@@ -66,8 +66,7 @@ h1 { margin-bottom: .8rem; font-size: clamp(2.6rem, 6vw, 4.7rem); line-height: 1
 .example-index { color: var(--accent); font-weight: 700; }
 .example-meta { display: flex; gap: 1rem; color: var(--muted); font-size: .9rem; }
 
-.baseline-tabs { display: flex; flex-wrap: wrap; gap: .6rem; margin-bottom: 1.5rem; }
-.baseline-tab, .row-actions button, .sync-play {
+.row-actions button, .sync-play {
   padding: .55rem .85rem;
   border: 1px solid var(--text);
   border-radius: 4px;
@@ -75,8 +74,10 @@ h1 { margin-bottom: .8rem; font-size: clamp(2.6rem, 6vw, 4.7rem); line-height: 1
   background: var(--surface);
   cursor: pointer;
 }
-.baseline-tab { font-size: 1.05rem; }
-.baseline-tab:hover, .baseline-tab.is-active, .sync-play:hover { color: #fff; background: var(--text); }
+.sync-play:hover { color: #fff; background: var(--text); }
+.baseline-list { display: flex; flex-direction: column; gap: 2rem; }
+.baseline-section { padding-top: 1.2rem; }
+.baseline-section + .baseline-section { border-top: 2px solid var(--text); }
 .baseline-intro { margin-bottom: 1rem; }
 .baseline-intro p:last-child { max-width: 700px; margin: .4rem 0 0; color: var(--muted); }
 
@@ -96,6 +97,7 @@ h1 { margin-bottom: .8rem; font-size: clamp(2.6rem, 6vw, 4.7rem); line-height: 1
 .sync-play { min-width: 7rem; font-weight: 700; }
 .sync-progress { width: 100%; accent-color: var(--accent); cursor: pointer; }
 .sync-time { min-width: 8.6rem; color: var(--muted); font-size: .95rem; text-align: right; }
+.measurement-note { margin: -.55rem 0 1.1rem; color: var(--muted); font-size: .88rem; }
 
 .notice { margin-bottom: 1rem; padding: .8rem; border-left: 4px solid var(--amber); background: #fff6df; }
 .iteration-list { display: flex; flex-direction: column; gap: 1.25rem; }
@@ -110,6 +112,8 @@ h1 { margin-bottom: .8rem; font-size: clamp(2.6rem, 6vw, 4.7rem); line-height: 1
 .status-accepted { color: var(--green); }
 .status-rejected { color: var(--red); }
 .status-revised { color: var(--amber); }
+.metric { color: #333; font-size: .88rem; white-space: nowrap; }
+.metric-muted { color: var(--muted); }
 .video-frame { width: min(720px, 100%); background: #111; }
 .video-frame video { display: block; width: 100%; aspect-ratio: 16 / 13; background: #111; }
 .video-placeholder { display: grid; place-content: center; min-height: 360px; padding: 1rem; color: #eee; text-align: center; }

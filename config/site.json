@@ -41,6 +41,8 @@
           "iterations": {
             "3": {
               "status": "rejected",
+              "runtime_seconds": 864.444,
+              "token_note": "tokens unreported",
               "tools": [
                 "FoundationPose",
                 "blender-scene · import-object-poses",
@@ -50,6 +52,8 @@
             },
             "5": {
               "status": "revised",
+              "runtime_seconds": 465.921,
+              "token_note": "tokens unreported",
               "tools": [
                 "FoundationPose++",
                 "SAM2 masks",
@@ -60,6 +64,8 @@
             },
             "8": {
               "status": "rejected",
+              "runtime_seconds": 563.969,
+              "token_note": "tokens unreported",
               "tools": [
                 "continuous quaternion regularization",
                 "contact-depth refinement",
@@ -69,6 +75,8 @@
             },
             "9": {
               "status": "accepted",
+              "runtime_seconds": 379.456,
+              "token_note": "tokens unreported",
               "tools": [
                 "temporal dynamic programming",
                 "contact geometry audit",
@@ -106,6 +114,8 @@
           "iterations": {
             "1": {
               "status": "revised",
+              "runtime_seconds": 1672.0,
+              "token_count": 5498611,
               "tools": [
                 "WiLoR and MANO hand reconstruction",
                 "Blender absolute shape keys",
@@ -116,6 +126,8 @@
             },
             "2": {
               "status": "revised",
+              "runtime_seconds": 430.0,
+              "token_count": 2488338,
               "tools": [
                 "SAM2 silhouette fitting",
                 "constrained mesh triangulation",
@@ -126,6 +138,8 @@
             },
             "3": {
               "status": "accepted",
+              "runtime_seconds": 2084.002,
+              "token_count": 14383940,
               "tools": [
                 "direct FoundationPose diagnostic",
                 "SAM2 and MoGe3-guided object fitting",

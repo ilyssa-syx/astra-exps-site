@@ -18,6 +18,9 @@
               "variant": "Four-panel RGB",
               "export_id": "iter03",
               "status": "rejected",
+              "runtime_seconds": 864.444,
+              "token_count": null,
+              "token_note": "tokens unreported",
               "tools": [
                 "FoundationPose",
                 "blender-scene · import-object-poses",
@@ -37,6 +40,9 @@
               "variant": "Four-panel RGB",
               "export_id": "iter05",
               "status": "revised",
+              "runtime_seconds": 465.921,
+              "token_count": null,
+              "token_note": "tokens unreported",
               "tools": [
                 "FoundationPose++",
                 "SAM2 masks",
@@ -57,6 +63,9 @@
               "variant": "Four-panel RGB",
               "export_id": "iter08",
               "status": "rejected",
+              "runtime_seconds": 563.969,
+              "token_count": null,
+              "token_note": "tokens unreported",
               "tools": [
                 "continuous quaternion regularization",
                 "contact-depth refinement",
@@ -76,6 +85,9 @@
               "variant": "Four-panel RGB",
               "export_id": "iter09",
               "status": "accepted",
+              "runtime_seconds": 379.456,
+              "token_count": null,
+              "token_note": "tokens unreported",
               "tools": [
                 "temporal dynamic programming",
                 "contact geometry audit",
@@ -103,6 +115,9 @@
               "variant": "Four-panel RGB",
               "export_id": "before-keytime-fix",
               "status": "revised",
+              "runtime_seconds": 1672.0,
+              "token_count": 5498611,
+              "token_note": "",
               "tools": [
                 "WiLoR and MANO hand reconstruction",
                 "Blender absolute shape keys",
@@ -122,6 +137,9 @@
               "variant": "Four-panel RGB",
               "export_id": "before-topology-fix",
               "status": "revised",
+              "runtime_seconds": 430.0,
+              "token_count": 2488338,
+              "token_note": "",
               "tools": [
                 "SAM2 silhouette fitting",
                 "constrained mesh triangulation",
@@ -141,6 +159,9 @@
               "variant": "Four-panel RGB",
               "export_id": "final",
               "status": "accepted",
+              "runtime_seconds": 2084.002,
+              "token_count": 14383940,
+              "token_note": "",
               "tools": [
                 "direct FoundationPose diagnostic",
                 "SAM2 and MoGe3-guided object fitting",

@@ -23,66 +23,47 @@ function renderExample(root, example, assetsReady) {
       <h1>${escapeHtml(example.title)}</h1>
       <p class="lede">${escapeHtml(example.description)}</p>
     </section>
-    <nav class="baseline-tabs" aria-label="Baselines"></nav>
-    <section class="baseline-panel"></section>`;
+    ${!assetsReady ? `<div class="notice"><strong>Video assets pending.</strong></div>` : ""}
+    <div class="sync-controls" aria-label="Synchronized video controls">
+      <button class="sync-play" type="button">Play all</button>
+      <input class="sync-progress" type="range" min="0" max="1000" value="0" step="1" aria-label="Video progress">
+      <span class="sync-time">00:00.0 / 00:20.0</span>
+    </div>
+    <p class="measurement-note">Runtime and token count are for that stage only, not cumulative. Unreported token counts are labeled explicitly.</p>
+    <div class="baseline-list"></div>`;
 
-  const tabs = root.querySelector(".baseline-tabs");
-  const panel = root.querySelector(".baseline-panel");
-  const requested = new URLSearchParams(window.location.search).get("baseline");
-  let active = example.baselines.find((item) => item.id === requested) || example.baselines[0];
-  let syncController = null;
-
+  const baselineList = root.querySelector(".baseline-list");
   for (const baseline of example.baselines) {
-    const button = document.createElement("button");
-    button.type = "button";
-    button.className = "baseline-tab";
-    button.textContent = baseline.label;
-    button.addEventListener("click", () => {
-      active = baseline;
-      const url = new URL(window.location.href);
-      url.searchParams.set("baseline", baseline.id);
-      window.history.replaceState({}, "", url);
-      update();
-    });
-    button.dataset.baseline = baseline.id;
-    tabs.appendChild(button);
-  }
-
-  function update() {
-    if (syncController) syncController.destroy();
-    for (const button of tabs.querySelectorAll("button")) {
-      const selected = button.dataset.baseline === active.id;
-      button.classList.toggle("is-active", selected);
-      button.setAttribute("aria-pressed", selected ? "true" : "false");
-    }
-    panel.innerHTML = `
+    const section = document.createElement("section");
+    section.className = "baseline-section";
+    section.dataset.baseline = baseline.id;
+    section.innerHTML = `
       <div class="baseline-intro">
         <div>
           <p class="eyebrow">Baseline</p>
-          <h2>${escapeHtml(active.label)}</h2>
-          <p>${escapeHtml(active.summary)}</p>
+          <h2>${escapeHtml(baseline.label)}</h2>
+          <p>${escapeHtml(baseline.summary)}</p>
         </div>
-        <span class="count">${active.exports.length} RGB videos</span>
-      </div>
-      ${!assetsReady ? `<div class="notice"><strong>Video assets pending.</strong></div>` : ""}
-      <div class="sync-controls" aria-label="Synchronized video controls">
-        <button class="sync-play" type="button">Play all</button>
-        <input class="sync-progress" type="range" min="0" max="1000" value="0" step="1" aria-label="Video progress">
-        <span class="sync-time">00:00.0 / 00:20.0</span>
+        <span class="count">${baseline.exports.length} RGB videos</span>
       </div>
       <div class="iteration-list"></div>`;
-    const list = panel.querySelector(".iteration-list");
-    for (const item of active.exports) list.appendChild(renderIteration(item));
-    syncController = createSyncController(panel);
+    const list = section.querySelector(".iteration-list");
+    for (const item of baseline.exports) list.appendChild(renderIteration(item));
+    baselineList.appendChild(section);
   }
-
-  update();
+  createSyncController(root);
 }
 
 function renderIteration(item) {
   const article = document.createElement("article");
   article.className = "iteration-row";
   const statusLabel = item.status.charAt(0).toUpperCase() + item.status.slice(1);
+  const runtime = Number.isFinite(item.runtime_seconds)
+    ? `<span class="metric">Runtime ${formatDuration(item.runtime_seconds)}</span>`
+    : "";
+  const tokens = Number.isFinite(item.token_count)
+    ? `<span class="metric">${item.token_count.toLocaleString("en-US")} tokens</span>`
+    : (item.token_note ? `<span class="metric metric-muted">${escapeHtml(item.token_note)}</span>` : "");
   const toolTags = item.tools.map((tool) => `<li>${escapeHtml(tool)}</li>`).join("");
   const video = item.video_url
     ? `<video muted playsinline preload="metadata" data-sync-video><source src="${escapeAttribute(item.video_url)}" type="video/mp4">Your browser does not support MP4 video.</video>`
@@ -92,6 +73,8 @@ function renderIteration(item) {
       <div>
         <h3>${escapeHtml(item.label)}</h3>
         <span class="status status-${escapeAttribute(item.status)}">${escapeHtml(statusLabel)}</span>
+        ${runtime}
+        ${tokens}
       </div>
       <div class="row-actions">
         <button type="button" data-video-toggle>Hide RGB</button>
@@ -223,6 +206,13 @@ function formatTime(seconds) {
   return `${String(minutes).padStart(2, "0")}:${remainder}`;
 }
 
+function formatDuration(seconds) {
+  const total = Math.round(seconds);
+  const minutes = Math.floor(total / 60);
+  const remainder = total % 60;
+  return minutes ? `${minutes}m ${String(remainder).padStart(2, "0")}s` : `${remainder}s`;
+}
+
 function escapeHtml(value) {
   const node = document.createElement("span");
   node.textContent = value || "";
@@ -232,4 +222,3 @@ function escapeHtml(value) {
 function escapeAttribute(value) {
   return escapeHtml(value).replace(/`/g, "&#96;");
 }
-

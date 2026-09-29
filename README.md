@@ -27,6 +27,8 @@ python3 scripts/build_site.py
 
 The video builder removes source RGB and observed depth from each six-panel review and recomposes reprojection, calibrated source, side, and rear into a 960×780 2×2 video. Original reconstruction deliverables are never modified. The site builder reads iteration metadata, writes the public catalog and pages, and creates a local `build/asset-manifest.json`. Neither script hashes videos.
 
+Runtime and token figures shown beside a video are stage-local, not cumulative. ASTRA runtimes are differences between consecutive bound review timestamps; its runner reported no token records, so tokens are explicitly unavailable. No-harness stages use the recorded stage-boundary timestamps and sum only per-response token records inside each interval. Preflight usage is excluded; the final no-harness stage includes the later shaded-review correction because that is the displayed final video.
+
 ## Cloudflare R2
 
 1. Configure an R2-compatible rclone remote.
