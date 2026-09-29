@@ -12,6 +12,32 @@
           "label": "20260928-2400s",
           "run": "../runs/20260928_v7/2400",
           "summary": "A 2400-second ASTRA reconstruction run with four exported review iterations.",
+          "exports": [
+            {
+              "source": "../runs/20260928_v7/2400/output/videos/intermediate_iter03_gpu/comparison.mp4",
+              "id": "iter03",
+              "iteration": 3,
+              "label": "Iteration 03"
+            },
+            {
+              "source": "../runs/20260928_v7/2400/output/videos/intermediate_iter05_gpu/comparison.mp4",
+              "id": "iter05",
+              "iteration": 5,
+              "label": "Iteration 05"
+            },
+            {
+              "source": "../runs/20260928_v7/2400/output/videos/intermediate_iter08_gpu/comparison.mp4",
+              "id": "iter08",
+              "iteration": 8,
+              "label": "Iteration 08"
+            },
+            {
+              "source": "../runs/20260928_v7/2400/output/videos/final_iter09_gpu/comparison.mp4",
+              "id": "iter09",
+              "iteration": 9,
+              "label": "Iteration 09 · Final"
+            }
+          ],
           "iterations": {
             "3": {
               "status": "rejected",
@@ -49,6 +75,65 @@
                 "full-frame RGB and multiview review"
               ],
               "conclusion": "Temporal DP preserved low-penetration contact branches without averaging through the hand. The complete reconstruction was accepted with mean silhouette IoU 0.618 and a sampled maximum penetration estimate of 9.05 mm; known thin-bowl roll errors remain disclosed."
+            }
+          }
+        },
+        {
+          "id": "no-harness",
+          "label": "no harness",
+          "run": "../no_harness_examples/0827-spoon",
+          "summary": "Standalone reconstruction without the ASTRA harness, shown at three complete review stages.",
+          "exports": [
+            {
+              "source": "../no_harness_examples/0827-spoon/intermediate/review_before_keytime_fix.mp4",
+              "id": "before-keytime-fix",
+              "iteration": 1,
+              "label": "Before key-time fix"
+            },
+            {
+              "source": "../no_harness_examples/0827-spoon/intermediate/review_before_topology_fix.mp4",
+              "id": "before-topology-fix",
+              "iteration": 2,
+              "label": "Before topology fix"
+            },
+            {
+              "source": "../no_harness_examples/0827-spoon/output/review.mp4",
+              "id": "final",
+              "iteration": 3,
+              "label": "Final"
+            }
+          ],
+          "iterations": {
+            "1": {
+              "status": "revised",
+              "tools": [
+                "WiLoR and MANO hand reconstruction",
+                "Blender absolute shape keys",
+                "full-scene validation"
+              ],
+              "change": "First complete standalone review before correcting animation key timing.",
+              "conclusion": "Full-scene validation found accumulated absolute-key timing error, producing up to 1.06 mm of hand interpolation discrepancy. The scene was rebuilt with explicit per-frame evaluation times."
+            },
+            "2": {
+              "status": "revised",
+              "tools": [
+                "SAM2 silhouette fitting",
+                "constrained mesh triangulation",
+                "topology validation"
+              ],
+              "change": "Complete review after key-time repair but before the final object-topology correction.",
+              "conclusion": "The full-resolution preview exposed unintended holes around the three spoon slots. The unconstrained triangulation was replaced with a watertight constrained mesh."
+            },
+            "3": {
+              "status": "accepted",
+              "tools": [
+                "direct FoundationPose diagnostic",
+                "SAM2 and MoGe3-guided object fitting",
+                "WiLoR and MANO hand reconstruction",
+                "standalone Blender review renderer"
+              ],
+              "change": "Final standalone scene after key-time and watertight-topology repairs.",
+              "conclusion": "Accepted standalone reconstruction: 1200 frames at 60 fps, watertight slotted-spoon geometry, mean filled silhouette IoU 0.730, and full review validation passed."
             }
           }
         }

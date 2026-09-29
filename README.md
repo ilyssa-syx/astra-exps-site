@@ -8,21 +8,24 @@ Static experiment review pages hosted by GitHub Pages. Large video assets live i
 ## Current content
 
 - Example: `0827-spoon`
-- Baseline: `20260928-2400s`
-- Source run: `../runs/20260928_v7/2400`
-- Valid exports: iterations 3, 5, 8, and 9
+- Baselines: `20260928-2400s` and `no harness`
+- Source runs: `../runs/20260928_v7/2400` and `../no_harness_examples/0827-spoon`
+- ASTRA exports: iterations 3, 5, 8, and 9
+- No-harness exports: before key-time fix, before topology fix, and final
 
 The 48-byte `output/videos/final_iter09/comparison.mp4` contains no media payload and is intentionally excluded. The valid GPU export for iteration 9 is included.
 
 ## Build
 
-Edit `config/site.json`, then run:
+Edit `config/site.json`, prepare the website-specific four-panel videos, then build:
 
 ```bash
+/home/yixuansu/miniforge3/envs/sam3d-objects/bin/python \
+  scripts/build_four_panel_videos.py --jobs 3
 python3 scripts/build_site.py
 ```
 
-The script discovers exported MP4s, reads their iteration metadata, writes the public catalog and pages, and creates a local `build/asset-manifest.json`. It does not hash videos.
+The video builder removes source RGB and observed depth from each six-panel review and recomposes reprojection, calibrated source, side, and rear into a 960×780 2×2 video. Original reconstruction deliverables are never modified. The site builder reads iteration metadata, writes the public catalog and pages, and creates a local `build/asset-manifest.json`. Neither script hashes videos.
 
 ## Cloudflare R2
 

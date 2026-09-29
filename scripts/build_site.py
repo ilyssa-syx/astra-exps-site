@@ -70,21 +70,46 @@ def build_catalog(config):
         }
         for baseline in example.get("baselines", []):
             run_root = (ROOT / baseline["run"]).resolve()
-            videos_root = run_root / "output" / "videos"
-            if not videos_root.is_dir():
-                raise RuntimeError("Missing videos directory: {}".format(videos_root))
-
             exports = []
             ignored = []
             annotations = baseline.get("iterations", {})
-            for video_path in sorted(videos_root.glob("*/*.mp4")):
-                iteration, metadata = iteration_from_export(video_path.parent)
-                if iteration is None:
-                    warnings.append("Could not identify iteration for {}".format(video_path))
-                    continue
+            configured_exports = baseline.get("exports", [])
+            if configured_exports:
+                export_specs = []
+                for spec in configured_exports:
+                    video_path = (
+                        BUILD
+                        / "videos"
+                        / example["id"]
+                        / baseline["id"]
+                        / (spec["id"] + "-four-panel.mp4")
+                    )
+                    if not video_path.is_file():
+                        raise RuntimeError(
+                            "Missing four-panel video {}; run scripts/build_four_panel_videos.py".format(
+                                video_path
+                            )
+                        )
+                    export_specs.append((video_path, int(spec["iteration"]), spec))
+            else:
+                videos_root = run_root / "output" / "videos"
+                if not videos_root.is_dir():
+                    raise RuntimeError("Missing videos directory: {}".format(videos_root))
+                export_specs = []
+                for video_path in sorted(videos_root.glob("*/*.mp4")):
+                    iteration, metadata = iteration_from_export(video_path.parent)
+                    if iteration is None:
+                        warnings.append("Could not identify iteration for {}".format(video_path))
+                        continue
+                    export_specs.append((video_path, iteration, {
+                        "id": video_path.parent.name,
+                        "label": variant_label(video_path.parent.name, metadata),
+                    }))
+
+            for video_path, iteration, spec in export_specs:
                 if video_path.stat().st_size < MIN_VIDEO_BYTES:
                     ignored.append({
-                        "file": str(video_path.relative_to(run_root)),
+                        "file": str(video_path),
                         "reason": "empty or incomplete MP4 ({} bytes)".format(video_path.stat().st_size),
                     })
                     continue
@@ -99,22 +124,25 @@ def build_catalog(config):
                 )
                 iteration_data = read_json(iteration_path) if iteration_path.is_file() else {}
                 annotation = annotations.get(str(iteration), {})
-                export_name = video_path.parent.name
-                asset_key = "{}/{}/iter-{:04d}/{}.mp4".format(
-                    example["id"], baseline["id"], iteration, export_name
+                export_name = spec["id"]
+                asset_key = "{}/{}/four-panel/{}-four-panel.mp4".format(
+                    example["id"], baseline["id"], export_name
                 )
                 video_url = "{}/{}".format(asset_base, asset_key) if asset_base else ""
                 exports.append({
                     "iteration": iteration,
-                    "variant": variant_label(export_name, metadata),
+                    "label": spec.get("label", "Iteration {:02d}".format(iteration)),
+                    "variant": "Four-panel RGB",
                     "export_id": export_name,
                     "status": annotation.get("status", "review"),
                     "tools": annotation.get("tools", []),
                     "conclusion": annotation.get("conclusion", ""),
-                    "change": iteration_data.get("reason", ""),
+                    "change": annotation.get("change", iteration_data.get("reason", "")),
                     "video_url": video_url,
                     "asset_key": asset_key,
                     "bytes": video_path.stat().st_size,
+                    "width": 960,
+                    "height": 780,
                 })
                 upload_assets.append({
                     "source": str(video_path),
@@ -208,4 +236,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
