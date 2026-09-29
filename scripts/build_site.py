@@ -57,6 +57,7 @@ def variant_label(export_name, metadata):
 
 def build_catalog(config):
     asset_base = config.get("asset_base_url", "").rstrip("/")
+    asset_version = config.get("asset_version", "1")
     public_examples = []
     upload_assets = []
     warnings = []
@@ -128,7 +129,9 @@ def build_catalog(config):
                 asset_key = "{}/{}/four-panel/{}-four-panel.mp4".format(
                     example["id"], baseline["id"], export_name
                 )
-                video_url = "{}/{}".format(asset_base, asset_key) if asset_base else ""
+                video_url = "{}/{}?v={}".format(
+                    asset_base, asset_key, asset_version
+                ) if asset_base else ""
                 exports.append({
                     "iteration": iteration,
                     "label": spec.get("label", "Iteration {:02d}".format(iteration)),
