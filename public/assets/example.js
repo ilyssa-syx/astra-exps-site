@@ -41,6 +41,14 @@ function renderExample(root, example, assetsReady) {
     baselineList.classList.toggle("single-baseline", visible === 1);
   };
   for (const baseline of example.baselines) {
+    const hasCompleteTokenCount = baseline.exports.every((item) => Number.isFinite(item.token_count));
+    const totalTokens = baseline.exports.reduce(
+      (total, item) => total + (Number.isFinite(item.token_count) ? item.token_count : 0),
+      0,
+    );
+    const totalTokenMarkup = hasCompleteTokenCount
+      ? `<footer class="baseline-total">Total: ${totalTokens.toLocaleString("en-US")} tokens</footer>`
+      : `<footer class="baseline-total metric-muted">Total: tokens unreported</footer>`;
     const section = document.createElement("section");
     section.className = "baseline-section";
     section.dataset.baseline = baseline.id;
@@ -53,7 +61,8 @@ function renderExample(root, example, assetsReady) {
         </div>
         <span class="count">${baseline.exports.length} RGB videos</span>
       </div>
-      <div class="iteration-list"></div>`;
+      <div class="iteration-list"></div>
+      ${totalTokenMarkup}`;
     const list = section.querySelector(".iteration-list");
     for (const item of baseline.exports) list.appendChild(renderIteration(item));
     baselineList.appendChild(section);
