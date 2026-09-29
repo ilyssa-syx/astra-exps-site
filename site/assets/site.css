@@ -15,7 +15,7 @@
 
 * { box-sizing: border-box; }
 body { margin: 0; color: var(--text); background: var(--background); }
-button, input { font: inherit; }
+button, input, select { font: inherit; }
 a { color: inherit; }
 
 .topbar {
@@ -93,7 +93,7 @@ h1 { margin-bottom: .8rem; font-size: clamp(2.6rem, 6vw, 4.7rem); line-height: 1
   z-index: 8;
   top: 58px;
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: auto auto 1fr auto;
   gap: 1rem;
   align-items: center;
   margin-bottom: 1.25rem;
@@ -102,6 +102,8 @@ h1 { margin-bottom: .8rem; font-size: clamp(2.6rem, 6vw, 4.7rem); line-height: 1
   background: rgba(255, 255, 255, .96);
 }
 .sync-play { min-width: 7rem; font-weight: 700; }
+.sync-speed { display: flex; align-items: center; gap: .45rem; color: var(--muted); font-size: .9rem; }
+.sync-speed select { padding: .45rem .55rem; border: 1px solid var(--text); border-radius: 4px; color: var(--text); background: var(--surface); cursor: pointer; }
 .sync-progress { width: 100%; accent-color: var(--accent); cursor: pointer; }
 .sync-time { min-width: 8.6rem; color: var(--muted); font-size: .95rem; text-align: right; }
 .measurement-note { margin: -.55rem 0 1.1rem; color: var(--muted); font-size: .88rem; }
@@ -144,7 +146,7 @@ h1 { margin-bottom: .8rem; font-size: clamp(2.6rem, 6vw, 4.7rem); line-height: 1
   :root { font-size: 16px; }
   .page-shell { width: min(94vw, 1050px); padding-top: 2rem; }
   .baseline-intro, .iteration-heading { align-items: flex-start; flex-direction: column; }
-  .sync-controls { grid-template-columns: auto 1fr; top: 58px; }
+  .sync-controls { grid-template-columns: auto auto 1fr; top: 58px; }
   .sync-time { grid-column: 1 / -1; text-align: left; }
   .iteration-heading > div:first-child { flex-wrap: wrap; }
   .example-card { grid-template-columns: 2rem 1fr; }

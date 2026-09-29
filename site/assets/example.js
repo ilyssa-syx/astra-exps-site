@@ -28,6 +28,16 @@ function renderExample(root, example, assetsReady) {
     ${!assetsReady ? `<div class="notice"><strong>Video assets pending.</strong></div>` : ""}
     <div class="sync-controls" aria-label="Synchronized video controls">
       <button class="sync-play" type="button">Play all</button>
+      <label class="sync-speed">Speed
+        <select aria-label="Playback speed">
+          <option value="0.25">0.25×</option>
+          <option value="0.5">0.5×</option>
+          <option value="0.75">0.75×</option>
+          <option value="1" selected>1×</option>
+          <option value="1.5">1.5×</option>
+          <option value="2">2×</option>
+        </select>
+      </label>
       <input class="sync-progress" type="range" min="0" max="1000" value="0" step="1" aria-label="Video progress">
       <span class="sync-time">00:00.0 / 00:20.0</span>
     </div>
@@ -141,6 +151,7 @@ function renderIteration(item) {
 
 function createSyncController(panel) {
   const playButton = panel.querySelector(".sync-play");
+  const speed = panel.querySelector(".sync-speed select");
   const progress = panel.querySelector(".sync-progress");
   const time = panel.querySelector(".sync-time");
   const videos = Array.from(panel.querySelectorAll("video[data-sync-video]"));
@@ -148,6 +159,11 @@ function createSyncController(panel) {
   let duration = 20;
   let currentTime = 0;
   let animationFrame = null;
+
+  function applyPlaybackRate() {
+    const rate = Number(speed.value);
+    for (const video of videos) video.playbackRate = rate;
+  }
 
   const visibleVideos = () => videos.filter((video) => (
     !video.closest(".video-frame").hidden && !video.closest(".baseline-section").hidden
@@ -187,6 +203,7 @@ function createSyncController(panel) {
   async function playAll() {
     const active = visibleVideos();
     if (!active.length) return;
+    applyPlaybackRate();
     for (const video of active) video.currentTime = currentTime;
     await Promise.all(active.map((video) => video.play().catch(() => null)));
     playing = true;
@@ -204,6 +221,7 @@ function createSyncController(panel) {
   }
 
   playButton.addEventListener("click", () => playing ? pauseAll() : playAll());
+  speed.addEventListener("change", applyPlaybackRate);
   progress.addEventListener("input", () => {
     currentTime = duration * Number(progress.value) / 1000;
     for (const video of visibleVideos()) video.currentTime = currentTime;
@@ -226,6 +244,7 @@ function createSyncController(panel) {
     }
     paint();
   });
+  applyPlaybackRate();
   paint();
 
   return {
