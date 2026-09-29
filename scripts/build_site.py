@@ -170,7 +170,7 @@ def build_catalog(config):
     }, upload_assets, warnings
 
 
-def render_example_page(example, site_title):
+def render_example_page(example, site_title, asset_version):
     title = "{} · {}".format(example.get("title", example["id"]), site_title)
     return """<!doctype html>
 <html lang="en">
@@ -179,20 +179,21 @@ def render_example_page(example, site_title):
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{description}">
   <title>{title}</title>
-  <link rel="stylesheet" href="../../assets/site.css">
+  <link rel="stylesheet" href="../../assets/site.css?v={asset_version}">
 </head>
-<body data-example="{example_id}">
+<body data-example="{example_id}" data-asset-version="{asset_version}">
   <header class="topbar"><a class="brand" href="../../">ASTRA / EXPERIMENTS</a></header>
   <main id="example-root" class="page-shell" aria-live="polite">
     <p class="loading">Loading experiment…</p>
   </main>
-  <script src="../../assets/example.js" defer></script>
+  <script src="../../assets/example.js?v={asset_version}" defer></script>
 </body>
 </html>
 """.format(
         title=html.escape(title),
         description=html.escape(example.get("description", ""), quote=True),
         example_id=html.escape(example["id"], quote=True),
+        asset_version=html.escape(asset_version, quote=True),
     )
 
 
@@ -214,7 +215,12 @@ def build_pages(config, catalog):
         output = examples_root / example["id"] / "index.html"
         output.parent.mkdir(parents=True, exist_ok=True)
         output.write_text(
-            render_example_page(example, catalog["site_title"]), encoding="utf-8"
+            render_example_page(
+                example,
+                catalog["site_title"],
+                config.get("asset_version", "1"),
+            ),
+            encoding="utf-8",
         )
 
 

@@ -30,7 +30,7 @@ a { color: inherit; }
   background: rgba(245, 245, 245, .96);
 }
 .brand { font-size: 1rem; font-weight: 700; text-decoration: none; }
-.page-shell { width: min(1050px, 92vw); margin: 0 auto; padding: 2.5rem 0 5rem; }
+.page-shell { width: min(1500px, 96vw); margin: 0 auto; padding: 2.5rem 0 5rem; }
 .home-shell { width: min(1050px, 92vw); }
 .hero, .example-hero { max-width: 850px; margin-bottom: 2.5rem; }
 .example-hero { margin-bottom: 1.8rem; }
@@ -66,7 +66,8 @@ h1 { margin-bottom: .8rem; font-size: clamp(2.6rem, 6vw, 4.7rem); line-height: 1
 .example-index { color: var(--accent); font-weight: 700; }
 .example-meta { display: flex; gap: 1rem; color: var(--muted); font-size: .9rem; }
 
-.row-actions button, .sync-play {
+.baseline-toggles { display: flex; flex-wrap: wrap; gap: .6rem; margin-bottom: 1rem; }
+.baseline-toggle, .row-actions button, .sync-play {
   padding: .55rem .85rem;
   border: 1px solid var(--text);
   border-radius: 4px;
@@ -74,10 +75,16 @@ h1 { margin-bottom: .8rem; font-size: clamp(2.6rem, 6vw, 4.7rem); line-height: 1
   background: var(--surface);
   cursor: pointer;
 }
-.sync-play:hover { color: #fff; background: var(--text); }
-.baseline-list { display: flex; flex-direction: column; gap: 2rem; }
-.baseline-section { padding-top: 1.2rem; }
-.baseline-section + .baseline-section { border-top: 2px solid var(--text); }
+.baseline-toggle:hover, .baseline-toggle.is-active, .sync-play:hover { color: #fff; background: var(--text); }
+.baseline-toggle:not(.is-active) { color: var(--muted); border-color: var(--border); text-decoration: line-through; }
+.baseline-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  align-items: start;
+}
+.baseline-list.single-baseline { grid-template-columns: minmax(0, 720px); }
+.baseline-section { min-width: 0; padding: 1rem; border: 1px solid var(--border); background: #eee; }
 .baseline-intro { margin-bottom: 1rem; }
 .baseline-intro p:last-child { max-width: 700px; margin: .4rem 0 0; color: var(--muted); }
 
@@ -141,6 +148,10 @@ h1 { margin-bottom: .8rem; font-size: clamp(2.6rem, 6vw, 4.7rem); line-height: 1
   .iteration-heading > div:first-child { flex-wrap: wrap; }
   .example-card { grid-template-columns: 2rem 1fr; }
   .example-meta { grid-column: 2; }
+}
+
+@media (max-width: 950px) {
+  .baseline-list { grid-template-columns: 1fr; }
 }
 
 @media (prefers-reduced-motion: reduce) {

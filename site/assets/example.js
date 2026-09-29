@@ -1,8 +1,9 @@
 (async function () {
   const root = document.querySelector("#example-root");
   const exampleId = document.body.dataset.example;
+  const assetVersion = document.body.dataset.assetVersion || "1";
   try {
-    const response = await fetch("../../data/catalog.json");
+    const response = await fetch(`../../data/catalog.json?v=${encodeURIComponent(assetVersion)}`);
     if (!response.ok) throw new Error(`catalog request failed: ${response.status}`);
     const catalog = await response.json();
     const example = catalog.examples.find((item) => item.id === exampleId);
@@ -23,6 +24,7 @@ function renderExample(root, example, assetsReady) {
       <h1>${escapeHtml(example.title)}</h1>
       <p class="lede">${escapeHtml(example.description)}</p>
     </section>
+    <nav class="baseline-toggles" aria-label="Show or hide baselines"></nav>
     ${!assetsReady ? `<div class="notice"><strong>Video assets pending.</strong></div>` : ""}
     <div class="sync-controls" aria-label="Synchronized video controls">
       <button class="sync-play" type="button">Play all</button>
@@ -33,6 +35,11 @@ function renderExample(root, example, assetsReady) {
     <div class="baseline-list"></div>`;
 
   const baselineList = root.querySelector(".baseline-list");
+  const baselineToggles = root.querySelector(".baseline-toggles");
+  const updateBaselineLayout = () => {
+    const visible = Array.from(baselineList.children).filter((section) => !section.hidden).length;
+    baselineList.classList.toggle("single-baseline", visible === 1);
+  };
   for (const baseline of example.baselines) {
     const section = document.createElement("section");
     section.className = "baseline-section";
@@ -50,7 +57,23 @@ function renderExample(root, example, assetsReady) {
     const list = section.querySelector(".iteration-list");
     for (const item of baseline.exports) list.appendChild(renderIteration(item));
     baselineList.appendChild(section);
+
+    const toggle = document.createElement("button");
+    toggle.type = "button";
+    toggle.className = "baseline-toggle is-active";
+    toggle.textContent = baseline.label;
+    toggle.setAttribute("aria-pressed", "true");
+    toggle.addEventListener("click", () => {
+      const willShow = section.hidden;
+      section.hidden = !willShow;
+      toggle.classList.toggle("is-active", willShow);
+      toggle.setAttribute("aria-pressed", willShow ? "true" : "false");
+      section.dispatchEvent(new CustomEvent("visibilitychange", { bubbles: true }));
+      updateBaselineLayout();
+    });
+    baselineToggles.appendChild(toggle);
   }
+  updateBaselineLayout();
   createSyncController(root);
 }
 
@@ -117,7 +140,9 @@ function createSyncController(panel) {
   let currentTime = 0;
   let animationFrame = null;
 
-  const visibleVideos = () => videos.filter((video) => !video.closest(".video-frame").hidden);
+  const visibleVideos = () => videos.filter((video) => (
+    !video.closest(".video-frame").hidden && !video.closest(".baseline-section").hidden
+  ));
   const leader = () => visibleVideos()[0] || null;
 
   function updateDuration() {
@@ -180,13 +205,15 @@ function createSyncController(panel) {
     video.addEventListener("ended", pauseAll);
   }
   panel.addEventListener("visibilitychange", (event) => {
-    const video = event.target.querySelector("video");
-    if (!video) return;
-    if (video.closest(".video-frame").hidden) {
-      video.pause();
-    } else {
-      video.currentTime = currentTime;
-      if (playing) video.play().catch(() => null);
+    const affected = Array.from(event.target.querySelectorAll("video"));
+    for (const video of affected) {
+      const hidden = video.closest(".video-frame").hidden || video.closest(".baseline-section").hidden;
+      if (hidden) {
+        video.pause();
+      } else {
+        video.currentTime = currentTime;
+        if (playing) video.play().catch(() => null);
+      }
     }
     paint();
   });
