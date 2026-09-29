@@ -2,6 +2,9 @@
 
 Static experiment review pages hosted by GitHub Pages. Large video assets live in Cloudflare R2.
 
+- R2 bucket: `baseline-pointmaps`
+- Public asset URL: `https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev`
+
 ## Current content
 
 - Example: `0827-spoon`

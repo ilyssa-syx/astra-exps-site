@@ -1,6 +1,6 @@
 {
   "site_title": "ASTRA Experiments",
-  "asset_base_url": "",
+  "asset_base_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev",
   "examples": [
     {
       "id": "0827-spoon",
@@ -56,4 +56,3 @@
     }
   ]
 }
-
