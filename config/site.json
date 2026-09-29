@@ -43,7 +43,7 @@
             "3": {
               "status": "rejected",
               "runtime_seconds": 864.444,
-              "token_count": 5887278,
+              "token_count": 5545153,
               "tools": [
                 "FoundationPose",
                 "blender-scene · import-object-poses",

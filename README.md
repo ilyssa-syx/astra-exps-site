@@ -27,7 +27,7 @@ python3 scripts/build_site.py
 
 The video builder removes source RGB and observed depth from each six-panel review and recomposes reprojection, calibrated source, side, and rear into a 960×780 2×2 video. Original reconstruction deliverables are never modified. The site builder reads iteration metadata, writes the public catalog and pages, and creates a local `build/asset-manifest.json`. Neither script hashes videos.
 
-Runtime and token figures shown beside a video are stage-local, not cumulative. ASTRA runtimes are differences between consecutive bound review timestamps. Its run-local `output/usage.json` did not receive usage records, so ASTRA token increments are recovered from the matched outer Codex rollout's checkpoint totals (5,887,278 / 8,740,360 / 12,796,613 / 16,599,879). No-harness stages use the recorded stage-boundary timestamps and sum only per-response token records inside each interval. Preflight usage is excluded; the final no-harness stage includes the later shaded-review correction because that is the displayed final video.
+Runtime and token figures shown beside a video use the same stage-local convention for every baseline. Tokens are outer-rollout `total_tokens` (including cached input) accumulated only between adjacent stage boundaries; preflight and initialization before the official start are excluded. ASTRA's run-local `output/usage.json` did not receive usage records, so its values are recovered from the matched Codex rollout and its recorded checkpoints. No-harness uses the same rollout field and interval-delta method. The final no-harness stage includes the later shaded-review correction because that is the displayed final video.
 
 ## Cloudflare R2
 
