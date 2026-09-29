@@ -1,0 +1,91 @@
+{
+  "site_title": "ASTRA Experiments",
+  "asset_base_url": "",
+  "examples": [
+    {
+      "id": "0827-spoon",
+      "title": "0827 · Spoon",
+      "description": "RGB-only hand–object reconstruction of a slotted spoon interaction.",
+      "baselines": [
+        {
+          "id": "20260928-2400s",
+          "label": "20260928-2400s",
+          "summary": "A 2400-second ASTRA reconstruction run with four exported review iterations.",
+          "exports": [
+            {
+              "iteration": 3,
+              "variant": "GPU · 6-panel comparison",
+              "export_id": "intermediate_iter03_gpu",
+              "status": "rejected",
+              "tools": [
+                "FoundationPose",
+                "blender-scene · import-object-poses",
+                "full-frame RGB inspection"
+              ],
+              "conclusion": "The initial proposal was rejected. FoundationPose drifted onto the keyboard after frame 300, while a mesh-basis mismatch and hallucinated bowl prongs produced a mean silhouette IoU of 0.056.",
+              "change": "Initial proposal only; inspect scale silhouette and contact before acceptance",
+              "video_url": "",
+              "asset_key": "0827-spoon/20260928-2400s/iter-0003/intermediate_iter03_gpu.mp4",
+              "bytes": 7872187
+            },
+            {
+              "iteration": 5,
+              "variant": "GPU · 6-panel comparison",
+              "export_id": "intermediate_iter05_gpu",
+              "status": "revised",
+              "tools": [
+                "FoundationPose++",
+                "SAM2 masks",
+                "mask-guided rigid pose fitting",
+                "hand temporal smoothing"
+              ],
+              "conclusion": "The repaired geometry and trajectory fixed the global failure and raised mean silhouette IoU to 0.647. Ambiguous axial rotation and contact-depth intervals still required temporal refinement.",
+              "change": "Replace rejected drift and basis mismatch; preserve SE3 and every-frame mapping",
+              "video_url": "",
+              "asset_key": "0827-spoon/20260928-2400s/iter-0005/intermediate_iter05_gpu.mp4",
+              "bytes": 8381913
+            },
+            {
+              "iteration": 8,
+              "variant": "GPU · 6-panel comparison",
+              "export_id": "intermediate_iter08_gpu",
+              "status": "rejected",
+              "tools": [
+                "continuous quaternion regularization",
+                "contact-depth refinement",
+                "full-frame contact inspection"
+              ],
+              "conclusion": "Object rotation became continuous with a 5.84° maximum step, but averaging independent hand-depth choices crossed high-penetration states around frames 379 and 652–667. This contact regression was rejected.",
+              "change": "Smooth viewing-ray offsets reduce finger penetration while preserving shaft-grasp articulation",
+              "video_url": "",
+              "asset_key": "0827-spoon/20260928-2400s/iter-0008/intermediate_iter08_gpu.mp4",
+              "bytes": 8049135
+            },
+            {
+              "iteration": 9,
+              "variant": "GPU · 6-panel comparison",
+              "export_id": "final_iter09_gpu",
+              "status": "accepted",
+              "tools": [
+                "temporal dynamic programming",
+                "contact geometry audit",
+                "full-frame RGB and multiview review"
+              ],
+              "conclusion": "Temporal DP preserved low-penetration contact branches without averaging through the hand. The complete reconstruction was accepted with mean silhouette IoU 0.618 and a sampled maximum penetration estimate of 9.05 mm; known thin-bowl roll errors remain disclosed.",
+              "change": "Temporal DP preserves low-penetration contact branches and bounded depth velocity instead of averaging through hand",
+              "video_url": "",
+              "asset_key": "0827-spoon/20260928-2400s/iter-0009/final_iter09_gpu.mp4",
+              "bytes": 8079092
+            }
+          ],
+          "ignored_exports": [
+            {
+              "file": "output/videos/final_iter09/comparison.mp4",
+              "reason": "empty or incomplete MP4 (48 bytes)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

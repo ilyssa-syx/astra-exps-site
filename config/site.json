@@ -1,0 +1,59 @@
+{
+  "site_title": "ASTRA Experiments",
+  "asset_base_url": "",
+  "examples": [
+    {
+      "id": "0827-spoon",
+      "title": "0827 · Spoon",
+      "description": "RGB-only hand–object reconstruction of a slotted spoon interaction.",
+      "baselines": [
+        {
+          "id": "20260928-2400s",
+          "label": "20260928-2400s",
+          "run": "../runs/20260928_v7/2400",
+          "summary": "A 2400-second ASTRA reconstruction run with four exported review iterations.",
+          "iterations": {
+            "3": {
+              "status": "rejected",
+              "tools": [
+                "FoundationPose",
+                "blender-scene · import-object-poses",
+                "full-frame RGB inspection"
+              ],
+              "conclusion": "The initial proposal was rejected. FoundationPose drifted onto the keyboard after frame 300, while a mesh-basis mismatch and hallucinated bowl prongs produced a mean silhouette IoU of 0.056."
+            },
+            "5": {
+              "status": "revised",
+              "tools": [
+                "FoundationPose++",
+                "SAM2 masks",
+                "mask-guided rigid pose fitting",
+                "hand temporal smoothing"
+              ],
+              "conclusion": "The repaired geometry and trajectory fixed the global failure and raised mean silhouette IoU to 0.647. Ambiguous axial rotation and contact-depth intervals still required temporal refinement."
+            },
+            "8": {
+              "status": "rejected",
+              "tools": [
+                "continuous quaternion regularization",
+                "contact-depth refinement",
+                "full-frame contact inspection"
+              ],
+              "conclusion": "Object rotation became continuous with a 5.84° maximum step, but averaging independent hand-depth choices crossed high-penetration states around frames 379 and 652–667. This contact regression was rejected."
+            },
+            "9": {
+              "status": "accepted",
+              "tools": [
+                "temporal dynamic programming",
+                "contact geometry audit",
+                "full-frame RGB and multiview review"
+              ],
+              "conclusion": "Temporal DP preserved low-penetration contact branches without averaging through the hand. The complete reconstruction was accepted with mean silhouette IoU 0.618 and a sampled maximum penetration estimate of 9.05 mm; known thin-bowl roll errors remain disclosed."
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
+
