@@ -268,8 +268,20 @@ def build_catalog(config):
             ignored = []
             configured_exports = baseline.get("exports", [])
             annotations = baseline.get("iterations", {})
-            iterations = run_iterations(run_root)
-            audit = build_audit(run_root, iterations)
+            iterations = (
+                {} if baseline.get("skip_run_discovery") else run_iterations(run_root)
+            )
+            audit = (
+                {
+                    "available": False,
+                    "source": "",
+                    "setup_events": [],
+                    "iteration_events": {},
+                    "excluded_event_count": 0,
+                    "included_event_count": 0,
+                }
+                if baseline.get("skip_audit") else build_audit(run_root, iterations)
+            )
             if baseline.get("auto_iterations"):
                 if not iterations:
                     raise RuntimeError("No iterations found for {}".format(run_root))
@@ -301,19 +313,24 @@ def build_catalog(config):
             elif configured_exports:
                 export_specs = []
                 for spec in configured_exports:
-                    video_path = (
-                        BUILD
-                        / "videos"
-                        / example["id"]
-                        / baseline["id"]
-                        / (spec["id"] + "-four-panel.mp4")
-                    )
-                    if not video_path.is_file():
-                        raise RuntimeError(
-                            "Missing four-panel video {}; run scripts/build_four_panel_videos.py".format(
-                                video_path
+                    if spec.get("video"):
+                        video_path = (run_root / spec["video"]).resolve()
+                        try:
+                            video_path.relative_to(run_root)
+                        except ValueError:
+                            raise RuntimeError(
+                                "Configured video escapes run root: {}".format(video_path)
                             )
+                    else:
+                        video_path = (
+                            BUILD
+                            / "videos"
+                            / example["id"]
+                            / baseline["id"]
+                            / (spec["id"] + "-four-panel.mp4")
                         )
+                    if not video_path.is_file():
+                        raise RuntimeError("Missing configured video {}".format(video_path))
                     export_specs.append((video_path, int(spec["iteration"]), spec))
             else:
                 videos_root = run_root / "output" / "videos"

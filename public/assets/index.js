@@ -2,7 +2,7 @@
   const grid = document.querySelector("#example-grid");
   const count = document.querySelector("#example-count");
   try {
-    const response = await fetch("data/catalog.json");
+    const response = await fetch("data/catalog.json", { cache: "no-store" });
     if (!response.ok) throw new Error(`catalog request failed: ${response.status}`);
     const catalog = await response.json();
     count.textContent = `${catalog.examples.length} total`;
@@ -35,4 +35,3 @@ function escapeHtml(value) {
   node.textContent = value || "";
   return node.innerHTML;
 }
-

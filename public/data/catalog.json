@@ -27,7 +27,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/no-harness/iterations/final.mp4?v=20260930-3",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/no-harness/iterations/final.mp4?v=20260930-4",
               "asset_key": "0827-spoon/no-harness/iterations/final.mp4",
               "video_ready": true,
               "bytes": 4340372,
@@ -47,7 +47,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/no-harness/iterations/before-topology-fix.mp4?v=20260930-3",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/no-harness/iterations/before-topology-fix.mp4?v=20260930-4",
               "asset_key": "0827-spoon/no-harness/iterations/before-topology-fix.mp4",
               "video_ready": true,
               "bytes": 4342634,
@@ -67,7 +67,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/no-harness/iterations/before-keytime-fix.mp4?v=20260930-3",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/no-harness/iterations/before-keytime-fix.mp4?v=20260930-4",
               "asset_key": "0827-spoon/no-harness/iterations/before-keytime-fix.mp4",
               "video_ready": true,
               "bytes": 4345819,
@@ -1585,7 +1585,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000009.mp4?v=20260930-3",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000009.mp4?v=20260930-4",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000009.mp4",
               "video_ready": true,
               "bytes": 4666106,
@@ -2139,7 +2139,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000008.mp4?v=20260930-3",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000008.mp4?v=20260930-4",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000008.mp4",
               "video_ready": true,
               "bytes": 4665029,
@@ -2240,7 +2240,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000007.mp4?v=20260930-3",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000007.mp4?v=20260930-4",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000007.mp4",
               "video_ready": true,
               "bytes": 4656717,
@@ -2380,7 +2380,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000006.mp4?v=20260930-3",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000006.mp4?v=20260930-4",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000006.mp4",
               "video_ready": true,
               "bytes": 4649168,
@@ -2773,7 +2773,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000005.mp4?v=20260930-3",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000005.mp4?v=20260930-4",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000005.mp4",
               "video_ready": true,
               "bytes": 4813948,
@@ -2867,7 +2867,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000004.mp4?v=20260930-3",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000004.mp4?v=20260930-4",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000004.mp4",
               "video_ready": true,
               "bytes": 4321572,
@@ -3598,7 +3598,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000003.mp4?v=20260930-3",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000003.mp4?v=20260930-4",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000003.mp4",
               "video_ready": true,
               "bytes": 4898222,
@@ -4138,7 +4138,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000002.mp4?v=20260930-3",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000002.mp4?v=20260930-4",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000002.mp4",
               "video_ready": true,
               "bytes": 5016715,
@@ -4158,7 +4158,7 @@
               "provenance": null,
               "blend_sha256": "ef0a4285f30d12086eb31b6167edc4ab668831369455f85565053dc894ea7d6a",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000001.mp4?v=20260930-3",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000001.mp4?v=20260930-4",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000001.mp4",
               "video_ready": true,
               "bytes": 2599510,
@@ -5500,7 +5500,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000016.mp4?v=20260930-3",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000016.mp4?v=20260930-4",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000016.mp4",
               "video_ready": true,
               "bytes": 5029574,
@@ -6374,7 +6374,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000015.mp4?v=20260930-3",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000015.mp4?v=20260930-4",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000015.mp4",
               "video_ready": true,
               "bytes": 5025521,
@@ -6588,7 +6588,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000014.mp4?v=20260930-3",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000014.mp4?v=20260930-4",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000014.mp4",
               "video_ready": true,
               "bytes": 4815353,
@@ -7437,7 +7437,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000013.mp4?v=20260930-3",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000013.mp4?v=20260930-4",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000013.mp4",
               "video_ready": true,
               "bytes": 4932534,
@@ -7990,7 +7990,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000012.mp4?v=20260930-3",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000012.mp4?v=20260930-4",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000012.mp4",
               "video_ready": true,
               "bytes": 4966555,
@@ -8140,7 +8140,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000011.mp4?v=20260930-3",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000011.mp4?v=20260930-4",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000011.mp4",
               "video_ready": true,
               "bytes": 5098791,
@@ -8621,7 +8621,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000010.mp4?v=20260930-3",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000010.mp4?v=20260930-4",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000010.mp4",
               "video_ready": true,
               "bytes": 5094780,
@@ -9625,7 +9625,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000009.mp4?v=20260930-3",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000009.mp4?v=20260930-4",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000009.mp4",
               "video_ready": true,
               "bytes": 5069457,
@@ -10892,7 +10892,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000008.mp4?v=20260930-3",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000008.mp4?v=20260930-4",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000008.mp4",
               "video_ready": true,
               "bytes": 4762414,
@@ -11545,7 +11545,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000007.mp4?v=20260930-3",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000007.mp4?v=20260930-4",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000007.mp4",
               "video_ready": true,
               "bytes": 4813781,
@@ -11637,7 +11637,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000006.mp4?v=20260930-3",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000006.mp4?v=20260930-4",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000006.mp4",
               "video_ready": true,
               "bytes": 4528666,
@@ -11804,7 +11804,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000005.mp4?v=20260930-3",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000005.mp4?v=20260930-4",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000005.mp4",
               "video_ready": true,
               "bytes": 4730774,
@@ -12186,7 +12186,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000004.mp4?v=20260930-3",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000004.mp4?v=20260930-4",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000004.mp4",
               "video_ready": true,
               "bytes": 5013576,
@@ -12508,7 +12508,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000003.mp4?v=20260930-3",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000003.mp4?v=20260930-4",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000003.mp4",
               "video_ready": true,
               "bytes": 5039903,
@@ -13005,7 +13005,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000002.mp4?v=20260930-3",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000002.mp4?v=20260930-4",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000002.mp4",
               "video_ready": true,
               "bytes": 4720471,
@@ -13093,7 +13093,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000001.mp4?v=20260930-3",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000001.mp4?v=20260930-4",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000001.mp4",
               "video_ready": true,
               "bytes": 2580321,
@@ -13682,6 +13682,490 @@
             ],
             "included_event_count": 238,
             "excluded_event_count": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "scale-0416-mug",
+      "title": "0416 · Mug",
+      "description": "Final Blender reconstruction from the 20260930 scale run.",
+      "baselines": [
+        {
+          "id": "20260930-scale-final",
+          "label": "Final reconstruction",
+          "summary": "Final four-panel Blender video.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 1,
+              "label": "Final",
+              "variant": "Four-panel RGB",
+              "export_id": "final",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "initial Blender scene",
+              "provenance": null,
+              "blend_sha256": "b1497164379752900c90ff7ccb1f868b0b18255e1868ea15b2f0889834aadcf6",
+              "audit_events": [],
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0416-mug/20260930-scale-final/iterations/final.mp4?v=20260930-4",
+              "asset_key": "scale-0416-mug/20260930-scale-final/iterations/final.mp4",
+              "video_ready": true,
+              "bytes": 1381469,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "scale-0529-bottle",
+      "title": "0529 · Bottle",
+      "description": "Final Blender reconstruction from the 20260930 scale run.",
+      "baselines": [
+        {
+          "id": "20260930-scale-final",
+          "label": "Final reconstruction",
+          "summary": "Final four-panel Blender video.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 1,
+              "label": "Final",
+              "variant": "Four-panel RGB",
+              "export_id": "final",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "initial Blender scene",
+              "provenance": null,
+              "blend_sha256": "7f73165a495f73ddc5f9e275b36dbcc834c569cf10e2afd0a9e5b795f06f691d",
+              "audit_events": [],
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0529-bottle/20260930-scale-final/iterations/final.mp4?v=20260930-4",
+              "asset_key": "scale-0529-bottle/20260930-scale-final/iterations/final.mp4",
+              "video_ready": true,
+              "bytes": 2875327,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "scale-0529-cup",
+      "title": "0529 · Cup",
+      "description": "Final Blender reconstruction from the 20260930 scale run.",
+      "baselines": [
+        {
+          "id": "20260930-scale-final",
+          "label": "Final reconstruction",
+          "summary": "Final four-panel Blender video.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 1,
+              "label": "Final",
+              "variant": "Four-panel RGB",
+              "export_id": "final",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "initial Blender scene",
+              "provenance": null,
+              "blend_sha256": "ba81831381f81c1fedb64dfa2c6f807ec5e909bea212ac8ba80e7fee7aa2872e",
+              "audit_events": [],
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0529-cup/20260930-scale-final/iterations/final.mp4?v=20260930-4",
+              "asset_key": "scale-0529-cup/20260930-scale-final/iterations/final.mp4",
+              "video_ready": true,
+              "bytes": 2814217,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "scale-0529-mouse",
+      "title": "0529 · Mouse",
+      "description": "Final Blender reconstruction from the 20260930 scale run.",
+      "baselines": [
+        {
+          "id": "20260930-scale-final",
+          "label": "Final reconstruction",
+          "summary": "Final four-panel Blender video.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 1,
+              "label": "Final",
+              "variant": "Four-panel RGB",
+              "export_id": "final",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "initial Blender scene",
+              "provenance": null,
+              "blend_sha256": "3270c5efab7bfe684b3e48af92baeb3e035eb09df71c68152d9d9a11d2c934a9",
+              "audit_events": [],
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0529-mouse/20260930-scale-final/iterations/final.mp4?v=20260930-4",
+              "asset_key": "scale-0529-mouse/20260930-scale-final/iterations/final.mp4",
+              "video_ready": true,
+              "bytes": 3275734,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "scale-0529-pen",
+      "title": "0529 · Pen",
+      "description": "Final Blender reconstruction from the 20260930 scale run.",
+      "baselines": [
+        {
+          "id": "20260930-scale-final",
+          "label": "Final reconstruction",
+          "summary": "Final four-panel Blender video.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 1,
+              "label": "Final",
+              "variant": "Four-panel RGB",
+              "export_id": "final",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "initial Blender scene",
+              "provenance": null,
+              "blend_sha256": "8c26c770e2a516768188ee99db629245624f8b4f4836e4f5f7b9af83fd2ba631",
+              "audit_events": [],
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0529-pen/20260930-scale-final/iterations/final.mp4?v=20260930-4",
+              "asset_key": "scale-0529-pen/20260930-scale-final/iterations/final.mp4",
+              "video_ready": true,
+              "bytes": 2259261,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "scale-0601-box",
+      "title": "0601 · Box",
+      "description": "Final Blender reconstruction from the 20260930 scale run.",
+      "baselines": [
+        {
+          "id": "20260930-scale-final",
+          "label": "Final reconstruction",
+          "summary": "Final four-panel Blender video.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 1,
+              "label": "Final",
+              "variant": "Four-panel RGB",
+              "export_id": "final",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "initial Blender scene",
+              "provenance": null,
+              "blend_sha256": "6c7f93381356418855b894ed111ac3ae561b246ffd1a1e2055c33d34b78aae1c",
+              "audit_events": [],
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0601-box/20260930-scale-final/iterations/final.mp4?v=20260930-4",
+              "asset_key": "scale-0601-box/20260930-scale-final/iterations/final.mp4",
+              "video_ready": true,
+              "bytes": 3360600,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "scale-0608-spoon",
+      "title": "0608 · Spoon",
+      "description": "Final Blender reconstruction from the 20260930 scale run.",
+      "baselines": [
+        {
+          "id": "20260930-scale-final",
+          "label": "Final reconstruction",
+          "summary": "Final four-panel Blender video.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 1,
+              "label": "Final",
+              "variant": "Four-panel RGB",
+              "export_id": "final",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "initial Blender scene",
+              "provenance": null,
+              "blend_sha256": "5db0f3012257257ff6f11280080292dbf562b0dcd43c40ae434d6b0897b6a7bf",
+              "audit_events": [],
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0608-spoon/20260930-scale-final/iterations/final.mp4?v=20260930-4",
+              "asset_key": "scale-0608-spoon/20260930-scale-final/iterations/final.mp4",
+              "video_ready": true,
+              "bytes": 3192452,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "scale-0609-fork",
+      "title": "0609 · Fork",
+      "description": "Final Blender reconstruction from the 20260930 scale run.",
+      "baselines": [
+        {
+          "id": "20260930-scale-final",
+          "label": "Final reconstruction",
+          "summary": "Final four-panel Blender video.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 1,
+              "label": "Final",
+              "variant": "Four-panel RGB",
+              "export_id": "final",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "initial Blender scene",
+              "provenance": null,
+              "blend_sha256": "aeaa5f6ac244991e93ef69e10a55528636010940efbd9b07b197321216458476",
+              "audit_events": [],
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0609-fork/20260930-scale-final/iterations/final.mp4?v=20260930-4",
+              "asset_key": "scale-0609-fork/20260930-scale-final/iterations/final.mp4",
+              "video_ready": true,
+              "bytes": 2842284,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "scale-0611-duck",
+      "title": "0611 · Duck",
+      "description": "Final Blender reconstruction from the 20260930 scale run.",
+      "baselines": [
+        {
+          "id": "20260930-scale-final",
+          "label": "Final reconstruction",
+          "summary": "Final four-panel Blender video.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 1,
+              "label": "Final",
+              "variant": "Four-panel RGB",
+              "export_id": "final",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "initial Blender scene",
+              "provenance": null,
+              "blend_sha256": "e50f6e7f31ad57aff8f3ee63ec3c96814a5544ce1c96887a3dbdec605daad4da",
+              "audit_events": [],
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0611-duck/20260930-scale-final/iterations/final.mp4?v=20260930-4",
+              "asset_key": "scale-0611-duck/20260930-scale-final/iterations/final.mp4",
+              "video_ready": true,
+              "bytes": 2674559,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "scale-0827-sweep",
+      "title": "0827 · Sweep",
+      "description": "Final Blender reconstruction from the 20260930 scale run.",
+      "baselines": [
+        {
+          "id": "20260930-scale-final",
+          "label": "Final reconstruction",
+          "summary": "Final four-panel Blender video.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 1,
+              "label": "Final",
+              "variant": "Four-panel RGB",
+              "export_id": "final",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "initial Blender scene",
+              "provenance": null,
+              "blend_sha256": "a528e5c23c253b322b6d13aa50a11d14f891d12b812930ad89a95e1708fa2a92",
+              "audit_events": [],
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0827-sweep/20260930-scale-final/iterations/final.mp4?v=20260930-4",
+              "asset_key": "scale-0827-sweep/20260930-scale-final/iterations/final.mp4",
+              "video_ready": true,
+              "bytes": 2845723,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "scale-sushi",
+      "title": "Sushi",
+      "description": "Final Blender reconstruction from the 20260930 scale run.",
+      "baselines": [
+        {
+          "id": "20260930-scale-final",
+          "label": "Final reconstruction",
+          "summary": "Final four-panel Blender video.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 1,
+              "label": "Final",
+              "variant": "Four-panel RGB",
+              "export_id": "final",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "",
+              "provenance": null,
+              "blend_sha256": "",
+              "audit_events": [],
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-sushi/20260930-scale-final/iterations/final.mp4?v=20260930-4",
+              "asset_key": "scale-sushi/20260930-scale-final/iterations/final.mp4",
+              "video_ready": true,
+              "bytes": 758749,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
           }
         }
       ]
