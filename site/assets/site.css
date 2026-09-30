@@ -77,6 +77,13 @@ h1 { margin-bottom: .8rem; font-size: clamp(2.6rem, 6vw, 4.7rem); line-height: 1
 }
 .baseline-toggle:hover, .baseline-toggle.is-active, .sync-play:hover, .rgb-all-toggle:hover { color: #fff; background: var(--text); }
 .baseline-toggle:not(.is-active) { color: var(--muted); border-color: var(--border); text-decoration: line-through; }
+.baseline-scroll-top {
+  height: 16px;
+  margin-bottom: .4rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.baseline-scroll-top-spacer { height: 1px; }
 .baseline-list {
   display: flex;
   gap: 1.5rem;

@@ -392,7 +392,10 @@ def build_catalog(config):
                         "bytes": video_path.stat().st_size,
                     })
 
-            exports.sort(key=lambda item: (item["iteration"], item["export_id"]))
+            exports.sort(
+                key=lambda item: (item["iteration"], item["export_id"]),
+                reverse=True,
+            )
             public_example["baselines"].append({
                 "id": baseline["id"],
                 "label": baseline.get("label", baseline["id"]),

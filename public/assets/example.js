@@ -43,13 +43,18 @@ function renderExample(root, example, assetsReady) {
       <span class="sync-time">00:00.0 / 00:20.0</span>
     </div>
     <p class="measurement-note">Runtime and token count are stage-local, not cumulative. Unattributed iteration token counts are labeled explicitly.</p>
+    <div class="baseline-scroll-top" aria-label="Scroll baselines horizontally" tabindex="0">
+      <div class="baseline-scroll-top-spacer"></div>
+    </div>
     <div class="baseline-list"></div>`;
 
   const baselineList = root.querySelector(".baseline-list");
   const baselineToggles = root.querySelector(".baseline-toggles");
+  let updateTopScroller = () => {};
   const updateBaselineLayout = () => {
     const visible = Array.from(baselineList.children).filter((section) => !section.hidden).length;
     baselineList.classList.toggle("single-baseline", visible === 1);
+    requestAnimationFrame(updateTopScroller);
   };
   for (const baseline of example.baselines) {
     const completeExportTokens = baseline.exports.every((item) => Number.isFinite(item.token_count));
@@ -107,9 +112,38 @@ function renderExample(root, example, assetsReady) {
     });
     baselineToggles.appendChild(toggle);
   }
+  updateTopScroller = createBaselineScroller(root);
   updateBaselineLayout();
   createRgbVisibilityController(root);
   createSyncController(root);
+}
+
+function createBaselineScroller(root) {
+  const topScroller = root.querySelector(".baseline-scroll-top");
+  const spacer = topScroller.querySelector(".baseline-scroll-top-spacer");
+  const baselineList = root.querySelector(".baseline-list");
+  let syncing = false;
+
+  function mirrorScroll(source, target) {
+    if (syncing) return;
+    syncing = true;
+    target.scrollLeft = source.scrollLeft;
+    requestAnimationFrame(() => { syncing = false; });
+  }
+
+  topScroller.addEventListener("scroll", () => mirrorScroll(topScroller, baselineList));
+  baselineList.addEventListener("scroll", () => mirrorScroll(baselineList, topScroller));
+
+  function update() {
+    spacer.style.width = `${baselineList.scrollWidth}px`;
+    topScroller.hidden = baselineList.scrollWidth <= baselineList.clientWidth + 1;
+    topScroller.scrollLeft = baselineList.scrollLeft;
+  }
+
+  window.addEventListener("resize", update);
+  if (window.ResizeObserver) new ResizeObserver(update).observe(baselineList);
+  requestAnimationFrame(update);
+  return update;
 }
 
 function renderIteration(item) {
