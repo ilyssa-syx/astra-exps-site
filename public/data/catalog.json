@@ -11,6 +11,8 @@
           "id": "20260928-2400s",
           "label": "20260928-2400s",
           "summary": "A 2400-second ASTRA reconstruction run with every immutable scene iteration.",
+          "total_token_count": 16257754,
+          "token_total_note": "Recorded stage-local total across iterations 3, 5, 8, and 9; other iterations were not separately attributed.",
           "exports": [
             {
               "iteration": 1,
@@ -18,11 +20,14 @@
               "variant": "Four-panel RGB",
               "export_id": "iteration-000001",
               "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "Tokens not separately attributed",
               "reason": "initial Blender scene",
               "provenance": null,
               "blend_sha256": "ef0a4285f30d12086eb31b6167edc4ab668831369455f85565053dc894ea7d6a",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000001.mp4?v=20260929-10",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000001.mp4?v=20260929-11",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000001.mp4",
               "video_ready": true,
               "bytes": 2599510,
@@ -35,6 +40,9 @@
               "variant": "Four-panel RGB",
               "export_id": "iteration-000002",
               "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "Tokens not separately attributed",
               "reason": "Initial WiLoR hand import from frozen off-the-shelf asset",
               "provenance": {
                 "kind": "wilor_import",
@@ -559,7 +567,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000002.mp4?v=20260929-10",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000002.mp4?v=20260929-11",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000002.mp4",
               "video_ready": true,
               "bytes": 5016715,
@@ -571,7 +579,10 @@
               "label": "Iteration 03",
               "variant": "Four-panel RGB",
               "export_id": "iteration-000003",
-              "status": "revised",
+              "status": "rejected",
+              "runtime_seconds": 864.444,
+              "token_count": 5545153,
+              "token_note": "",
               "reason": "Initial proposal only; inspect scale silhouette and contact before acceptance",
               "provenance": {
                 "coordinate_space": "opencv-camera",
@@ -1287,7 +1298,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000003.mp4?v=20260929-10",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000003.mp4?v=20260929-11",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000003.mp4",
               "video_ready": true,
               "bytes": 4898222,
@@ -1300,6 +1311,9 @@
               "variant": "Four-panel RGB",
               "export_id": "iteration-000004",
               "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "Tokens not separately attributed",
               "reason": "RGB-verified slotted bowl repair, canonical axes, metric scale from table; full-sequence hand temporal regularization",
               "provenance": {
                 "kind": "agent_blender_script",
@@ -1378,7 +1392,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000004.mp4?v=20260929-10",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000004.mp4?v=20260929-11",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000004.mp4",
               "video_ready": true,
               "bytes": 4321572,
@@ -1391,6 +1405,9 @@
               "variant": "Four-panel RGB",
               "export_id": "iteration-000005",
               "status": "revised",
+              "runtime_seconds": 465.921,
+              "token_count": 2853082,
+              "token_note": "",
               "reason": "Replace rejected drift and basis mismatch; preserve SE3 and every-frame mapping",
               "provenance": {
                 "coordinate_space": "opencv-camera",
@@ -1768,7 +1785,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000005.mp4?v=20260929-10",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000005.mp4?v=20260929-11",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000005.mp4",
               "video_ready": true,
               "bytes": 4813948,
@@ -1781,6 +1798,9 @@
               "variant": "Four-panel RGB",
               "export_id": "iteration-000006",
               "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "Tokens not separately attributed",
               "reason": "Resolve rapid 3D flips while preserving observed projected axis and full SE3 mapping",
               "provenance": {
                 "coordinate_space": "opencv-camera",
@@ -1905,7 +1925,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000006.mp4?v=20260929-10",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000006.mp4?v=20260929-11",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000006.mp4",
               "video_ready": true,
               "bytes": 4649168,
@@ -1918,6 +1938,9 @@
               "variant": "Four-panel RGB",
               "export_id": "iteration-000007",
               "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "Tokens not separately attributed",
               "reason": "Numerical angular audit rejected intermediate candidate; continuous path now has bounded frame-to-frame rotation",
               "provenance": {
                 "coordinate_space": "opencv-camera",
@@ -2003,7 +2026,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000007.mp4?v=20260929-10",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000007.mp4?v=20260929-11",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000007.mp4",
               "video_ready": true,
               "bytes": 4656717,
@@ -2015,7 +2038,10 @@
               "label": "Iteration 08",
               "variant": "Four-panel RGB",
               "export_id": "iteration-000008",
-              "status": "revised",
+              "status": "rejected",
+              "runtime_seconds": 563.969,
+              "token_count": 4056253,
+              "token_note": "",
               "reason": "Smooth viewing-ray offsets reduce finger penetration while preserving shaft-grasp articulation",
               "provenance": {
                 "kind": "agent_blender_script",
@@ -2554,7 +2580,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000008.mp4?v=20260929-10",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000008.mp4?v=20260929-11",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000008.mp4",
               "video_ready": true,
               "bytes": 4665029,
@@ -2567,6 +2593,9 @@
               "variant": "Four-panel RGB",
               "export_id": "iteration-000009",
               "status": "accepted",
+              "runtime_seconds": 379.456,
+              "token_count": 3803266,
+              "token_note": "",
               "reason": "Temporal DP preserves low-penetration contact branches and bounded depth velocity instead of averaging through hand",
               "provenance": {
                 "kind": "agent_blender_script",
@@ -4052,7 +4081,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000009.mp4?v=20260929-10",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000009.mp4?v=20260929-11",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000009.mp4",
               "video_ready": true,
               "bytes": 4666106,
@@ -4951,18 +4980,23 @@
           "id": "no-harness",
           "label": "no harness",
           "summary": "Standalone reconstruction without the ASTRA harness, shown at three complete review stages.",
+          "total_token_count": 22370889,
+          "token_total_note": "Recorded stage-local total across the three displayed review stages.",
           "exports": [
             {
               "iteration": 1,
               "label": "Before key-time fix",
               "variant": "Four-panel RGB",
               "export_id": "before-keytime-fix",
-              "status": "recorded",
+              "status": "revised",
+              "runtime_seconds": 1672.0,
+              "token_count": 5498611,
+              "token_note": "",
               "reason": "",
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/no-harness/iterations/before-keytime-fix.mp4?v=20260929-10",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/no-harness/iterations/before-keytime-fix.mp4?v=20260929-11",
               "asset_key": "0827-spoon/no-harness/iterations/before-keytime-fix.mp4",
               "video_ready": true,
               "bytes": 4345819,
@@ -4974,12 +5008,15 @@
               "label": "Before topology fix",
               "variant": "Four-panel RGB",
               "export_id": "before-topology-fix",
-              "status": "recorded",
+              "status": "revised",
+              "runtime_seconds": 430.0,
+              "token_count": 2488338,
+              "token_note": "",
               "reason": "",
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/no-harness/iterations/before-topology-fix.mp4?v=20260929-10",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/no-harness/iterations/before-topology-fix.mp4?v=20260929-11",
               "asset_key": "0827-spoon/no-harness/iterations/before-topology-fix.mp4",
               "video_ready": true,
               "bytes": 4342634,
@@ -4991,12 +5028,15 @@
               "label": "Final",
               "variant": "Four-panel RGB",
               "export_id": "final",
-              "status": "recorded",
+              "status": "accepted",
+              "runtime_seconds": 2084.002,
+              "token_count": 14383940,
+              "token_note": "",
               "reason": "",
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/no-harness/iterations/final.mp4?v=20260929-10",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/no-harness/iterations/final.mp4?v=20260929-11",
               "asset_key": "0827-spoon/no-harness/iterations/final.mp4",
               "video_ready": true,
               "bytes": 4340372,

@@ -139,6 +139,7 @@ h1 { margin-bottom: .8rem; font-size: clamp(2.6rem, 6vw, 4.7rem); line-height: 1
 .notice { margin-bottom: 1rem; padding: .8rem; border-left: 4px solid var(--amber); background: #fff6df; }
 .iteration-list { display: flex; flex-direction: column; gap: 1.25rem; }
 .baseline-total { margin-top: 1rem; padding-top: 1rem; border-top: 2px solid var(--text); font-size: 1.15rem; font-weight: 700; }
+.baseline-total small { display: block; margin-top: .3rem; color: var(--muted); font-size: .76rem; font-weight: 400; }
 .iteration-row { padding-bottom: 1.25rem; border-bottom: 1px solid var(--border); }
 .iteration-heading { max-width: 720px; margin-bottom: .55rem; }
 .iteration-heading > div:first-child { display: flex; align-items: center; gap: .7rem; }

@@ -1,6 +1,6 @@
 {
   "site_title": "ASTRA Experiments",
-  "asset_version": "20260929-10",
+  "asset_version": "20260929-11",
   "asset_base_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev",
   "examples": [
     {
@@ -13,13 +13,28 @@
           "label": "20260928-2400s",
           "run": "../runs/20260928_v7/2400",
           "summary": "A 2400-second ASTRA reconstruction run with every immutable scene iteration.",
-          "auto_iterations": true
+          "auto_iterations": true,
+          "total_token_count": 16257754,
+          "token_total_note": "Recorded stage-local total across iterations 3, 5, 8, and 9; other iterations were not separately attributed.",
+          "iterations": {
+            "1": { "token_note": "Tokens not separately attributed" },
+            "2": { "token_note": "Tokens not separately attributed" },
+            "3": { "status": "rejected", "runtime_seconds": 864.444, "token_count": 5545153 },
+            "4": { "token_note": "Tokens not separately attributed" },
+            "5": { "status": "revised", "runtime_seconds": 465.921, "token_count": 2853082 },
+            "6": { "token_note": "Tokens not separately attributed" },
+            "7": { "token_note": "Tokens not separately attributed" },
+            "8": { "status": "rejected", "runtime_seconds": 563.969, "token_count": 4056253 },
+            "9": { "status": "accepted", "runtime_seconds": 379.456, "token_count": 3803266 }
+          }
         },
         {
           "id": "no-harness",
           "label": "no harness",
           "run": "../no_harness_examples/0827-spoon",
           "summary": "Standalone reconstruction without the ASTRA harness, shown at three complete review stages.",
+          "total_token_count": 22370889,
+          "token_total_note": "Recorded stage-local total across the three displayed review stages.",
           "exports": [
             {
               "source": "../no_harness_examples/0827-spoon/intermediate/review_before_keytime_fix.mp4",
@@ -39,7 +54,12 @@
               "iteration": 3,
               "label": "Final"
             }
-          ]
+          ],
+          "iterations": {
+            "1": { "status": "revised", "runtime_seconds": 1672.0, "token_count": 5498611 },
+            "2": { "status": "revised", "runtime_seconds": 430.0, "token_count": 2488338 },
+            "3": { "status": "accepted", "runtime_seconds": 2084.002, "token_count": 14383940 }
+          }
         }
       ]
     }

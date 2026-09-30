@@ -267,6 +267,7 @@ def build_catalog(config):
             exports = []
             ignored = []
             configured_exports = baseline.get("exports", [])
+            annotations = baseline.get("iterations", {})
             iterations = run_iterations(run_root)
             audit = build_audit(run_root, iterations)
             if baseline.get("auto_iterations"):
@@ -359,12 +360,16 @@ def build_catalog(config):
                     asset_base, asset_key, asset_version
                 ) if asset_base and video_ready else ""
                 audit_events = audit.get("iteration_events", {}).get(str(iteration), [])
+                annotation = annotations.get(str(iteration), {})
                 exports.append({
                     "iteration": iteration,
                     "label": spec.get("label", "Iteration {:02d}".format(iteration)),
                     "variant": "Four-panel RGB",
                     "export_id": export_name,
-                    "status": review_status(audit_events),
+                    "status": annotation.get("status", review_status(audit_events)),
+                    "runtime_seconds": annotation.get("runtime_seconds"),
+                    "token_count": annotation.get("token_count"),
+                    "token_note": annotation.get("token_note", ""),
                     "reason": iteration_data.get("reason", ""),
                     "provenance": iteration_data.get("provenance"),
                     "blend_sha256": iteration_data.get("blend_sha256", ""),
@@ -388,6 +393,8 @@ def build_catalog(config):
                 "id": baseline["id"],
                 "label": baseline.get("label", baseline["id"]),
                 "summary": baseline.get("summary", ""),
+                "total_token_count": baseline.get("total_token_count"),
+                "token_total_note": baseline.get("token_total_note", ""),
                 "exports": exports,
                 "ignored_exports": ignored,
                 "audit": {

@@ -41,6 +41,7 @@ function renderExample(root, example, assetsReady) {
       <input class="sync-progress" type="range" min="0" max="1000" value="0" step="1" aria-label="Video progress">
       <span class="sync-time">00:00.0 / 00:20.0</span>
     </div>
+    <p class="measurement-note">Runtime and token count are stage-local, not cumulative. Unattributed iteration token counts are labeled explicitly.</p>
     <div class="baseline-list"></div>`;
 
   const baselineList = root.querySelector(".baseline-list");
@@ -50,6 +51,17 @@ function renderExample(root, example, assetsReady) {
     baselineList.classList.toggle("single-baseline", visible === 1);
   };
   for (const baseline of example.baselines) {
+    const completeExportTokens = baseline.exports.every((item) => Number.isFinite(item.token_count));
+    const summedExportTokens = baseline.exports.reduce(
+      (total, item) => total + (Number.isFinite(item.token_count) ? item.token_count : 0),
+      0,
+    );
+    const totalTokens = Number.isFinite(baseline.total_token_count)
+      ? baseline.total_token_count
+      : (completeExportTokens ? summedExportTokens : null);
+    const totalTokenMarkup = Number.isFinite(totalTokens)
+      ? `<footer class="baseline-total">Total: ${totalTokens.toLocaleString("en-US")} tokens${baseline.token_total_note ? `<small>${escapeHtml(baseline.token_total_note)}</small>` : ""}</footer>`
+      : `<footer class="baseline-total metric-muted">Total: tokens unreported</footer>`;
     const section = document.createElement("section");
     section.className = "baseline-section";
     section.dataset.baseline = baseline.id;
@@ -63,7 +75,8 @@ function renderExample(root, example, assetsReady) {
         <span class="count">${baseline.exports.length} iterations</span>
       </div>
       ${renderAudit(baseline.audit)}
-      <div class="iteration-list"></div>`;
+      <div class="iteration-list"></div>
+      ${totalTokenMarkup}`;
     const list = section.querySelector(".iteration-list");
     for (const item of baseline.exports) list.appendChild(renderIteration(item));
     const auditToggle = section.querySelector("[data-audit-toggle]");
@@ -101,6 +114,12 @@ function renderIteration(item) {
   const article = document.createElement("article");
   article.className = "iteration-row";
   const statusLabel = item.status.charAt(0).toUpperCase() + item.status.slice(1);
+  const runtime = Number.isFinite(item.runtime_seconds)
+    ? `<span class="metric">Runtime ${formatDuration(item.runtime_seconds)}</span>`
+    : "";
+  const tokens = Number.isFinite(item.token_count)
+    ? `<span class="metric">${item.token_count.toLocaleString("en-US")} tokens</span>`
+    : (item.token_note ? `<span class="metric metric-muted">${escapeHtml(item.token_note)}</span>` : "");
   const video = item.video_url
     ? `<video muted playsinline preload="metadata" data-sync-video><source src="${escapeAttribute(item.video_url)}" type="video/mp4">Your browser does not support MP4 video.</video>`
     : `<div class="video-placeholder">Iteration video pending<br><small>${escapeHtml(item.asset_key)}</small></div>`;
@@ -115,6 +134,8 @@ function renderIteration(item) {
       <div>
         <h3>${escapeHtml(item.label)}</h3>
         <span class="status status-${escapeAttribute(item.status)}">${escapeHtml(statusLabel)}</span>
+        ${runtime}
+        ${tokens}
       </div>
       <div class="row-actions">
         <button type="button" data-video-toggle>Hide RGB</button>
