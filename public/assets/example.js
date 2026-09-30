@@ -28,6 +28,7 @@ function renderExample(root, example, assetsReady) {
     ${!assetsReady ? `<div class="notice"><strong>Video assets pending.</strong></div>` : ""}
     <div class="sync-controls" aria-label="Synchronized video controls">
       <button class="sync-play" type="button">Play all</button>
+      <button class="rgb-all-toggle" type="button">Show all RGB</button>
       <label class="sync-speed">Speed
         <select aria-label="Playback speed">
           <option value="0.25">0.25×</option>
@@ -107,6 +108,7 @@ function renderExample(root, example, assetsReady) {
     baselineToggles.appendChild(toggle);
   }
   updateBaselineLayout();
+  createRgbVisibilityController(root);
   createSyncController(root);
 }
 
@@ -121,7 +123,7 @@ function renderIteration(item) {
     ? `<span class="metric">${item.token_count.toLocaleString("en-US")} tokens</span>`
     : (item.token_note ? `<span class="metric metric-muted">${escapeHtml(item.token_note)}</span>` : "");
   const video = item.video_url
-    ? `<video muted playsinline preload="metadata" data-sync-video><source src="${escapeAttribute(item.video_url)}" type="video/mp4">Your browser does not support MP4 video.</video>`
+    ? `<video muted playsinline preload="none" data-sync-video><source data-src="${escapeAttribute(item.video_url)}" type="video/mp4">Your browser does not support MP4 video.</video>`
     : `<div class="video-placeholder">Iteration video pending<br><small>${escapeHtml(item.asset_key)}</small></div>`;
   const provenance = item.provenance
     ? `<details class="iteration-provenance"><summary>Raw provenance</summary><pre>${escapeHtml(JSON.stringify(item.provenance, null, 2))}</pre></details>`
@@ -138,7 +140,7 @@ function renderIteration(item) {
         ${tokens}
       </div>
       <div class="row-actions">
-        <button type="button" data-video-toggle>Hide RGB</button>
+        <button type="button" data-video-toggle>Show RGB</button>
         <button type="button" data-details-toggle aria-expanded="false">${auditLabel}</button>
       </div>
     </header>
@@ -149,10 +151,9 @@ function renderIteration(item) {
 
   const frame = article.querySelector(".video-frame");
   const videoToggle = article.querySelector("[data-video-toggle]");
+  frame.hidden = true;
   videoToggle.addEventListener("click", () => {
-    const wasHidden = frame.hidden;
-    frame.hidden = !wasHidden;
-    videoToggle.textContent = wasHidden ? "Hide RGB" : "Show RGB";
+    setVideoFrameVisible(frame, frame.hidden);
     article.dispatchEvent(new CustomEvent("visibilitychange", { bubbles: true }));
   });
 
@@ -358,6 +359,50 @@ function formatPreciseDuration(seconds) {
   return formatDuration(seconds);
 }
 
+function loadVideo(video) {
+  const source = video && video.querySelector("source[data-src]");
+  if (!source || source.hasAttribute("src")) return;
+  source.src = source.dataset.src;
+  video.load();
+}
+
+function unloadVideo(video) {
+  if (!video) return;
+  video.pause();
+  const source = video.querySelector("source[data-src]");
+  if (!source || !source.hasAttribute("src")) return;
+  source.removeAttribute("src");
+  video.removeAttribute("src");
+  video.load();
+}
+
+function setVideoFrameVisible(frame, visible) {
+  frame.hidden = !visible;
+  const video = frame.querySelector("video[data-sync-video]");
+  const toggle = frame.closest(".iteration-row").querySelector("[data-video-toggle]");
+  if (visible) loadVideo(video);
+  else unloadVideo(video);
+  toggle.textContent = visible ? "Hide RGB" : "Show RGB";
+}
+
+function createRgbVisibilityController(panel) {
+  const toggle = panel.querySelector(".rgb-all-toggle");
+  const frames = Array.from(panel.querySelectorAll(".video-frame"));
+
+  function updateLabel() {
+    toggle.textContent = frames.some((frame) => frame.hidden) ? "Show all RGB" : "Hide all RGB";
+  }
+
+  toggle.addEventListener("click", () => {
+    const show = frames.some((frame) => frame.hidden);
+    for (const frame of frames) setVideoFrameVisible(frame, show);
+    panel.dispatchEvent(new CustomEvent("visibilitychange", { bubbles: true }));
+    updateLabel();
+  });
+  panel.addEventListener("visibilitychange", updateLabel);
+  updateLabel();
+}
+
 function createSyncController(panel) {
   const playButton = panel.querySelector(".sync-play");
   const speed = panel.querySelector(".sync-speed select");
@@ -445,8 +490,9 @@ function createSyncController(panel) {
     for (const video of affected) {
       const hidden = video.closest(".video-frame").hidden || video.closest(".baseline-section").hidden;
       if (hidden) {
-        video.pause();
+        unloadVideo(video);
       } else {
+        loadVideo(video);
         video.currentTime = currentTime;
         if (playing) video.play().catch(() => null);
       }
