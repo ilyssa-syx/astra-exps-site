@@ -10,24 +10,42 @@ Static experiment review pages hosted by GitHub Pages. Large video assets live i
 - Example: `0827-spoon`
 - Baselines: `20260928-2400s` and `no harness`
 - Source runs: `../runs/20260928_v7/2400` and `../no_harness_examples/0827-spoon`
-- ASTRA exports: iterations 3, 5, 8, and 9
+- ASTRA exports: every immutable scene iteration discovered from the run
 - No-harness exports: before key-time fix, before topology fix, and final
-
-The 48-byte `output/videos/final_iter09/comparison.mp4` contains no media payload and is intentionally excluded. The valid GPU export for iteration 9 is included.
 
 ## Build
 
-Edit `config/site.json`, prepare the website-specific four-panel videos, then build:
+Render every ASTRA iteration directly to a resumable four-panel website video, prepare
+any explicitly configured non-ASTRA videos, then build:
 
 ```bash
-/home/yixuansu/miniforge3/envs/sam3d-objects/bin/python \
-  scripts/build_four_panel_videos.py --jobs 3
+bash scripts/run_egl.sh scripts/export_iterations.py \
+  --run ../runs/20260928_v7/2400 \
+  --engine eevee --samples 4 --jobs 3 --timeout-seconds 7200
+python3 scripts/build_four_panel_videos.py --jobs 3
 python3 scripts/build_site.py
 ```
 
-The video builder removes source RGB and observed depth from each six-panel review and recomposes reprojection, calibrated source, side, and rear into a 960×780 2×2 video. Original reconstruction deliverables are never modified. The site builder reads iteration metadata, writes the public catalog and pages, and creates a local `build/asset-manifest.json`. Neither script hashes videos.
+Run the EGL step only after reconstruction has produced its immutable iterations,
+inside an existing tmux + Slurm GPU shell. The site-owned launcher validates CUDA
+and a real offscreen EGL context but never requests a GPU. See
+[`docs/egl-rendering.md`](docs/egl-rendering.md) for the tested environment, device
+index pitfall, overrides, smoke test, and recovery procedure.
 
-Runtime and token figures shown beside a video use the same stage-local convention for every baseline. Tokens are outer-rollout `total_tokens` (including cached input) accumulated only between adjacent stage boundaries; preflight and initialization before the official start are excluded. ASTRA's run-local `output/usage.json` did not receive usage records, so its values are recovered from the matched Codex rollout and its recorded checkpoints. No-harness uses the same rollout field and interval-delta method. The final no-harness stage includes the later shaded-review correction because that is the displayed final video.
+`export_iterations.py` discovers `reconstruction/scene/iterations/*/scene.blend`,
+validates every immutable blend hash, and invokes the canonical scene renderer. It
+renders reprojection, calibrated source, side, and rear directly into one 960×780
+2×2 video; no six-panel intermediate or second video transcode is produced. The
+default Eevee backend is substantially faster than the former forced Cycles CPU
+path. Existing outputs are reused only when their manifest, blend hash, settings,
+and video hash all match. The exporter also raises the per-iteration worker timeout
+to two hours by default so full 1200-frame videos do not inherit the CLI's short
+smoke-test timeout.
+
+`build_four_panel_videos.py` remains only for explicitly configured standalone
+baselines that do not have ASTRA iteration directories. The site builder discovers
+ASTRA iterations and their videos automatically, exports the run audit grouped by
+iteration, writes the public catalog and pages, and creates `build/asset-manifest.json`.
 
 ## Cloudflare R2
 
@@ -51,7 +69,7 @@ Uploads use rclone's `--size-only` comparison to avoid repeated content hashing.
 For browser playback, the public R2 domain must allow `GET`, `HEAD`, and byte-range requests. MP4 files are written beneath:
 
 ```text
-<example>/<baseline>/iter-<number>/<export-name>.mp4
+<example>/<baseline>/iterations/iteration-<six-digit-number>.mp4
 ```
 
 ## GitHub Pages

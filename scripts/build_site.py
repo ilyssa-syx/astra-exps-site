@@ -4,6 +4,7 @@
 from __future__ import print_function
 
 import html
+import hashlib
 import json
 import re
 import shutil
@@ -16,11 +17,203 @@ PUBLIC = ROOT / "public"
 BUILD = ROOT / "build"
 ITERATION_RE = re.compile(r"[/\\]iterations[/\\](\d+)[/\\]")
 MIN_VIDEO_BYTES = 1024
+EXCLUDED_AUDIT_OPERATIONS = {
+    ("run", "budget-status"),
+    ("run", "usage"),
+}
 
 
 def read_json(path):
     with path.open("r", encoding="utf-8") as handle:
         return json.load(handle)
+
+
+def sha256(path):
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for block in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(block)
+    return digest.hexdigest()
+
+
+def read_jsonl(path):
+    events = []
+    with path.open("r", encoding="utf-8") as handle:
+        for line_number, line in enumerate(handle, 1):
+            if not line.strip():
+                continue
+            try:
+                events.append(json.loads(line))
+            except ValueError as error:
+                raise RuntimeError(
+                    "Invalid JSON in {} at line {}: {}".format(path, line_number, error)
+                )
+    return events
+
+
+def verify_audit_chain(events, path):
+    previous_hash = None
+    for index, event in enumerate(events, 1):
+        if event.get("schema") != "hoi-agent-audit-event/v1":
+            raise RuntimeError("Unsupported audit event schema at {}:{}".format(path, index))
+        if event.get("sequence") != index or event.get("previous_hash") != previous_hash:
+            raise RuntimeError("Broken audit sequence/hash link at {}:{}".format(path, index))
+        unsigned = dict(event)
+        recorded_hash = unsigned.pop("event_hash", None)
+        canonical = json.dumps(
+            unsigned, ensure_ascii=False, sort_keys=True, separators=(",", ":"),
+            allow_nan=False,
+        )
+        expected_hash = hashlib.sha256(canonical.encode("utf-8")).hexdigest()
+        if recorded_hash != expected_hash:
+            raise RuntimeError("Changed audit event at {}:{}".format(path, index))
+        previous_hash = recorded_hash
+
+
+def referenced_json(run_root, reference):
+    if not reference:
+        return None
+    path = (run_root / reference).resolve()
+    try:
+        path.relative_to(run_root)
+    except ValueError:
+        raise RuntimeError("Audit reference escapes run root: {}".format(reference))
+    return read_json(path) if path.is_file() else None
+
+
+def argument_value(argv, option):
+    try:
+        index = argv.index(option)
+    except ValueError:
+        return None
+    return argv[index + 1] if index + 1 < len(argv) else None
+
+
+def build_audit(run_root, iterations):
+    """Export and segment the audit without rewriting its recorded claims."""
+    audit_path = run_root / "audit" / "events.jsonl"
+    if not audit_path.is_file():
+        return {
+            "available": False,
+            "source": "audit/events.jsonl",
+            "setup_events": [],
+            "iteration_events": {},
+            "excluded_event_count": 0,
+        }
+
+    events = read_jsonl(audit_path)
+    verify_audit_chain(events, audit_path)
+    excluded_call_ids = {
+        event.get("payload", {}).get("call_id")
+        for event in events
+        if event.get("event") == "tool_call_started"
+        and (
+            event.get("payload", {}).get("tool"),
+            event.get("payload", {}).get("operation"),
+        ) in EXCLUDED_AUDIT_OPERATIONS
+    }
+    included = [
+        event
+        for event in events
+        if event.get("payload", {}).get("call_id") not in excluded_call_ids
+    ]
+    reason_to_iteration = {
+        metadata.get("reason"): number
+        for number, metadata in iterations.items()
+        if metadata.get("reason")
+    }
+    call_targets = {}
+    documents = {}
+    for event in included:
+        payload = event.get("payload", {})
+        call_id = payload.get("call_id")
+        if not call_id:
+            continue
+        document = referenced_json(run_root, payload.get("request"))
+        if document is not None:
+            documents[(call_id, "request")] = document
+            reason = argument_value(document.get("argv", []), "--reason")
+            if reason in reason_to_iteration:
+                call_targets[call_id] = reason_to_iteration[reason]
+            if payload.get("tool") == "scene" and payload.get("operation") == "create":
+                stdout_path = run_root / "audit" / "tool_calls" / call_id / "stdout.log"
+                if stdout_path.is_file():
+                    created = []
+                    for line in stdout_path.read_text(encoding="utf-8").splitlines():
+                        try:
+                            value = json.loads(line)
+                        except ValueError:
+                            continue
+                        if isinstance(value, dict) and isinstance(value.get("iteration"), int):
+                            created.append(value["iteration"])
+                        current = value.get("current", {}) if isinstance(value, dict) else {}
+                        if isinstance(current.get("iteration"), int):
+                            created.append(current["iteration"])
+                    if created:
+                        call_targets[call_id] = max(created)
+        result = referenced_json(run_root, payload.get("result"))
+        if result is not None:
+            documents[(call_id, "result")] = result
+
+    setup_events = []
+    iteration_events = {str(number): [] for number in iterations}
+    current_iteration = None
+    for event in included:
+        payload = event.get("payload", {})
+        call_id = payload.get("call_id")
+        if event.get("event") == "tool_call_started" and call_id in call_targets:
+            current_iteration = call_targets[call_id]
+        assigned_iteration = call_targets.get(call_id, current_iteration)
+        exported = {"raw": event}
+        request = documents.get((call_id, "request"))
+        result = documents.get((call_id, "result"))
+        if event.get("event") == "tool_call_started" and request is not None:
+            exported["request"] = request
+        if event.get("event") == "tool_call_finished" and result is not None:
+            exported["result"] = result
+        if assigned_iteration in iterations:
+            iteration_events[str(assigned_iteration)].append(exported)
+        else:
+            setup_events.append(exported)
+
+    return {
+        "available": True,
+        "source": "audit/events.jsonl",
+        "setup_events": setup_events,
+        "iteration_events": iteration_events,
+        "excluded_event_count": len(events) - len(included),
+        "included_event_count": len(included),
+    }
+
+
+def review_status(events):
+    verdict = None
+    for exported in events:
+        argv = exported.get("request", {}).get("argv", [])
+        recorded = argument_value(argv, "--verdict")
+        if recorded:
+            verdict = recorded
+    return {"accept": "accepted", "reject": "rejected", "revise": "revised"}.get(
+        verdict, "recorded"
+    )
+
+
+def run_iterations(run_root):
+    root = run_root / "reconstruction" / "scene" / "iterations"
+    result = {}
+    for directory in sorted(root.glob("[0-9][0-9][0-9][0-9][0-9][0-9]")):
+        metadata_path = directory / "iteration.json"
+        blend = directory / "scene.blend"
+        if not metadata_path.is_file() or not blend.is_file():
+            raise RuntimeError("Incomplete iteration directory: {}".format(directory))
+        metadata = read_json(metadata_path)
+        number = int(directory.name)
+        if metadata.get("iteration") != number:
+            raise RuntimeError("Iteration number mismatch: {}".format(metadata_path))
+        if metadata.get("blend_sha256") != sha256(blend):
+            raise RuntimeError("Blend hash mismatch: {}".format(directory))
+        result[number] = metadata
+    return result
 
 
 def write_json(path, value):
@@ -73,9 +266,38 @@ def build_catalog(config):
             run_root = (ROOT / baseline["run"]).resolve()
             exports = []
             ignored = []
-            annotations = baseline.get("iterations", {})
             configured_exports = baseline.get("exports", [])
-            if configured_exports:
+            iterations = run_iterations(run_root)
+            audit = build_audit(run_root, iterations)
+            if baseline.get("auto_iterations"):
+                if not iterations:
+                    raise RuntimeError("No iterations found for {}".format(run_root))
+                export_specs = []
+                for iteration, iteration_data in sorted(iterations.items()):
+                    render_dir = (
+                        run_root / "output" / "site-videos"
+                        / "iteration_{:06d}".format(iteration)
+                    )
+                    video_path = render_dir / "comparison.mp4"
+                    manifest_path = render_dir / "manifest.json"
+                    metadata = read_json(manifest_path) if manifest_path.is_file() else {}
+                    if metadata and (
+                        metadata.get("schema") != "astra-four-panel-video/v1"
+                        or metadata.get("iteration") != iteration
+                        or metadata.get("blend_sha256") != iteration_data.get("blend_sha256")
+                        or metadata.get("width") != 960
+                        or metadata.get("height") != 780
+                        or not video_path.is_file()
+                        or metadata.get("video_sha256") != sha256(video_path)
+                    ):
+                        raise RuntimeError("Stale or mismatched video manifest: {}".format(manifest_path))
+                    export_specs.append((video_path, iteration, {
+                        "id": "iteration-{:06d}".format(iteration),
+                        "label": "Iteration {:02d}".format(iteration),
+                        "metadata": metadata,
+                        "manifest_valid": bool(metadata),
+                    }))
+            elif configured_exports:
                 export_specs = []
                 for spec in configured_exports:
                     video_path = (
@@ -108,12 +330,17 @@ def build_catalog(config):
                     }))
 
             for video_path, iteration, spec in export_specs:
-                if video_path.stat().st_size < MIN_VIDEO_BYTES:
+                video_ready = (
+                    spec.get("manifest_valid", True)
+                    and video_path.is_file()
+                    and video_path.stat().st_size >= MIN_VIDEO_BYTES
+                )
+                if not video_ready:
                     ignored.append({
                         "file": str(video_path),
-                        "reason": "empty or incomplete MP4 ({} bytes)".format(video_path.stat().st_size),
+                        "reason": "missing manifest or incomplete MP4",
                     })
-                    continue
+                    warnings.append("Missing iteration video: {}".format(video_path))
 
                 iteration_path = (
                     run_root
@@ -124,37 +351,37 @@ def build_catalog(config):
                     / "iteration.json"
                 )
                 iteration_data = read_json(iteration_path) if iteration_path.is_file() else {}
-                annotation = annotations.get(str(iteration), {})
                 export_name = spec["id"]
-                asset_key = "{}/{}/four-panel/{}-four-panel.mp4".format(
+                asset_key = "{}/{}/iterations/{}.mp4".format(
                     example["id"], baseline["id"], export_name
                 )
                 video_url = "{}/{}?v={}".format(
                     asset_base, asset_key, asset_version
-                ) if asset_base else ""
+                ) if asset_base and video_ready else ""
+                audit_events = audit.get("iteration_events", {}).get(str(iteration), [])
                 exports.append({
                     "iteration": iteration,
                     "label": spec.get("label", "Iteration {:02d}".format(iteration)),
                     "variant": "Four-panel RGB",
                     "export_id": export_name,
-                    "status": annotation.get("status", "review"),
-                    "runtime_seconds": annotation.get("runtime_seconds"),
-                    "token_count": annotation.get("token_count"),
-                    "token_note": annotation.get("token_note", ""),
-                    "tools": annotation.get("tools", []),
-                    "conclusion": annotation.get("conclusion", ""),
-                    "change": annotation.get("change", iteration_data.get("reason", "")),
+                    "status": review_status(audit_events),
+                    "reason": iteration_data.get("reason", ""),
+                    "provenance": iteration_data.get("provenance"),
+                    "blend_sha256": iteration_data.get("blend_sha256", ""),
+                    "audit_events": audit_events,
                     "video_url": video_url,
                     "asset_key": asset_key,
-                    "bytes": video_path.stat().st_size,
+                    "video_ready": video_ready,
+                    "bytes": video_path.stat().st_size if video_ready else 0,
                     "width": 960,
                     "height": 780,
                 })
-                upload_assets.append({
-                    "source": str(video_path),
-                    "key": asset_key,
-                    "bytes": video_path.stat().st_size,
-                })
+                if video_ready:
+                    upload_assets.append({
+                        "source": str(video_path),
+                        "key": asset_key,
+                        "bytes": video_path.stat().st_size,
+                    })
 
             exports.sort(key=lambda item: (item["iteration"], item["export_id"]))
             public_example["baselines"].append({
@@ -163,6 +390,13 @@ def build_catalog(config):
                 "summary": baseline.get("summary", ""),
                 "exports": exports,
                 "ignored_exports": ignored,
+                "audit": {
+                    "available": audit["available"],
+                    "source": audit["source"],
+                    "setup_events": audit.get("setup_events", []),
+                    "included_event_count": audit.get("included_event_count", 0),
+                    "excluded_event_count": audit["excluded_event_count"],
+                },
             })
         public_examples.append(public_example)
 

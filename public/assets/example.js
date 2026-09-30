@@ -41,7 +41,6 @@ function renderExample(root, example, assetsReady) {
       <input class="sync-progress" type="range" min="0" max="1000" value="0" step="1" aria-label="Video progress">
       <span class="sync-time">00:00.0 / 00:20.0</span>
     </div>
-    <p class="measurement-note">Runtime and token count are for that stage only, not cumulative. Unreported token counts are labeled explicitly.</p>
     <div class="baseline-list"></div>`;
 
   const baselineList = root.querySelector(".baseline-list");
@@ -51,14 +50,6 @@ function renderExample(root, example, assetsReady) {
     baselineList.classList.toggle("single-baseline", visible === 1);
   };
   for (const baseline of example.baselines) {
-    const hasCompleteTokenCount = baseline.exports.every((item) => Number.isFinite(item.token_count));
-    const totalTokens = baseline.exports.reduce(
-      (total, item) => total + (Number.isFinite(item.token_count) ? item.token_count : 0),
-      0,
-    );
-    const totalTokenMarkup = hasCompleteTokenCount
-      ? `<footer class="baseline-total">Total: ${totalTokens.toLocaleString("en-US")} tokens</footer>`
-      : `<footer class="baseline-total metric-muted">Total: tokens unreported</footer>`;
     const section = document.createElement("section");
     section.className = "baseline-section";
     section.dataset.baseline = baseline.id;
@@ -69,12 +60,22 @@ function renderExample(root, example, assetsReady) {
           <h2>${escapeHtml(baseline.label)}</h2>
           <p>${escapeHtml(baseline.summary)}</p>
         </div>
-        <span class="count">${baseline.exports.length} RGB videos</span>
+        <span class="count">${baseline.exports.length} iterations</span>
       </div>
-      <div class="iteration-list"></div>
-      ${totalTokenMarkup}`;
+      ${renderAudit(baseline.audit)}
+      <div class="iteration-list"></div>`;
     const list = section.querySelector(".iteration-list");
     for (const item of baseline.exports) list.appendChild(renderIteration(item));
+    const auditToggle = section.querySelector("[data-audit-toggle]");
+    const auditTimeline = section.querySelector(".audit-timeline");
+    if (auditToggle && auditTimeline) {
+      const closedLabel = auditToggle.textContent;
+      auditToggle.addEventListener("click", () => {
+        auditTimeline.hidden = !auditTimeline.hidden;
+        auditToggle.setAttribute("aria-expanded", auditTimeline.hidden ? "false" : "true");
+        auditToggle.textContent = auditTimeline.hidden ? closedLabel : "Hide setup";
+      });
+    }
     baselineList.appendChild(section);
 
     const toggle = document.createElement("button");
@@ -100,35 +101,28 @@ function renderIteration(item) {
   const article = document.createElement("article");
   article.className = "iteration-row";
   const statusLabel = item.status.charAt(0).toUpperCase() + item.status.slice(1);
-  const runtime = Number.isFinite(item.runtime_seconds)
-    ? `<span class="metric">Runtime ${formatDuration(item.runtime_seconds)}</span>`
-    : "";
-  const tokens = Number.isFinite(item.token_count)
-    ? `<span class="metric">${item.token_count.toLocaleString("en-US")} tokens</span>`
-    : (item.token_note ? `<span class="metric metric-muted">${escapeHtml(item.token_note)}</span>` : "");
-  const toolTags = item.tools.map((tool) => `<li>${escapeHtml(tool)}</li>`).join("");
   const video = item.video_url
     ? `<video muted playsinline preload="metadata" data-sync-video><source src="${escapeAttribute(item.video_url)}" type="video/mp4">Your browser does not support MP4 video.</video>`
-    : `<div class="video-placeholder">R2 asset pending<br><small>${escapeHtml(item.asset_key)}</small></div>`;
+    : `<div class="video-placeholder">Iteration video pending<br><small>${escapeHtml(item.asset_key)}</small></div>`;
+  const provenance = item.provenance
+    ? `<details class="iteration-provenance"><summary>Raw provenance</summary><pre>${escapeHtml(JSON.stringify(item.provenance, null, 2))}</pre></details>`
+    : "";
+  const auditEvents = item.audit_events || [];
   article.innerHTML = `
     <header class="iteration-heading">
       <div>
         <h3>${escapeHtml(item.label)}</h3>
         <span class="status status-${escapeAttribute(item.status)}">${escapeHtml(statusLabel)}</span>
-        ${runtime}
-        ${tokens}
       </div>
       <div class="row-actions">
         <button type="button" data-video-toggle>Hide RGB</button>
-        <button type="button" data-details-toggle aria-expanded="false">RGB details</button>
+        <button type="button" data-details-toggle aria-expanded="false">Audit (${auditEvents.length})</button>
       </div>
     </header>
+    <p class="iteration-reason"><strong>Recorded reason:</strong> ${escapeHtml(item.reason || "No reason recorded")}</p>
+    ${provenance}
     <div class="video-frame">${video}</div>
-    <div class="iteration-details" hidden>
-      <section><h4>Tools</h4><ul>${toolTags}</ul></section>
-      <section><h4>Change</h4><p>${escapeHtml(item.change)}</p></section>
-      <section><h4>Conclusion</h4><p>${escapeHtml(item.conclusion)}</p></section>
-    </div>`;
+    <div class="iteration-details" hidden>${renderAuditEvents(auditEvents)}</div>`;
 
   const frame = article.querySelector(".video-frame");
   const videoToggle = article.querySelector("[data-video-toggle]");
@@ -144,9 +138,118 @@ function renderIteration(item) {
   detailsToggle.addEventListener("click", () => {
     details.hidden = !details.hidden;
     detailsToggle.setAttribute("aria-expanded", details.hidden ? "false" : "true");
-    detailsToggle.textContent = details.hidden ? "RGB details" : "Hide details";
+    detailsToggle.textContent = details.hidden
+      ? `Audit (${auditEvents.length})`
+      : "Hide audit";
   });
+
   return article;
+}
+
+function renderAudit(audit) {
+  if (!audit || !audit.available) {
+    return `<section class="audit-panel audit-unavailable">
+      <h3>Audit timeline</h3>
+      <p>No <code>audit/events.jsonl</code> is available for this baseline.</p>
+    </section>`;
+  }
+  const events = audit.setup_events || [];
+  return `<section class="audit-panel">
+    <div class="audit-heading">
+      <div>
+        <h3>Run audit</h3>
+        <p>${audit.included_event_count || 0} source events from <code>${escapeHtml(audit.source)}</code>; ${audit.excluded_event_count || 0} token-usage/time-limit check events excluded.</p>
+      </div>
+      <button type="button" data-audit-toggle aria-expanded="false">Setup (${events.length})</button>
+    </div>
+    <ol class="audit-timeline" hidden>${renderAuditEventList(events)}</ol>
+  </section>`;
+}
+
+function renderAuditEvents(events) {
+  if (!events.length) return `<p class="audit-empty">No audit events were assigned to this iteration.</p>`;
+  return `<ol class="audit-timeline iteration-audit">${renderAuditEventList(events)}</ol>`;
+}
+
+function renderAuditEventList(events) {
+  const patchCallIds = new Set();
+  events.forEach((exported) => {
+    const event = exported.raw || exported;
+    const payload = event.payload || {};
+    if (event.event === "tool_call_started" && isPatchOperation(payload)) {
+      patchCallIds.add(payload.call_id);
+    }
+  });
+  return events.map((exported) => renderAuditEvent(exported, patchCallIds)).join("");
+}
+
+function isPatchOperation(payload) {
+  const tool = String(payload.tool || "").toLowerCase().replaceAll("-", "_");
+  const operation = String(payload.operation || "").toLowerCase().replaceAll("-", "_");
+  return tool === "apply_patch" || operation === "apply_patch" || operation === "apply_script";
+}
+
+function renderAuditEvent(exported, patchCallIds) {
+  const event = exported.raw || exported;
+  const payload = event.payload || {};
+  const isToolCall = event.event === "tool_call_started" || event.event === "tool_call_finished";
+  const isReusedTool = isToolCall && !patchCallIds.has(payload.call_id) && !isPatchOperation(payload);
+  const toolOperation = [payload.tool, payload.operation].filter(Boolean).join(" · ");
+  const title = toolOperation || event.event || "audit event";
+  const reusedToolBadge = isReusedTool
+    ? `<span class="audit-tool-badge">reused tool</span>`
+    : "";
+  const purpose = payload.purpose ? `<p class="audit-purpose">${escapeHtml(payload.purpose)}</p>` : "";
+  const exitCode = Number.isInteger(payload.exit_code)
+    ? `<span class="audit-exit ${payload.exit_code === 0 ? "audit-ok" : "audit-failed"}">exit ${payload.exit_code}</span>`
+    : "";
+  const elapsed = Number.isFinite(payload.elapsed_seconds)
+    ? `<span>${formatPreciseDuration(payload.elapsed_seconds)}</span>`
+    : "";
+  const time = Number.isFinite(event.created_at)
+    ? `<time datetime="${new Date(event.created_at * 1000).toISOString()}">${escapeHtml(formatAuditTime(event.created_at))}</time>`
+    : "";
+  const request = exported.request
+    ? renderJsonDetails("Raw tool request", exported.request)
+    : "";
+  const result = exported.result
+    ? renderJsonDetails("Raw tool result", exported.result)
+    : "";
+  return `<li class="audit-event${isReusedTool ? " audit-event-reused-tool" : ""}">
+    <div class="audit-event-summary">
+      <span class="audit-sequence">#${escapeHtml(event.sequence)}</span>
+      <div>
+        <strong>${escapeHtml(title)}</strong>
+        ${reusedToolBadge}
+        <span class="audit-event-type">${escapeHtml(event.event)}</span>
+        ${purpose}
+        <div class="audit-meta">${time}${elapsed}${exitCode}</div>
+      </div>
+    </div>
+    <details>
+      <summary>Raw event JSON</summary>
+      <pre>${escapeHtml(JSON.stringify(event, null, 2))}</pre>
+    </details>
+    ${request}
+    ${result}
+  </li>`;
+}
+
+function renderJsonDetails(label, value) {
+  return `<details><summary>${escapeHtml(label)}</summary><pre>${escapeHtml(JSON.stringify(value, null, 2))}</pre></details>`;
+}
+
+function formatAuditTime(epochSeconds) {
+  return new Date(epochSeconds * 1000).toLocaleString(undefined, {
+    dateStyle: "medium",
+    timeStyle: "medium",
+  });
+}
+
+function formatPreciseDuration(seconds) {
+  if (seconds < 1) return `${Math.round(seconds * 1000)} ms`;
+  if (seconds < 60) return `${seconds.toFixed(2)} s`;
+  return formatDuration(seconds);
 }
 
 function createSyncController(panel) {
@@ -270,7 +373,7 @@ function formatDuration(seconds) {
 
 function escapeHtml(value) {
   const node = document.createElement("span");
-  node.textContent = value || "";
+  node.textContent = value === undefined || value === null ? "" : String(value);
   return node.innerHTML;
 }
 

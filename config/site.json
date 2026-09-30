@@ -1,6 +1,6 @@
 {
   "site_title": "ASTRA Experiments",
-  "asset_version": "20260929-7",
+  "asset_version": "20260929-9",
   "asset_base_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev",
   "examples": [
     {
@@ -12,80 +12,8 @@
           "id": "20260928-2400s",
           "label": "20260928-2400s",
           "run": "../runs/20260928_v7/2400",
-          "summary": "A 2400-second ASTRA reconstruction run with four exported review iterations.",
-          "exports": [
-            {
-              "source": "../runs/20260928_v7/2400/output/videos/intermediate_iter03_gpu/comparison.mp4",
-              "id": "iter03",
-              "iteration": 3,
-              "label": "Iteration 03"
-            },
-            {
-              "source": "../runs/20260928_v7/2400/output/videos/intermediate_iter05_gpu/comparison.mp4",
-              "id": "iter05",
-              "iteration": 5,
-              "label": "Iteration 05"
-            },
-            {
-              "source": "../runs/20260928_v7/2400/output/videos/intermediate_iter08_gpu/comparison.mp4",
-              "id": "iter08",
-              "iteration": 8,
-              "label": "Iteration 08"
-            },
-            {
-              "source": "../runs/20260928_v7/2400/output/videos/final_iter09_gpu/comparison.mp4",
-              "id": "iter09",
-              "iteration": 9,
-              "label": "Iteration 09 · Final"
-            }
-          ],
-          "iterations": {
-            "3": {
-              "status": "rejected",
-              "runtime_seconds": 864.444,
-              "token_count": 5545153,
-              "tools": [
-                "FoundationPose",
-                "blender-scene · import-object-poses",
-                "full-frame RGB inspection"
-              ],
-              "conclusion": "The initial proposal was rejected. FoundationPose drifted onto the keyboard after frame 300, while a mesh-basis mismatch and hallucinated bowl prongs produced a mean silhouette IoU of 0.056."
-            },
-            "5": {
-              "status": "revised",
-              "runtime_seconds": 465.921,
-              "token_count": 2853082,
-              "tools": [
-                "FoundationPose++",
-                "SAM2 masks",
-                "mask-guided rigid pose fitting",
-                "hand temporal smoothing"
-              ],
-              "conclusion": "The repaired geometry and trajectory fixed the global failure and raised mean silhouette IoU to 0.647. Ambiguous axial rotation and contact-depth intervals still required temporal refinement."
-            },
-            "8": {
-              "status": "rejected",
-              "runtime_seconds": 563.969,
-              "token_count": 4056253,
-              "tools": [
-                "continuous quaternion regularization",
-                "contact-depth refinement",
-                "full-frame contact inspection"
-              ],
-              "conclusion": "Object rotation became continuous with a 5.84° maximum step, but averaging independent hand-depth choices crossed high-penetration states around frames 379 and 652–667. This contact regression was rejected."
-            },
-            "9": {
-              "status": "accepted",
-              "runtime_seconds": 379.456,
-              "token_count": 3803266,
-              "tools": [
-                "temporal dynamic programming",
-                "contact geometry audit",
-                "full-frame RGB and multiview review"
-              ],
-              "conclusion": "Temporal DP preserved low-penetration contact branches without averaging through the hand. The complete reconstruction was accepted with mean silhouette IoU 0.618 and a sampled maximum penetration estimate of 9.05 mm; known thin-bowl roll errors remain disclosed."
-            }
-          }
+          "summary": "A 2400-second ASTRA reconstruction run with every immutable scene iteration.",
+          "auto_iterations": true
         },
         {
           "id": "no-harness",
@@ -111,46 +39,7 @@
               "iteration": 3,
               "label": "Final"
             }
-          ],
-          "iterations": {
-            "1": {
-              "status": "revised",
-              "runtime_seconds": 1672.0,
-              "token_count": 5498611,
-              "tools": [
-                "WiLoR and MANO hand reconstruction",
-                "Blender absolute shape keys",
-                "full-scene validation"
-              ],
-              "change": "First complete standalone review before correcting animation key timing.",
-              "conclusion": "Full-scene validation found accumulated absolute-key timing error, producing up to 1.06 mm of hand interpolation discrepancy. The scene was rebuilt with explicit per-frame evaluation times."
-            },
-            "2": {
-              "status": "revised",
-              "runtime_seconds": 430.0,
-              "token_count": 2488338,
-              "tools": [
-                "SAM2 silhouette fitting",
-                "constrained mesh triangulation",
-                "topology validation"
-              ],
-              "change": "Complete review after key-time repair but before the final object-topology correction.",
-              "conclusion": "The full-resolution preview exposed unintended holes around the three spoon slots. The unconstrained triangulation was replaced with a watertight constrained mesh."
-            },
-            "3": {
-              "status": "accepted",
-              "runtime_seconds": 2084.002,
-              "token_count": 14383940,
-              "tools": [
-                "direct FoundationPose diagnostic",
-                "SAM2 and MoGe3-guided object fitting",
-                "WiLoR and MANO hand reconstruction",
-                "standalone Blender review renderer"
-              ],
-              "change": "Final standalone scene after key-time and watertight-topology repairs.",
-              "conclusion": "Accepted standalone reconstruction: 1200 frames at 60 fps, watertight slotted-spoon geometry, mean filled silhouette IoU 0.730, and full review validation passed."
-            }
-          }
+          ]
         }
       ]
     }
