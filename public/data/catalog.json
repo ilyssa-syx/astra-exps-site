@@ -22,7 +22,7 @@
               "provenance": null,
               "blend_sha256": "ef0a4285f30d12086eb31b6167edc4ab668831369455f85565053dc894ea7d6a",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000001.mp4?v=20260929-9",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000001.mp4?v=20260929-10",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000001.mp4",
               "video_ready": true,
               "bytes": 2599510,
@@ -559,7 +559,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000002.mp4?v=20260929-9",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000002.mp4?v=20260929-10",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000002.mp4",
               "video_ready": true,
               "bytes": 5016715,
@@ -1287,7 +1287,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000003.mp4?v=20260929-9",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000003.mp4?v=20260929-10",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000003.mp4",
               "video_ready": true,
               "bytes": 4898222,
@@ -1378,7 +1378,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000004.mp4?v=20260929-9",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000004.mp4?v=20260929-10",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000004.mp4",
               "video_ready": true,
               "bytes": 4321572,
@@ -1768,7 +1768,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000005.mp4?v=20260929-9",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000005.mp4?v=20260929-10",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000005.mp4",
               "video_ready": true,
               "bytes": 4813948,
@@ -1905,7 +1905,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000006.mp4?v=20260929-9",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000006.mp4?v=20260929-10",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000006.mp4",
               "video_ready": true,
               "bytes": 4649168,
@@ -2003,7 +2003,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000007.mp4?v=20260929-9",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000007.mp4?v=20260929-10",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000007.mp4",
               "video_ready": true,
               "bytes": 4656717,
@@ -2554,7 +2554,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000008.mp4?v=20260929-9",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000008.mp4?v=20260929-10",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000008.mp4",
               "video_ready": true,
               "bytes": 4665029,
@@ -4052,7 +4052,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000009.mp4?v=20260929-9",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000009.mp4?v=20260929-10",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000009.mp4",
               "video_ready": true,
               "bytes": 4666106,
@@ -4962,7 +4962,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/no-harness/iterations/before-keytime-fix.mp4?v=20260929-9",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/no-harness/iterations/before-keytime-fix.mp4?v=20260929-10",
               "asset_key": "0827-spoon/no-harness/iterations/before-keytime-fix.mp4",
               "video_ready": true,
               "bytes": 4345819,
@@ -4979,7 +4979,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/no-harness/iterations/before-topology-fix.mp4?v=20260929-9",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/no-harness/iterations/before-topology-fix.mp4?v=20260929-10",
               "asset_key": "0827-spoon/no-harness/iterations/before-topology-fix.mp4",
               "video_ready": true,
               "bytes": 4342634,
@@ -4996,7 +4996,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/no-harness/iterations/final.mp4?v=20260929-9",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/no-harness/iterations/final.mp4?v=20260929-10",
               "asset_key": "0827-spoon/no-harness/iterations/final.mp4",
               "video_ready": true,
               "bytes": 4340372,

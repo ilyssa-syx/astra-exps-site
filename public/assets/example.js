@@ -108,6 +108,8 @@ function renderIteration(item) {
     ? `<details class="iteration-provenance"><summary>Raw provenance</summary><pre>${escapeHtml(JSON.stringify(item.provenance, null, 2))}</pre></details>`
     : "";
   const auditEvents = item.audit_events || [];
+  const auditEntryCount = collapseAuditEvents(auditEvents).length;
+  const auditLabel = `Audit (${auditEntryCount} entries · ${auditEvents.length} events)`;
   article.innerHTML = `
     <header class="iteration-heading">
       <div>
@@ -116,7 +118,7 @@ function renderIteration(item) {
       </div>
       <div class="row-actions">
         <button type="button" data-video-toggle>Hide RGB</button>
-        <button type="button" data-details-toggle aria-expanded="false">Audit (${auditEvents.length})</button>
+        <button type="button" data-details-toggle aria-expanded="false">${auditLabel}</button>
       </div>
     </header>
     <p class="iteration-reason"><strong>Recorded reason:</strong> ${escapeHtml(item.reason || "No reason recorded")}</p>
@@ -139,7 +141,7 @@ function renderIteration(item) {
     details.hidden = !details.hidden;
     detailsToggle.setAttribute("aria-expanded", details.hidden ? "false" : "true");
     detailsToggle.textContent = details.hidden
-      ? `Audit (${auditEvents.length})`
+      ? auditLabel
       : "Hide audit";
   });
 
@@ -154,13 +156,14 @@ function renderAudit(audit) {
     </section>`;
   }
   const events = audit.setup_events || [];
+  const entryCount = collapseAuditEvents(events).length;
   return `<section class="audit-panel">
     <div class="audit-heading">
       <div>
         <h3>Run audit</h3>
         <p>${audit.included_event_count || 0} source events from <code>${escapeHtml(audit.source)}</code>; ${audit.excluded_event_count || 0} token-usage/time-limit check events excluded.</p>
       </div>
-      <button type="button" data-audit-toggle aria-expanded="false">Setup (${events.length})</button>
+      <button type="button" data-audit-toggle aria-expanded="false">Setup (${entryCount} entries · ${events.length} events)</button>
     </div>
     <ol class="audit-timeline" hidden>${renderAuditEventList(events)}</ol>
   </section>`;
@@ -172,15 +175,30 @@ function renderAuditEvents(events) {
 }
 
 function renderAuditEventList(events) {
-  const patchCallIds = new Set();
+  return collapseAuditEvents(events).map(renderAuditEntry).join("");
+}
+
+function collapseAuditEvents(events) {
+  const entries = [];
+  const callsById = new Map();
   events.forEach((exported) => {
     const event = exported.raw || exported;
     const payload = event.payload || {};
-    if (event.event === "tool_call_started" && isPatchOperation(payload)) {
-      patchCallIds.add(payload.call_id);
+    const isToolCall = event.event === "tool_call_started" || event.event === "tool_call_finished";
+    if (!isToolCall || !payload.call_id) {
+      entries.push({ kind: "event", exported });
+      return;
     }
+    let entry = callsById.get(payload.call_id);
+    if (!entry) {
+      entry = { kind: "tool-call", callId: payload.call_id, started: null, finished: null };
+      callsById.set(payload.call_id, entry);
+      entries.push(entry);
+    }
+    if (event.event === "tool_call_started") entry.started = exported;
+    if (event.event === "tool_call_finished") entry.finished = exported;
   });
-  return events.map((exported) => renderAuditEvent(exported, patchCallIds)).join("");
+  return entries;
 }
 
 function isPatchOperation(payload) {
@@ -189,16 +207,84 @@ function isPatchOperation(payload) {
   return tool === "apply_patch" || operation === "apply_patch" || operation === "apply_script";
 }
 
-function renderAuditEvent(exported, patchCallIds) {
-  const event = exported.raw || exported;
-  const payload = event.payload || {};
-  const isToolCall = event.event === "tool_call_started" || event.event === "tool_call_finished";
-  const isReusedTool = isToolCall && !patchCallIds.has(payload.call_id) && !isPatchOperation(payload);
-  const toolOperation = [payload.tool, payload.operation].filter(Boolean).join(" · ");
-  const title = toolOperation || event.event || "audit event";
+function renderAuditEntry(entry) {
+  return entry.kind === "tool-call" ? renderToolCall(entry) : renderAuditEvent(entry.exported);
+}
+
+function renderToolCall(entry) {
+  const startedEvent = entry.started ? (entry.started.raw || entry.started) : null;
+  const finishedEvent = entry.finished ? (entry.finished.raw || entry.finished) : null;
+  const startedPayload = startedEvent ? (startedEvent.payload || {}) : {};
+  const finishedPayload = finishedEvent ? (finishedEvent.payload || {}) : {};
+  const displayPayload = startedEvent ? startedPayload : finishedPayload;
+  const toolOperation = [displayPayload.tool, displayPayload.operation].filter(Boolean).join(" · ");
+  const title = toolOperation || `tool call ${entry.callId}`;
+  const isReusedTool = Boolean(startedEvent) && !isPatchOperation(startedPayload);
   const reusedToolBadge = isReusedTool
     ? `<span class="audit-tool-badge">reused tool</span>`
     : "";
+  const incompleteLabel = !startedEvent
+    ? `<span class="audit-state-badge">missing start</span>`
+    : !finishedEvent
+      ? `<span class="audit-state-badge">unfinished</span>`
+      : "";
+  const purpose = startedPayload.purpose
+    ? `<p class="audit-purpose">${escapeHtml(startedPayload.purpose)}</p>`
+    : "";
+  const exitCode = Number.isInteger(finishedPayload.exit_code)
+    ? `<span class="audit-exit ${finishedPayload.exit_code === 0 ? "audit-ok" : "audit-failed"}">exit ${finishedPayload.exit_code}</span>`
+    : "";
+  const elapsed = Number.isFinite(finishedPayload.elapsed_seconds)
+    ? `<span>${formatPreciseDuration(finishedPayload.elapsed_seconds)}</span>`
+    : "";
+  const timestamp = startedEvent ? startedEvent.created_at : finishedEvent && finishedEvent.created_at;
+  const time = Number.isFinite(timestamp)
+    ? `<time datetime="${new Date(timestamp * 1000).toISOString()}">${escapeHtml(formatAuditTime(timestamp))}</time>`
+    : "";
+  const startSequence = startedEvent && startedEvent.sequence;
+  const finishSequence = finishedEvent && finishedEvent.sequence;
+  const sequence = startSequence && finishSequence && startSequence !== finishSequence
+    ? `#${startSequence}–#${finishSequence}`
+    : `#${startSequence || finishSequence || "?"}`;
+  const classes = [
+    "audit-event",
+    "audit-event-tool-call",
+    isReusedTool ? "audit-event-reused-tool" : "",
+    !startedEvent || !finishedEvent ? "audit-event-incomplete" : "",
+  ].filter(Boolean).join(" ");
+  const rawStarted = startedEvent ? renderJsonDetails("Raw started event", startedEvent) : "";
+  const rawFinished = finishedEvent ? renderJsonDetails("Raw finished event", finishedEvent) : "";
+  const request = entry.started && entry.started.request
+    ? renderJsonDetails("Raw tool request", entry.started.request)
+    : "";
+  const result = entry.finished && entry.finished.result
+    ? renderJsonDetails("Raw tool result", entry.finished.result)
+    : "";
+
+  return `<li class="${classes}">
+    <div class="audit-event-summary">
+      <span class="audit-sequence">${escapeHtml(sequence)}</span>
+      <div>
+        <strong>${escapeHtml(title)}</strong>
+        ${reusedToolBadge}
+        ${incompleteLabel}
+        <span class="audit-event-type">tool call</span>
+        ${purpose}
+        <div class="audit-meta">${time}${elapsed}${exitCode}</div>
+      </div>
+    </div>
+    ${rawStarted}
+    ${rawFinished}
+    ${request}
+    ${result}
+  </li>`;
+}
+
+function renderAuditEvent(exported) {
+  const event = exported.raw || exported;
+  const payload = event.payload || {};
+  const toolOperation = [payload.tool, payload.operation].filter(Boolean).join(" · ");
+  const title = toolOperation || event.event || "audit event";
   const purpose = payload.purpose ? `<p class="audit-purpose">${escapeHtml(payload.purpose)}</p>` : "";
   const exitCode = Number.isInteger(payload.exit_code)
     ? `<span class="audit-exit ${payload.exit_code === 0 ? "audit-ok" : "audit-failed"}">exit ${payload.exit_code}</span>`
@@ -215,12 +301,11 @@ function renderAuditEvent(exported, patchCallIds) {
   const result = exported.result
     ? renderJsonDetails("Raw tool result", exported.result)
     : "";
-  return `<li class="audit-event${isReusedTool ? " audit-event-reused-tool" : ""}">
+  return `<li class="audit-event">
     <div class="audit-event-summary">
       <span class="audit-sequence">#${escapeHtml(event.sequence)}</span>
       <div>
         <strong>${escapeHtml(title)}</strong>
-        ${reusedToolBadge}
         <span class="audit-event-type">${escapeHtml(event.event)}</span>
         ${purpose}
         <div class="audit-meta">${time}${elapsed}${exitCode}</div>
