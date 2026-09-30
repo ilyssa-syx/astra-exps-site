@@ -369,7 +369,11 @@ def build_catalog(config):
                     "status": annotation.get("status", review_status(audit_events)),
                     "runtime_seconds": annotation.get("runtime_seconds"),
                     "token_count": annotation.get("token_count"),
-                    "token_note": annotation.get("token_note", ""),
+                    "token_note": annotation.get(
+                        "token_note",
+                        "Tokens not separately attributed"
+                        if baseline.get("total_token_count") is not None else "",
+                    ),
                     "reason": iteration_data.get("reason", ""),
                     "provenance": iteration_data.get("provenance"),
                     "blend_sha256": iteration_data.get("blend_sha256", ""),

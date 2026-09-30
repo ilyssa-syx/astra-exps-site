@@ -8,8 +8,8 @@ Static experiment review pages hosted by GitHub Pages. Large video assets live i
 ## Current content
 
 - Example: `0827-spoon`
-- Baselines: `20260928-2400s` and `no harness`
-- Source runs: `../runs/20260928_v7/2400` and `../no_harness_examples/0827-spoon`
+- Baselines, left to right: `no harness`, `20260928 · 2400s`, and `20260930 · 2400s`
+- Source runs: `../no_harness_examples/0827-spoon`, `../runs/20260928_v7/2400`, and `../runs/20260930_v1`
 - ASTRA exports: every immutable scene iteration discovered from the run
 - No-harness exports: before key-time fix, before topology fix, and final
 
