@@ -1,6 +1,19 @@
 {
   "site_title": "ASTRA Experiments",
-  "asset_version": "20261005-d-spider-1",
+  "asset_version": "20261005-e-final-1",
+  "ablation_e_final_cases": [
+    {"id": "0416-mug", "title": "0416 Mug"},
+    {"id": "0529-bottle", "title": "0529 Bottle"},
+    {"id": "0529-cup", "title": "0529 Cup"},
+    {"id": "0529-mouse", "title": "0529 Mouse"},
+    {"id": "0529-pen", "title": "0529 Pen"},
+    {"id": "0601-box", "title": "0601 Box"},
+    {"id": "0608-spoon", "title": "0608 Spoon"},
+    {"id": "0609-fork", "title": "0609 Fork"},
+    {"id": "0611-duck", "title": "0611 Duck"},
+    {"id": "0827-spoon", "title": "0827 Spoon"},
+    {"id": "0827-sweep", "title": "0827 Sweep"}
+  ],
   "asset_base_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev",
   "examples": [
     {
@@ -372,6 +385,91 @@
           "summary": "Final-iteration SPIDER tracking; dropped segments resume at drop frame +30 with a two-second pause.",
           "skip_run_discovery": true, "skip_audit": true,
           "exports": [{"video": "0827-spoon_spider_motion_tracking.mp4", "id": "final-spider", "iteration": 18, "label": "SPIDER tracking", "publish_local": true}]
+        }
+      ]
+    },
+    {
+      "id": "ablation-d-0601-box",
+      "title": "Ablation D · 0601 Box",
+      "description": "Final Ablation D Blender reconstruction. SPIDER was abandoned after initialization failed.",
+      "playback_mode": "independent",
+      "baselines": [
+        {
+          "id": "blender-final", "label": "Blender final",
+          "run": "../runs/20261004_ablation/D/_render_20fps/videos/0601-box",
+          "summary": "Final iteration 23, rendered as a four-panel comparison at 20 fps.",
+          "skip_run_discovery": true, "skip_audit": true,
+          "exports": [{"video": "iteration_000023/comparison.mp4", "id": "final-blender", "iteration": 23, "label": "Final iteration 23 · Blender", "publish_local": true}]
+        },
+        {
+          "id": "spider-final", "label": "SPIDER tracking · initialization failed",
+          "run": "../runs/20261004_ablation/D_spider_track/0601-box",
+          "summary": "Abandoned: SPIDER could not initialize a stable motion segment.",
+          "skip_run_discovery": true, "skip_audit": true, "skip_video_exports": true
+        }
+      ]
+    },
+    {
+      "id": "ablation-d-0608-spoon",
+      "title": "Ablation D · 0608 Spoon",
+      "description": "Final Ablation D Blender reconstruction. SPIDER was abandoned after initialization failed.",
+      "playback_mode": "independent",
+      "baselines": [
+        {
+          "id": "blender-final", "label": "Blender final",
+          "run": "../runs/20261004_ablation/D/_render_20fps/videos/0608-spoon",
+          "summary": "Final iteration 17, rendered as a four-panel comparison at 20 fps.",
+          "skip_run_discovery": true, "skip_audit": true,
+          "exports": [{"video": "iteration_000017/comparison.mp4", "id": "final-blender", "iteration": 17, "label": "Final iteration 17 · Blender", "publish_local": true}]
+        },
+        {
+          "id": "spider-final", "label": "SPIDER tracking · initialization failed",
+          "run": "../runs/20261004_ablation/D_spider_track/0608-spoon",
+          "summary": "Abandoned: SPIDER could not initialize a stable motion segment.",
+          "skip_run_discovery": true, "skip_audit": true, "skip_video_exports": true
+        }
+      ]
+    },
+    {
+      "id": "ablation-d-0827-sweep",
+      "title": "Ablation D · 0827 Sweep",
+      "description": "Final Ablation D Blender reconstruction and segmented SPIDER motion tracking.",
+      "playback_mode": "independent",
+      "baselines": [
+        {
+          "id": "blender-final", "label": "Blender final",
+          "run": "../runs/20261004_ablation/D/_render_20fps/videos/0827-sweep",
+          "summary": "Final iteration 15, rendered as a four-panel comparison at 20 fps.",
+          "skip_run_discovery": true, "skip_audit": true,
+          "exports": [{"video": "iteration_000015/comparison.mp4", "id": "final-blender", "iteration": 15, "label": "Final iteration 15 · Blender", "publish_local": true}]
+        },
+        {
+          "id": "spider-final", "label": "SPIDER tracking",
+          "run": "../runs/20261004_ablation/D_spider_track/0827-sweep",
+          "summary": "The successful final segment is shown; earlier resume points failed initialization.",
+          "skip_run_discovery": true, "skip_audit": true,
+          "exports": [{"video": "0827-sweep_spider_motion_tracking.mp4", "id": "final-spider", "iteration": 15, "label": "SPIDER tracking", "publish_local": true}]
+        }
+      ]
+    },
+    {
+      "id": "ablation-d-sushi",
+      "title": "Ablation D · Sushi",
+      "description": "Final Ablation D Blender reconstruction at its native 12 fps. SPIDER was abandoned after initialization failed.",
+      "playback_mode": "independent",
+      "baselines": [
+        {
+          "id": "blender-final", "label": "Blender final",
+          "run": "../runs/20261004_ablation/D/_render_20fps/videos/sushi",
+          "summary": "Final iteration 18, rendered as a four-panel comparison at native 12 fps.",
+          "skip_run_discovery": true, "skip_audit": true,
+          "exports": [{"video": "iteration_000018/comparison.mp4", "id": "final-blender", "iteration": 18, "label": "Final iteration 18 · Blender", "publish_local": true}]
+        },
+        {
+          "id": "spider-final", "label": "SPIDER tracking · initialization failed",
+          "run": "../runs/20261004_ablation/D_spider_track/sushi",
+          "summary": "Abandoned: SPIDER could not initialize a stable motion segment.",
+          "skip_run_discovery": true, "skip_audit": true, "skip_video_exports": true
         }
       ]
     }

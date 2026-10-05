@@ -251,12 +251,51 @@ def variant_label(export_name, metadata):
 def build_catalog(config):
     asset_base = config.get("asset_base_url", "").rstrip("/")
     asset_version = config.get("asset_version", "1")
+    examples = list(config.get("examples", []))
+    for case in config.get("ablation_e_final_cases", []):
+        case_id = case["id"]
+        title = case.get("title", case_id.replace("-", " ").title())
+        examples.append({
+            "id": "ablation-e-final-" + case_id,
+            "title": "Ablation E final · " + title,
+            "description": (
+                "Final E_spider_resume Blender reconstruction with elevated palm/finger "
+                "views, plus segmented SPIDER tracking. Players are independent."
+            ),
+            "playback_mode": "independent",
+            "baselines": [
+                {
+                    "id": "blender-final",
+                    "label": "Blender final · palm/contact views",
+                    "run": "../runs/20261004_ablation/E_spider_resume/_final_pipeline/render_palm/" + case_id,
+                    "summary": "Final deliverable rendered at 20 fps with two elevated rear-oblique views chosen to expose finger/object contact.",
+                    "skip_run_discovery": True,
+                    "skip_audit": True,
+                    "exports": [{
+                        "video": "comparison.mp4", "id": "final-blender", "iteration": 0,
+                        "label": "Final Blender · palm/contact views", "publish_local": True,
+                    }],
+                },
+                {
+                    "id": "spider-final",
+                    "label": "SPIDER tracking",
+                    "run": "../runs/20261004_ablation/E_spider_resume/_final_pipeline/spider/" + case_id,
+                    "summary": "Tracked until a drop; resumed from drop +30 frames. Processing stopped when the next segment could not initialize, and all successful segments were retained.",
+                    "skip_run_discovery": True,
+                    "skip_audit": True,
+                    "exports": [{
+                        "video": case_id + "_spider_motion_tracking.mp4", "id": "final-spider",
+                        "iteration": 0, "label": "SPIDER tracking", "publish_local": True,
+                    }],
+                },
+            ],
+        })
     public_examples = []
     upload_assets = []
     local_assets = []
     warnings = []
 
-    for example in config.get("examples", []):
+    for example in examples:
         public_example = {
             "id": example["id"],
             "title": example.get("title", example["id"]),
@@ -284,7 +323,9 @@ def build_catalog(config):
                 }
                 if baseline.get("skip_audit") else build_audit(run_root, iterations)
             )
-            if baseline.get("auto_iterations"):
+            if baseline.get("skip_video_exports"):
+                export_specs = []
+            elif baseline.get("auto_iterations"):
                 if not iterations:
                     raise RuntimeError("No iterations found for {}".format(run_root))
                 export_specs = []
@@ -499,7 +540,7 @@ def build_pages(config, catalog, local_assets):
     examples_root = PUBLIC / "examples"
     if examples_root.exists():
         shutil.rmtree(str(examples_root))
-    for example in config.get("examples", []):
+    for example in catalog.get("examples", []):
         output = examples_root / example["id"] / "index.html"
         output.parent.mkdir(parents=True, exist_ok=True)
         output.write_text(

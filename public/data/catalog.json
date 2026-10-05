@@ -28,7 +28,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/no-harness/iterations/final.mp4?v=20261005-d-spider-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/no-harness/iterations/final.mp4?v=20261005-e-final-1",
               "asset_key": "0827-spoon/no-harness/iterations/final.mp4",
               "video_ready": true,
               "bytes": 4340372,
@@ -48,7 +48,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/no-harness/iterations/before-topology-fix.mp4?v=20261005-d-spider-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/no-harness/iterations/before-topology-fix.mp4?v=20261005-e-final-1",
               "asset_key": "0827-spoon/no-harness/iterations/before-topology-fix.mp4",
               "video_ready": true,
               "bytes": 4342634,
@@ -68,7 +68,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/no-harness/iterations/before-keytime-fix.mp4?v=20261005-d-spider-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/no-harness/iterations/before-keytime-fix.mp4?v=20261005-e-final-1",
               "asset_key": "0827-spoon/no-harness/iterations/before-keytime-fix.mp4",
               "video_ready": true,
               "bytes": 4345819,
@@ -1586,7 +1586,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000009.mp4?v=20261005-d-spider-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000009.mp4?v=20261005-e-final-1",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000009.mp4",
               "video_ready": true,
               "bytes": 4666106,
@@ -2140,7 +2140,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000008.mp4?v=20261005-d-spider-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000008.mp4?v=20261005-e-final-1",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000008.mp4",
               "video_ready": true,
               "bytes": 4665029,
@@ -2241,7 +2241,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000007.mp4?v=20261005-d-spider-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000007.mp4?v=20261005-e-final-1",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000007.mp4",
               "video_ready": true,
               "bytes": 4656717,
@@ -2381,7 +2381,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000006.mp4?v=20261005-d-spider-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000006.mp4?v=20261005-e-final-1",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000006.mp4",
               "video_ready": true,
               "bytes": 4649168,
@@ -2774,7 +2774,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000005.mp4?v=20261005-d-spider-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000005.mp4?v=20261005-e-final-1",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000005.mp4",
               "video_ready": true,
               "bytes": 4813948,
@@ -2868,7 +2868,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000004.mp4?v=20261005-d-spider-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000004.mp4?v=20261005-e-final-1",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000004.mp4",
               "video_ready": true,
               "bytes": 4321572,
@@ -3599,7 +3599,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000003.mp4?v=20261005-d-spider-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000003.mp4?v=20261005-e-final-1",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000003.mp4",
               "video_ready": true,
               "bytes": 4898222,
@@ -4139,7 +4139,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000002.mp4?v=20261005-d-spider-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000002.mp4?v=20261005-e-final-1",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000002.mp4",
               "video_ready": true,
               "bytes": 5016715,
@@ -4159,7 +4159,7 @@
               "provenance": null,
               "blend_sha256": "ef0a4285f30d12086eb31b6167edc4ab668831369455f85565053dc894ea7d6a",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000001.mp4?v=20261005-d-spider-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000001.mp4?v=20261005-e-final-1",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000001.mp4",
               "video_ready": true,
               "bytes": 2599510,
@@ -6412,7 +6412,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000016.mp4?v=20261005-d-spider-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000016.mp4?v=20261005-e-final-1",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000016.mp4",
               "video_ready": true,
               "bytes": 5029574,
@@ -7286,7 +7286,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000015.mp4?v=20261005-d-spider-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000015.mp4?v=20261005-e-final-1",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000015.mp4",
               "video_ready": true,
               "bytes": 5025521,
@@ -7500,7 +7500,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000014.mp4?v=20261005-d-spider-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000014.mp4?v=20261005-e-final-1",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000014.mp4",
               "video_ready": true,
               "bytes": 4815353,
@@ -8349,7 +8349,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000013.mp4?v=20261005-d-spider-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000013.mp4?v=20261005-e-final-1",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000013.mp4",
               "video_ready": true,
               "bytes": 4932534,
@@ -8902,7 +8902,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000012.mp4?v=20261005-d-spider-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000012.mp4?v=20261005-e-final-1",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000012.mp4",
               "video_ready": true,
               "bytes": 4966555,
@@ -9052,7 +9052,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000011.mp4?v=20261005-d-spider-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000011.mp4?v=20261005-e-final-1",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000011.mp4",
               "video_ready": true,
               "bytes": 5098791,
@@ -9533,7 +9533,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000010.mp4?v=20261005-d-spider-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000010.mp4?v=20261005-e-final-1",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000010.mp4",
               "video_ready": true,
               "bytes": 5094780,
@@ -10537,7 +10537,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000009.mp4?v=20261005-d-spider-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000009.mp4?v=20261005-e-final-1",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000009.mp4",
               "video_ready": true,
               "bytes": 5069457,
@@ -11804,7 +11804,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000008.mp4?v=20261005-d-spider-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000008.mp4?v=20261005-e-final-1",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000008.mp4",
               "video_ready": true,
               "bytes": 4762414,
@@ -12457,7 +12457,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000007.mp4?v=20261005-d-spider-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000007.mp4?v=20261005-e-final-1",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000007.mp4",
               "video_ready": true,
               "bytes": 4813781,
@@ -12549,7 +12549,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000006.mp4?v=20261005-d-spider-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000006.mp4?v=20261005-e-final-1",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000006.mp4",
               "video_ready": true,
               "bytes": 4528666,
@@ -12716,7 +12716,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000005.mp4?v=20261005-d-spider-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000005.mp4?v=20261005-e-final-1",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000005.mp4",
               "video_ready": true,
               "bytes": 4730774,
@@ -13098,7 +13098,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000004.mp4?v=20261005-d-spider-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000004.mp4?v=20261005-e-final-1",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000004.mp4",
               "video_ready": true,
               "bytes": 5013576,
@@ -13420,7 +13420,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000003.mp4?v=20261005-d-spider-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000003.mp4?v=20261005-e-final-1",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000003.mp4",
               "video_ready": true,
               "bytes": 5039903,
@@ -13917,7 +13917,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000002.mp4?v=20261005-d-spider-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000002.mp4?v=20261005-e-final-1",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000002.mp4",
               "video_ready": true,
               "bytes": 4720471,
@@ -14005,7 +14005,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000001.mp4?v=20261005-d-spider-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000001.mp4?v=20261005-e-final-1",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000001.mp4",
               "video_ready": true,
               "bytes": 2580321,
@@ -14633,7 +14633,7 @@
               "provenance": null,
               "blend_sha256": "b1497164379752900c90ff7ccb1f868b0b18255e1868ea15b2f0889834aadcf6",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0416-mug/20260930-scale-final/iterations/final.mp4?v=20261005-d-spider-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0416-mug/20260930-scale-final/iterations/final.mp4?v=20261005-e-final-1",
               "asset_key": "scale-0416-mug/20260930-scale-final/iterations/final.mp4",
               "video_ready": true,
               "bytes": 1381469,
@@ -14678,7 +14678,7 @@
               "provenance": null,
               "blend_sha256": "7f73165a495f73ddc5f9e275b36dbcc834c569cf10e2afd0a9e5b795f06f691d",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0529-bottle/20260930-scale-final/iterations/final.mp4?v=20261005-d-spider-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0529-bottle/20260930-scale-final/iterations/final.mp4?v=20261005-e-final-1",
               "asset_key": "scale-0529-bottle/20260930-scale-final/iterations/final.mp4",
               "video_ready": true,
               "bytes": 2875327,
@@ -14723,7 +14723,7 @@
               "provenance": null,
               "blend_sha256": "ba81831381f81c1fedb64dfa2c6f807ec5e909bea212ac8ba80e7fee7aa2872e",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0529-cup/20260930-scale-final/iterations/final.mp4?v=20261005-d-spider-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0529-cup/20260930-scale-final/iterations/final.mp4?v=20261005-e-final-1",
               "asset_key": "scale-0529-cup/20260930-scale-final/iterations/final.mp4",
               "video_ready": true,
               "bytes": 2814217,
@@ -14768,7 +14768,7 @@
               "provenance": null,
               "blend_sha256": "3270c5efab7bfe684b3e48af92baeb3e035eb09df71c68152d9d9a11d2c934a9",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0529-mouse/20260930-scale-final/iterations/final.mp4?v=20261005-d-spider-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0529-mouse/20260930-scale-final/iterations/final.mp4?v=20261005-e-final-1",
               "asset_key": "scale-0529-mouse/20260930-scale-final/iterations/final.mp4",
               "video_ready": true,
               "bytes": 3275734,
@@ -14813,7 +14813,7 @@
               "provenance": null,
               "blend_sha256": "8c26c770e2a516768188ee99db629245624f8b4f4836e4f5f7b9af83fd2ba631",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0529-pen/20260930-scale-final/iterations/final.mp4?v=20261005-d-spider-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0529-pen/20260930-scale-final/iterations/final.mp4?v=20261005-e-final-1",
               "asset_key": "scale-0529-pen/20260930-scale-final/iterations/final.mp4",
               "video_ready": true,
               "bytes": 2259261,
@@ -14858,7 +14858,7 @@
               "provenance": null,
               "blend_sha256": "6c7f93381356418855b894ed111ac3ae561b246ffd1a1e2055c33d34b78aae1c",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0601-box/20260930-scale-final/iterations/final.mp4?v=20261005-d-spider-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0601-box/20260930-scale-final/iterations/final.mp4?v=20261005-e-final-1",
               "asset_key": "scale-0601-box/20260930-scale-final/iterations/final.mp4",
               "video_ready": true,
               "bytes": 3360600,
@@ -14903,7 +14903,7 @@
               "provenance": null,
               "blend_sha256": "5db0f3012257257ff6f11280080292dbf562b0dcd43c40ae434d6b0897b6a7bf",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0608-spoon/20260930-scale-final/iterations/final.mp4?v=20261005-d-spider-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0608-spoon/20260930-scale-final/iterations/final.mp4?v=20261005-e-final-1",
               "asset_key": "scale-0608-spoon/20260930-scale-final/iterations/final.mp4",
               "video_ready": true,
               "bytes": 3192452,
@@ -14948,7 +14948,7 @@
               "provenance": null,
               "blend_sha256": "aeaa5f6ac244991e93ef69e10a55528636010940efbd9b07b197321216458476",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0609-fork/20260930-scale-final/iterations/final.mp4?v=20261005-d-spider-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0609-fork/20260930-scale-final/iterations/final.mp4?v=20261005-e-final-1",
               "asset_key": "scale-0609-fork/20260930-scale-final/iterations/final.mp4",
               "video_ready": true,
               "bytes": 2842284,
@@ -14993,7 +14993,7 @@
               "provenance": null,
               "blend_sha256": "e50f6e7f31ad57aff8f3ee63ec3c96814a5544ce1c96887a3dbdec605daad4da",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0611-duck/20260930-scale-final/iterations/final.mp4?v=20261005-d-spider-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0611-duck/20260930-scale-final/iterations/final.mp4?v=20261005-e-final-1",
               "asset_key": "scale-0611-duck/20260930-scale-final/iterations/final.mp4",
               "video_ready": true,
               "bytes": 2674559,
@@ -15038,7 +15038,7 @@
               "provenance": null,
               "blend_sha256": "a528e5c23c253b322b6d13aa50a11d14f891d12b812930ad89a95e1708fa2a92",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0827-sweep/20260930-scale-final/iterations/final.mp4?v=20261005-d-spider-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0827-sweep/20260930-scale-final/iterations/final.mp4?v=20261005-e-final-1",
               "asset_key": "scale-0827-sweep/20260930-scale-final/iterations/final.mp4",
               "video_ready": true,
               "bytes": 2845723,
@@ -15083,7 +15083,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-sushi/20260930-scale-final/iterations/final.mp4?v=20261005-d-spider-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-sushi/20260930-scale-final/iterations/final.mp4?v=20261005-e-final-1",
               "asset_key": "scale-sushi/20260930-scale-final/iterations/final.mp4",
               "video_ready": true,
               "bytes": 758749,
@@ -15128,7 +15128,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-d-0416-mug/blender-final/iterations/final-blender.mp4?v=20261005-d-spider-1",
+              "video_url": "../../media/ablation-d-0416-mug/blender-final/iterations/final-blender.mp4?v=20261005-e-final-1",
               "asset_key": "ablation-d-0416-mug/blender-final/iterations/final-blender.mp4",
               "video_ready": true,
               "bytes": 1351292,
@@ -15165,10 +15165,10 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-d-0416-mug/spider-final/iterations/final-spider.mp4?v=20261005-d-spider-1",
+              "video_url": "../../media/ablation-d-0416-mug/spider-final/iterations/final-spider.mp4?v=20261005-e-final-1",
               "asset_key": "ablation-d-0416-mug/spider-final/iterations/final-spider.mp4",
               "video_ready": true,
-              "bytes": 238638,
+              "bytes": 630099,
               "width": 960,
               "height": 780
             }
@@ -15210,7 +15210,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-d-0529-bottle/blender-final/iterations/final-blender.mp4?v=20261005-d-spider-1",
+              "video_url": "../../media/ablation-d-0529-bottle/blender-final/iterations/final-blender.mp4?v=20261005-e-final-1",
               "asset_key": "ablation-d-0529-bottle/blender-final/iterations/final-blender.mp4",
               "video_ready": true,
               "bytes": 2654027,
@@ -15247,10 +15247,10 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-d-0529-bottle/spider-final/iterations/final-spider.mp4?v=20261005-d-spider-1",
+              "video_url": "../../media/ablation-d-0529-bottle/spider-final/iterations/final-spider.mp4?v=20261005-e-final-1",
               "asset_key": "ablation-d-0529-bottle/spider-final/iterations/final-spider.mp4",
               "video_ready": true,
-              "bytes": 250573,
+              "bytes": 822180,
               "width": 960,
               "height": 780
             }
@@ -15292,7 +15292,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-d-0529-cup/blender-final/iterations/final-blender.mp4?v=20261005-d-spider-1",
+              "video_url": "../../media/ablation-d-0529-cup/blender-final/iterations/final-blender.mp4?v=20261005-e-final-1",
               "asset_key": "ablation-d-0529-cup/blender-final/iterations/final-blender.mp4",
               "video_ready": true,
               "bytes": 3777139,
@@ -15329,10 +15329,10 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-d-0529-cup/spider-final/iterations/final-spider.mp4?v=20261005-d-spider-1",
+              "video_url": "../../media/ablation-d-0529-cup/spider-final/iterations/final-spider.mp4?v=20261005-e-final-1",
               "asset_key": "ablation-d-0529-cup/spider-final/iterations/final-spider.mp4",
               "video_ready": true,
-              "bytes": 106994,
+              "bytes": 1071855,
               "width": 960,
               "height": 780
             }
@@ -15374,7 +15374,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-d-0529-mouse/blender-final/iterations/final-blender.mp4?v=20261005-d-spider-1",
+              "video_url": "../../media/ablation-d-0529-mouse/blender-final/iterations/final-blender.mp4?v=20261005-e-final-1",
               "asset_key": "ablation-d-0529-mouse/blender-final/iterations/final-blender.mp4",
               "video_ready": true,
               "bytes": 2568409,
@@ -15411,10 +15411,10 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-d-0529-mouse/spider-final/iterations/final-spider.mp4?v=20261005-d-spider-1",
+              "video_url": "../../media/ablation-d-0529-mouse/spider-final/iterations/final-spider.mp4?v=20261005-e-final-1",
               "asset_key": "ablation-d-0529-mouse/spider-final/iterations/final-spider.mp4",
               "video_ready": true,
-              "bytes": 189000,
+              "bytes": 187301,
               "width": 960,
               "height": 780
             }
@@ -15456,7 +15456,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-d-0529-pen/blender-final/iterations/final-blender.mp4?v=20261005-d-spider-1",
+              "video_url": "../../media/ablation-d-0529-pen/blender-final/iterations/final-blender.mp4?v=20261005-e-final-1",
               "asset_key": "ablation-d-0529-pen/blender-final/iterations/final-blender.mp4",
               "video_ready": true,
               "bytes": 2001040,
@@ -15493,10 +15493,10 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-d-0529-pen/spider-final/iterations/final-spider.mp4?v=20261005-d-spider-1",
+              "video_url": "../../media/ablation-d-0529-pen/spider-final/iterations/final-spider.mp4?v=20261005-e-final-1",
               "asset_key": "ablation-d-0529-pen/spider-final/iterations/final-spider.mp4",
               "video_ready": true,
-              "bytes": 99449,
+              "bytes": 301691,
               "width": 960,
               "height": 780
             }
@@ -15538,7 +15538,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-d-0609-fork/blender-final/iterations/final-blender.mp4?v=20261005-d-spider-1",
+              "video_url": "../../media/ablation-d-0609-fork/blender-final/iterations/final-blender.mp4?v=20261005-e-final-1",
               "asset_key": "ablation-d-0609-fork/blender-final/iterations/final-blender.mp4",
               "video_ready": true,
               "bytes": 2605237,
@@ -15575,10 +15575,10 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-d-0609-fork/spider-final/iterations/final-spider.mp4?v=20261005-d-spider-1",
+              "video_url": "../../media/ablation-d-0609-fork/spider-final/iterations/final-spider.mp4?v=20261005-e-final-1",
               "asset_key": "ablation-d-0609-fork/spider-final/iterations/final-spider.mp4",
               "video_ready": true,
-              "bytes": 97602,
+              "bytes": 202892,
               "width": 960,
               "height": 780
             }
@@ -15620,7 +15620,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-d-0611-duck/blender-final/iterations/final-blender.mp4?v=20261005-d-spider-1",
+              "video_url": "../../media/ablation-d-0611-duck/blender-final/iterations/final-blender.mp4?v=20261005-e-final-1",
               "asset_key": "ablation-d-0611-duck/blender-final/iterations/final-blender.mp4",
               "video_ready": true,
               "bytes": 2125183,
@@ -15657,10 +15657,10 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-d-0611-duck/spider-final/iterations/final-spider.mp4?v=20261005-d-spider-1",
+              "video_url": "../../media/ablation-d-0611-duck/spider-final/iterations/final-spider.mp4?v=20261005-e-final-1",
               "asset_key": "ablation-d-0611-duck/spider-final/iterations/final-spider.mp4",
               "video_ready": true,
-              "bytes": 240857,
+              "bytes": 517970,
               "width": 960,
               "height": 780
             }
@@ -15702,7 +15702,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-d-0827-spoon/blender-final/iterations/final-blender.mp4?v=20261005-d-spider-1",
+              "video_url": "../../media/ablation-d-0827-spoon/blender-final/iterations/final-blender.mp4?v=20261005-e-final-1",
               "asset_key": "ablation-d-0827-spoon/blender-final/iterations/final-blender.mp4",
               "video_ready": true,
               "bytes": 3154691,
@@ -15739,10 +15739,1177 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-d-0827-spoon/spider-final/iterations/final-spider.mp4?v=20261005-d-spider-1",
+              "video_url": "../../media/ablation-d-0827-spoon/spider-final/iterations/final-spider.mp4?v=20261005-e-final-1",
               "asset_key": "ablation-d-0827-spoon/spider-final/iterations/final-spider.mp4",
               "video_ready": true,
-              "bytes": 196538,
+              "bytes": 293381,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "ablation-d-0601-box",
+      "title": "Ablation D · 0601 Box",
+      "description": "Final Ablation D Blender reconstruction. SPIDER was abandoned after initialization failed.",
+      "playback_mode": "independent",
+      "baselines": [
+        {
+          "id": "blender-final",
+          "label": "Blender final",
+          "summary": "Final iteration 23, rendered as a four-panel comparison at 20 fps.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 23,
+              "label": "Final iteration 23 · Blender",
+              "variant": "Four-panel RGB",
+              "export_id": "final-blender",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "",
+              "provenance": null,
+              "blend_sha256": "",
+              "audit_events": [],
+              "video_url": "../../media/ablation-d-0601-box/blender-final/iterations/final-blender.mp4?v=20261005-e-final-1",
+              "asset_key": "ablation-d-0601-box/blender-final/iterations/final-blender.mp4",
+              "video_ready": true,
+              "bytes": 3248744,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        },
+        {
+          "id": "spider-final",
+          "label": "SPIDER tracking · initialization failed",
+          "summary": "Abandoned: SPIDER could not initialize a stable motion segment.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "ablation-d-0608-spoon",
+      "title": "Ablation D · 0608 Spoon",
+      "description": "Final Ablation D Blender reconstruction. SPIDER was abandoned after initialization failed.",
+      "playback_mode": "independent",
+      "baselines": [
+        {
+          "id": "blender-final",
+          "label": "Blender final",
+          "summary": "Final iteration 17, rendered as a four-panel comparison at 20 fps.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 17,
+              "label": "Final iteration 17 · Blender",
+              "variant": "Four-panel RGB",
+              "export_id": "final-blender",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "",
+              "provenance": null,
+              "blend_sha256": "",
+              "audit_events": [],
+              "video_url": "../../media/ablation-d-0608-spoon/blender-final/iterations/final-blender.mp4?v=20261005-e-final-1",
+              "asset_key": "ablation-d-0608-spoon/blender-final/iterations/final-blender.mp4",
+              "video_ready": true,
+              "bytes": 2283687,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        },
+        {
+          "id": "spider-final",
+          "label": "SPIDER tracking · initialization failed",
+          "summary": "Abandoned: SPIDER could not initialize a stable motion segment.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "ablation-d-0827-sweep",
+      "title": "Ablation D · 0827 Sweep",
+      "description": "Final Ablation D Blender reconstruction and segmented SPIDER motion tracking.",
+      "playback_mode": "independent",
+      "baselines": [
+        {
+          "id": "blender-final",
+          "label": "Blender final",
+          "summary": "Final iteration 15, rendered as a four-panel comparison at 20 fps.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 15,
+              "label": "Final iteration 15 · Blender",
+              "variant": "Four-panel RGB",
+              "export_id": "final-blender",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "",
+              "provenance": null,
+              "blend_sha256": "",
+              "audit_events": [],
+              "video_url": "../../media/ablation-d-0827-sweep/blender-final/iterations/final-blender.mp4?v=20261005-e-final-1",
+              "asset_key": "ablation-d-0827-sweep/blender-final/iterations/final-blender.mp4",
+              "video_ready": true,
+              "bytes": 2736982,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        },
+        {
+          "id": "spider-final",
+          "label": "SPIDER tracking",
+          "summary": "The successful final segment is shown; earlier resume points failed initialization.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 15,
+              "label": "SPIDER tracking",
+              "variant": "Four-panel RGB",
+              "export_id": "final-spider",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "",
+              "provenance": null,
+              "blend_sha256": "",
+              "audit_events": [],
+              "video_url": "../../media/ablation-d-0827-sweep/spider-final/iterations/final-spider.mp4?v=20261005-e-final-1",
+              "asset_key": "ablation-d-0827-sweep/spider-final/iterations/final-spider.mp4",
+              "video_ready": true,
+              "bytes": 322434,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "ablation-d-sushi",
+      "title": "Ablation D · Sushi",
+      "description": "Final Ablation D Blender reconstruction at its native 12 fps. SPIDER was abandoned after initialization failed.",
+      "playback_mode": "independent",
+      "baselines": [
+        {
+          "id": "blender-final",
+          "label": "Blender final",
+          "summary": "Final iteration 18, rendered as a four-panel comparison at native 12 fps.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 18,
+              "label": "Final iteration 18 · Blender",
+              "variant": "Four-panel RGB",
+              "export_id": "final-blender",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "",
+              "provenance": null,
+              "blend_sha256": "",
+              "audit_events": [],
+              "video_url": "../../media/ablation-d-sushi/blender-final/iterations/final-blender.mp4?v=20261005-e-final-1",
+              "asset_key": "ablation-d-sushi/blender-final/iterations/final-blender.mp4",
+              "video_ready": true,
+              "bytes": 731339,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        },
+        {
+          "id": "spider-final",
+          "label": "SPIDER tracking · initialization failed",
+          "summary": "Abandoned: SPIDER could not initialize a stable motion segment.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "ablation-e-final-0416-mug",
+      "title": "Ablation E final · 0416 Mug",
+      "description": "Final E_spider_resume Blender reconstruction with elevated palm/finger views, plus segmented SPIDER tracking. Players are independent.",
+      "playback_mode": "independent",
+      "baselines": [
+        {
+          "id": "blender-final",
+          "label": "Blender final · palm/contact views",
+          "summary": "Final deliverable rendered at 20 fps with two elevated rear-oblique views chosen to expose finger/object contact.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 0,
+              "label": "Final Blender · palm/contact views",
+              "variant": "Four-panel RGB",
+              "export_id": "final-blender",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "",
+              "provenance": null,
+              "blend_sha256": "",
+              "audit_events": [],
+              "video_url": "../../media/ablation-e-final-0416-mug/blender-final/iterations/final-blender.mp4?v=20261005-e-final-1",
+              "asset_key": "ablation-e-final-0416-mug/blender-final/iterations/final-blender.mp4",
+              "video_ready": true,
+              "bytes": 1423746,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        },
+        {
+          "id": "spider-final",
+          "label": "SPIDER tracking",
+          "summary": "Tracked until a drop; resumed from drop +30 frames. Processing stopped when the next segment could not initialize, and all successful segments were retained.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 0,
+              "label": "SPIDER tracking",
+              "variant": "Four-panel RGB",
+              "export_id": "final-spider",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "",
+              "provenance": null,
+              "blend_sha256": "",
+              "audit_events": [],
+              "video_url": "../../media/ablation-e-final-0416-mug/spider-final/iterations/final-spider.mp4?v=20261005-e-final-1",
+              "asset_key": "ablation-e-final-0416-mug/spider-final/iterations/final-spider.mp4",
+              "video_ready": true,
+              "bytes": 228477,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "ablation-e-final-0529-bottle",
+      "title": "Ablation E final · 0529 Bottle",
+      "description": "Final E_spider_resume Blender reconstruction with elevated palm/finger views, plus segmented SPIDER tracking. Players are independent.",
+      "playback_mode": "independent",
+      "baselines": [
+        {
+          "id": "blender-final",
+          "label": "Blender final · palm/contact views",
+          "summary": "Final deliverable rendered at 20 fps with two elevated rear-oblique views chosen to expose finger/object contact.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 0,
+              "label": "Final Blender · palm/contact views",
+              "variant": "Four-panel RGB",
+              "export_id": "final-blender",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "",
+              "provenance": null,
+              "blend_sha256": "",
+              "audit_events": [],
+              "video_url": "../../media/ablation-e-final-0529-bottle/blender-final/iterations/final-blender.mp4?v=20261005-e-final-1",
+              "asset_key": "ablation-e-final-0529-bottle/blender-final/iterations/final-blender.mp4",
+              "video_ready": true,
+              "bytes": 2913902,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        },
+        {
+          "id": "spider-final",
+          "label": "SPIDER tracking",
+          "summary": "Tracked until a drop; resumed from drop +30 frames. Processing stopped when the next segment could not initialize, and all successful segments were retained.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 0,
+              "label": "SPIDER tracking",
+              "variant": "Four-panel RGB",
+              "export_id": "final-spider",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "",
+              "provenance": null,
+              "blend_sha256": "",
+              "audit_events": [],
+              "video_url": "../../media/ablation-e-final-0529-bottle/spider-final/iterations/final-spider.mp4?v=20261005-e-final-1",
+              "asset_key": "ablation-e-final-0529-bottle/spider-final/iterations/final-spider.mp4",
+              "video_ready": true,
+              "bytes": 249537,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "ablation-e-final-0529-cup",
+      "title": "Ablation E final · 0529 Cup",
+      "description": "Final E_spider_resume Blender reconstruction with elevated palm/finger views, plus segmented SPIDER tracking. Players are independent.",
+      "playback_mode": "independent",
+      "baselines": [
+        {
+          "id": "blender-final",
+          "label": "Blender final · palm/contact views",
+          "summary": "Final deliverable rendered at 20 fps with two elevated rear-oblique views chosen to expose finger/object contact.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 0,
+              "label": "Final Blender · palm/contact views",
+              "variant": "Four-panel RGB",
+              "export_id": "final-blender",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "",
+              "provenance": null,
+              "blend_sha256": "",
+              "audit_events": [],
+              "video_url": "../../media/ablation-e-final-0529-cup/blender-final/iterations/final-blender.mp4?v=20261005-e-final-1",
+              "asset_key": "ablation-e-final-0529-cup/blender-final/iterations/final-blender.mp4",
+              "video_ready": true,
+              "bytes": 2470029,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        },
+        {
+          "id": "spider-final",
+          "label": "SPIDER tracking",
+          "summary": "Tracked until a drop; resumed from drop +30 frames. Processing stopped when the next segment could not initialize, and all successful segments were retained.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 0,
+              "label": "SPIDER tracking",
+              "variant": "Four-panel RGB",
+              "export_id": "final-spider",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "",
+              "provenance": null,
+              "blend_sha256": "",
+              "audit_events": [],
+              "video_url": "../../media/ablation-e-final-0529-cup/spider-final/iterations/final-spider.mp4?v=20261005-e-final-1",
+              "asset_key": "ablation-e-final-0529-cup/spider-final/iterations/final-spider.mp4",
+              "video_ready": true,
+              "bytes": 383804,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "ablation-e-final-0529-mouse",
+      "title": "Ablation E final · 0529 Mouse",
+      "description": "Final E_spider_resume Blender reconstruction with elevated palm/finger views, plus segmented SPIDER tracking. Players are independent.",
+      "playback_mode": "independent",
+      "baselines": [
+        {
+          "id": "blender-final",
+          "label": "Blender final · palm/contact views",
+          "summary": "Final deliverable rendered at 20 fps with two elevated rear-oblique views chosen to expose finger/object contact.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 0,
+              "label": "Final Blender · palm/contact views",
+              "variant": "Four-panel RGB",
+              "export_id": "final-blender",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "",
+              "provenance": null,
+              "blend_sha256": "",
+              "audit_events": [],
+              "video_url": "../../media/ablation-e-final-0529-mouse/blender-final/iterations/final-blender.mp4?v=20261005-e-final-1",
+              "asset_key": "ablation-e-final-0529-mouse/blender-final/iterations/final-blender.mp4",
+              "video_ready": true,
+              "bytes": 2699979,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        },
+        {
+          "id": "spider-final",
+          "label": "SPIDER tracking",
+          "summary": "Tracked until a drop; resumed from drop +30 frames. Processing stopped when the next segment could not initialize, and all successful segments were retained.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 0,
+              "label": "SPIDER tracking",
+              "variant": "Four-panel RGB",
+              "export_id": "final-spider",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "",
+              "provenance": null,
+              "blend_sha256": "",
+              "audit_events": [],
+              "video_url": "../../media/ablation-e-final-0529-mouse/spider-final/iterations/final-spider.mp4?v=20261005-e-final-1",
+              "asset_key": "ablation-e-final-0529-mouse/spider-final/iterations/final-spider.mp4",
+              "video_ready": true,
+              "bytes": 150057,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "ablation-e-final-0529-pen",
+      "title": "Ablation E final · 0529 Pen",
+      "description": "Final E_spider_resume Blender reconstruction with elevated palm/finger views, plus segmented SPIDER tracking. Players are independent.",
+      "playback_mode": "independent",
+      "baselines": [
+        {
+          "id": "blender-final",
+          "label": "Blender final · palm/contact views",
+          "summary": "Final deliverable rendered at 20 fps with two elevated rear-oblique views chosen to expose finger/object contact.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 0,
+              "label": "Final Blender · palm/contact views",
+              "variant": "Four-panel RGB",
+              "export_id": "final-blender",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "",
+              "provenance": null,
+              "blend_sha256": "",
+              "audit_events": [],
+              "video_url": "../../media/ablation-e-final-0529-pen/blender-final/iterations/final-blender.mp4?v=20261005-e-final-1",
+              "asset_key": "ablation-e-final-0529-pen/blender-final/iterations/final-blender.mp4",
+              "video_ready": true,
+              "bytes": 2223474,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        },
+        {
+          "id": "spider-final",
+          "label": "SPIDER tracking",
+          "summary": "Tracked until a drop; resumed from drop +30 frames. Processing stopped when the next segment could not initialize, and all successful segments were retained.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 0,
+              "label": "SPIDER tracking",
+              "variant": "Four-panel RGB",
+              "export_id": "final-spider",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "",
+              "provenance": null,
+              "blend_sha256": "",
+              "audit_events": [],
+              "video_url": "../../media/ablation-e-final-0529-pen/spider-final/iterations/final-spider.mp4?v=20261005-e-final-1",
+              "asset_key": "ablation-e-final-0529-pen/spider-final/iterations/final-spider.mp4",
+              "video_ready": true,
+              "bytes": 102924,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "ablation-e-final-0601-box",
+      "title": "Ablation E final · 0601 Box",
+      "description": "Final E_spider_resume Blender reconstruction with elevated palm/finger views, plus segmented SPIDER tracking. Players are independent.",
+      "playback_mode": "independent",
+      "baselines": [
+        {
+          "id": "blender-final",
+          "label": "Blender final · palm/contact views",
+          "summary": "Final deliverable rendered at 20 fps with two elevated rear-oblique views chosen to expose finger/object contact.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 0,
+              "label": "Final Blender · palm/contact views",
+              "variant": "Four-panel RGB",
+              "export_id": "final-blender",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "",
+              "provenance": null,
+              "blend_sha256": "",
+              "audit_events": [],
+              "video_url": "../../media/ablation-e-final-0601-box/blender-final/iterations/final-blender.mp4?v=20261005-e-final-1",
+              "asset_key": "ablation-e-final-0601-box/blender-final/iterations/final-blender.mp4",
+              "video_ready": true,
+              "bytes": 3193605,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        },
+        {
+          "id": "spider-final",
+          "label": "SPIDER tracking",
+          "summary": "Tracked until a drop; resumed from drop +30 frames. Processing stopped when the next segment could not initialize, and all successful segments were retained.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 0,
+              "label": "SPIDER tracking",
+              "variant": "Four-panel RGB",
+              "export_id": "final-spider",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "",
+              "provenance": null,
+              "blend_sha256": "",
+              "audit_events": [],
+              "video_url": "../../media/ablation-e-final-0601-box/spider-final/iterations/final-spider.mp4?v=20261005-e-final-1",
+              "asset_key": "ablation-e-final-0601-box/spider-final/iterations/final-spider.mp4",
+              "video_ready": true,
+              "bytes": 165426,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "ablation-e-final-0608-spoon",
+      "title": "Ablation E final · 0608 Spoon",
+      "description": "Final E_spider_resume Blender reconstruction with elevated palm/finger views, plus segmented SPIDER tracking. Players are independent.",
+      "playback_mode": "independent",
+      "baselines": [
+        {
+          "id": "blender-final",
+          "label": "Blender final · palm/contact views",
+          "summary": "Final deliverable rendered at 20 fps with two elevated rear-oblique views chosen to expose finger/object contact.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 0,
+              "label": "Final Blender · palm/contact views",
+              "variant": "Four-panel RGB",
+              "export_id": "final-blender",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "",
+              "provenance": null,
+              "blend_sha256": "",
+              "audit_events": [],
+              "video_url": "../../media/ablation-e-final-0608-spoon/blender-final/iterations/final-blender.mp4?v=20261005-e-final-1",
+              "asset_key": "ablation-e-final-0608-spoon/blender-final/iterations/final-blender.mp4",
+              "video_ready": true,
+              "bytes": 2075903,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        },
+        {
+          "id": "spider-final",
+          "label": "SPIDER tracking",
+          "summary": "Tracked until a drop; resumed from drop +30 frames. Processing stopped when the next segment could not initialize, and all successful segments were retained.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 0,
+              "label": "SPIDER tracking",
+              "variant": "Four-panel RGB",
+              "export_id": "final-spider",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "",
+              "provenance": null,
+              "blend_sha256": "",
+              "audit_events": [],
+              "video_url": "../../media/ablation-e-final-0608-spoon/spider-final/iterations/final-spider.mp4?v=20261005-e-final-1",
+              "asset_key": "ablation-e-final-0608-spoon/spider-final/iterations/final-spider.mp4",
+              "video_ready": true,
+              "bytes": 89297,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "ablation-e-final-0609-fork",
+      "title": "Ablation E final · 0609 Fork",
+      "description": "Final E_spider_resume Blender reconstruction with elevated palm/finger views, plus segmented SPIDER tracking. Players are independent.",
+      "playback_mode": "independent",
+      "baselines": [
+        {
+          "id": "blender-final",
+          "label": "Blender final · palm/contact views",
+          "summary": "Final deliverable rendered at 20 fps with two elevated rear-oblique views chosen to expose finger/object contact.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 0,
+              "label": "Final Blender · palm/contact views",
+              "variant": "Four-panel RGB",
+              "export_id": "final-blender",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "",
+              "provenance": null,
+              "blend_sha256": "",
+              "audit_events": [],
+              "video_url": "../../media/ablation-e-final-0609-fork/blender-final/iterations/final-blender.mp4?v=20261005-e-final-1",
+              "asset_key": "ablation-e-final-0609-fork/blender-final/iterations/final-blender.mp4",
+              "video_ready": true,
+              "bytes": 2169711,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        },
+        {
+          "id": "spider-final",
+          "label": "SPIDER tracking",
+          "summary": "Tracked until a drop; resumed from drop +30 frames. Processing stopped when the next segment could not initialize, and all successful segments were retained.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 0,
+              "label": "SPIDER tracking",
+              "variant": "Four-panel RGB",
+              "export_id": "final-spider",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "",
+              "provenance": null,
+              "blend_sha256": "",
+              "audit_events": [],
+              "video_url": "../../media/ablation-e-final-0609-fork/spider-final/iterations/final-spider.mp4?v=20261005-e-final-1",
+              "asset_key": "ablation-e-final-0609-fork/spider-final/iterations/final-spider.mp4",
+              "video_ready": true,
+              "bytes": 95268,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "ablation-e-final-0611-duck",
+      "title": "Ablation E final · 0611 Duck",
+      "description": "Final E_spider_resume Blender reconstruction with elevated palm/finger views, plus segmented SPIDER tracking. Players are independent.",
+      "playback_mode": "independent",
+      "baselines": [
+        {
+          "id": "blender-final",
+          "label": "Blender final · palm/contact views",
+          "summary": "Final deliverable rendered at 20 fps with two elevated rear-oblique views chosen to expose finger/object contact.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 0,
+              "label": "Final Blender · palm/contact views",
+              "variant": "Four-panel RGB",
+              "export_id": "final-blender",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "",
+              "provenance": null,
+              "blend_sha256": "",
+              "audit_events": [],
+              "video_url": "../../media/ablation-e-final-0611-duck/blender-final/iterations/final-blender.mp4?v=20261005-e-final-1",
+              "asset_key": "ablation-e-final-0611-duck/blender-final/iterations/final-blender.mp4",
+              "video_ready": true,
+              "bytes": 3000164,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        },
+        {
+          "id": "spider-final",
+          "label": "SPIDER tracking",
+          "summary": "Tracked until a drop; resumed from drop +30 frames. Processing stopped when the next segment could not initialize, and all successful segments were retained.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 0,
+              "label": "SPIDER tracking",
+              "variant": "Four-panel RGB",
+              "export_id": "final-spider",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "",
+              "provenance": null,
+              "blend_sha256": "",
+              "audit_events": [],
+              "video_url": "../../media/ablation-e-final-0611-duck/spider-final/iterations/final-spider.mp4?v=20261005-e-final-1",
+              "asset_key": "ablation-e-final-0611-duck/spider-final/iterations/final-spider.mp4",
+              "video_ready": true,
+              "bytes": 122757,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "ablation-e-final-0827-spoon",
+      "title": "Ablation E final · 0827 Spoon",
+      "description": "Final E_spider_resume Blender reconstruction with elevated palm/finger views, plus segmented SPIDER tracking. Players are independent.",
+      "playback_mode": "independent",
+      "baselines": [
+        {
+          "id": "blender-final",
+          "label": "Blender final · palm/contact views",
+          "summary": "Final deliverable rendered at 20 fps with two elevated rear-oblique views chosen to expose finger/object contact.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 0,
+              "label": "Final Blender · palm/contact views",
+              "variant": "Four-panel RGB",
+              "export_id": "final-blender",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "",
+              "provenance": null,
+              "blend_sha256": "",
+              "audit_events": [],
+              "video_url": "../../media/ablation-e-final-0827-spoon/blender-final/iterations/final-blender.mp4?v=20261005-e-final-1",
+              "asset_key": "ablation-e-final-0827-spoon/blender-final/iterations/final-blender.mp4",
+              "video_ready": true,
+              "bytes": 3256619,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        },
+        {
+          "id": "spider-final",
+          "label": "SPIDER tracking",
+          "summary": "Tracked until a drop; resumed from drop +30 frames. Processing stopped when the next segment could not initialize, and all successful segments were retained.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 0,
+              "label": "SPIDER tracking",
+              "variant": "Four-panel RGB",
+              "export_id": "final-spider",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "",
+              "provenance": null,
+              "blend_sha256": "",
+              "audit_events": [],
+              "video_url": "../../media/ablation-e-final-0827-spoon/spider-final/iterations/final-spider.mp4?v=20261005-e-final-1",
+              "asset_key": "ablation-e-final-0827-spoon/spider-final/iterations/final-spider.mp4",
+              "video_ready": true,
+              "bytes": 120184,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "ablation-e-final-0827-sweep",
+      "title": "Ablation E final · 0827 Sweep",
+      "description": "Final E_spider_resume Blender reconstruction with elevated palm/finger views, plus segmented SPIDER tracking. Players are independent.",
+      "playback_mode": "independent",
+      "baselines": [
+        {
+          "id": "blender-final",
+          "label": "Blender final · palm/contact views",
+          "summary": "Final deliverable rendered at 20 fps with two elevated rear-oblique views chosen to expose finger/object contact.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 0,
+              "label": "Final Blender · palm/contact views",
+              "variant": "Four-panel RGB",
+              "export_id": "final-blender",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "",
+              "provenance": null,
+              "blend_sha256": "",
+              "audit_events": [],
+              "video_url": "../../media/ablation-e-final-0827-sweep/blender-final/iterations/final-blender.mp4?v=20261005-e-final-1",
+              "asset_key": "ablation-e-final-0827-sweep/blender-final/iterations/final-blender.mp4",
+              "video_ready": true,
+              "bytes": 2929187,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        },
+        {
+          "id": "spider-final",
+          "label": "SPIDER tracking",
+          "summary": "Tracked until a drop; resumed from drop +30 frames. Processing stopped when the next segment could not initialize, and all successful segments were retained.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 0,
+              "label": "SPIDER tracking",
+              "variant": "Four-panel RGB",
+              "export_id": "final-spider",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "",
+              "provenance": null,
+              "blend_sha256": "",
+              "audit_events": [],
+              "video_url": "../../media/ablation-e-final-0827-sweep/spider-final/iterations/final-spider.mp4?v=20261005-e-final-1",
+              "asset_key": "ablation-e-final-0827-sweep/spider-final/iterations/final-spider.mp4",
+              "video_ready": true,
+              "bytes": 91811,
               "width": 960,
               "height": 780
             }
