@@ -261,6 +261,7 @@ def build_catalog(config):
             "id": example["id"],
             "title": example.get("title", example["id"]),
             "description": example.get("description", ""),
+            "playback_mode": example.get("playback_mode", "synchronized"),
             "baselines": [],
         }
         for baseline in example.get("baselines", []):

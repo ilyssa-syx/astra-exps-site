@@ -17,6 +17,7 @@
 })();
 
 function renderExample(root, example, assetsReady) {
+  const independentPlayback = example.playback_mode === "independent";
   root.innerHTML = `
     <section class="example-hero">
       <a class="back-link" href="../../">← All examples</a>
@@ -26,7 +27,7 @@ function renderExample(root, example, assetsReady) {
     </section>
     <nav class="baseline-toggles" aria-label="Show or hide baselines"></nav>
     ${!assetsReady ? `<div class="notice"><strong>Video assets pending.</strong></div>` : ""}
-    <div class="sync-controls" aria-label="Synchronized video controls">
+    <div class="sync-controls" aria-label="Synchronized video controls" ${independentPlayback ? "hidden" : ""}>
       <button class="sync-play" type="button">Play all</button>
       <button class="rgb-all-toggle" type="button">Show all RGB</button>
       <label class="sync-speed">Speed
@@ -84,7 +85,7 @@ function renderExample(root, example, assetsReady) {
       <div class="iteration-list"></div>
       ${totalTokenMarkup}`;
     const list = section.querySelector(".iteration-list");
-    for (const item of baseline.exports) list.appendChild(renderIteration(item));
+    for (const item of baseline.exports) list.appendChild(renderIteration(item, independentPlayback));
     const auditToggle = section.querySelector("[data-audit-toggle]");
     const auditTimeline = section.querySelector(".audit-timeline");
     if (auditToggle && auditTimeline) {
@@ -146,7 +147,7 @@ function createBaselineScroller(root) {
   return update;
 }
 
-function renderIteration(item) {
+function renderIteration(item, independentPlayback = false) {
   const article = document.createElement("article");
   article.className = "iteration-row";
   const statusLabel = item.status.charAt(0).toUpperCase() + item.status.slice(1);
@@ -157,7 +158,7 @@ function renderIteration(item) {
     ? `<span class="metric">${item.token_count.toLocaleString("en-US")} tokens</span>`
     : (item.token_note ? `<span class="metric metric-muted">${escapeHtml(item.token_note)}</span>` : "");
   const video = item.video_url
-    ? `<video muted playsinline preload="none" data-sync-video><source data-src="${escapeAttribute(item.video_url)}" type="video/mp4">Your browser does not support MP4 video.</video>`
+    ? `<video muted playsinline preload="none" ${independentPlayback ? "controls" : "data-sync-video"}><source data-src="${escapeAttribute(item.video_url)}" type="video/mp4">Your browser does not support MP4 video.</video>`
     : `<div class="video-placeholder">Iteration video pending<br><small>${escapeHtml(item.asset_key)}</small></div>`;
   const provenance = item.provenance
     ? `<details class="iteration-provenance"><summary>Raw provenance</summary><pre>${escapeHtml(JSON.stringify(item.provenance, null, 2))}</pre></details>`
@@ -174,7 +175,7 @@ function renderIteration(item) {
         ${tokens}
       </div>
       <div class="row-actions">
-        <button type="button" data-video-toggle>Show RGB</button>
+        <button type="button" data-video-toggle>Show video</button>
         <button type="button" data-details-toggle aria-expanded="false">${auditLabel}</button>
       </div>
     </header>
@@ -185,7 +186,8 @@ function renderIteration(item) {
 
   const frame = article.querySelector(".video-frame");
   const videoToggle = article.querySelector("[data-video-toggle]");
-  frame.hidden = true;
+  frame.hidden = !independentPlayback;
+  if (independentPlayback) setVideoFrameVisible(frame, true);
   videoToggle.addEventListener("click", () => {
     setVideoFrameVisible(frame, frame.hidden);
     article.dispatchEvent(new CustomEvent("visibilitychange", { bubbles: true }));
@@ -412,11 +414,11 @@ function unloadVideo(video) {
 
 function setVideoFrameVisible(frame, visible) {
   frame.hidden = !visible;
-  const video = frame.querySelector("video[data-sync-video]");
+  const video = frame.querySelector("video");
   const toggle = frame.closest(".iteration-row").querySelector("[data-video-toggle]");
   if (visible) loadVideo(video);
   else unloadVideo(video);
-  toggle.textContent = visible ? "Hide RGB" : "Show RGB";
+  toggle.textContent = visible ? "Hide video" : "Show video";
 }
 
 function createRgbVisibilityController(panel) {

@@ -203,6 +203,7 @@
       "id": "ablation-d-0416-mug",
       "title": "Ablation D · 0416 Mug",
       "description": "Final Ablation D Blender reconstruction and segmented SPIDER motion tracking.",
+      "playback_mode": "independent",
       "baselines": [
         {
           "id": "blender-final", "label": "Blender final",
@@ -224,6 +225,7 @@
       "id": "ablation-d-0529-bottle",
       "title": "Ablation D · 0529 Bottle",
       "description": "Final Ablation D Blender reconstruction and segmented SPIDER motion tracking.",
+      "playback_mode": "independent",
       "baselines": [
         {
           "id": "blender-final", "label": "Blender final",
@@ -245,6 +247,7 @@
       "id": "ablation-d-0529-cup",
       "title": "Ablation D · 0529 Cup",
       "description": "Final Ablation D Blender reconstruction and segmented SPIDER motion tracking.",
+      "playback_mode": "independent",
       "baselines": [
         {
           "id": "blender-final", "label": "Blender final",
@@ -266,6 +269,7 @@
       "id": "ablation-d-0529-mouse",
       "title": "Ablation D · 0529 Mouse",
       "description": "Final Ablation D Blender reconstruction and segmented SPIDER motion tracking.",
+      "playback_mode": "independent",
       "baselines": [
         {
           "id": "blender-final", "label": "Blender final",
@@ -287,6 +291,7 @@
       "id": "ablation-d-0529-pen",
       "title": "Ablation D · 0529 Pen",
       "description": "Final Ablation D Blender reconstruction and segmented SPIDER motion tracking.",
+      "playback_mode": "independent",
       "baselines": [
         {
           "id": "blender-final", "label": "Blender final",
@@ -308,6 +313,7 @@
       "id": "ablation-d-0609-fork",
       "title": "Ablation D · 0609 Fork",
       "description": "Final Ablation D Blender reconstruction and segmented SPIDER motion tracking.",
+      "playback_mode": "independent",
       "baselines": [
         {
           "id": "blender-final", "label": "Blender final",
@@ -329,6 +335,7 @@
       "id": "ablation-d-0611-duck",
       "title": "Ablation D · 0611 Duck",
       "description": "Final Ablation D Blender reconstruction and segmented SPIDER motion tracking.",
+      "playback_mode": "independent",
       "baselines": [
         {
           "id": "blender-final", "label": "Blender final",
@@ -350,6 +357,7 @@
       "id": "ablation-d-0827-spoon",
       "title": "Ablation D · 0827 Spoon",
       "description": "Final Ablation D Blender reconstruction and segmented SPIDER motion tracking.",
+      "playback_mode": "independent",
       "baselines": [
         {
           "id": "blender-final", "label": "Blender final",

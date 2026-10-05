@@ -6,6 +6,7 @@
       "id": "0827-spoon",
       "title": "0827 · Spoon",
       "description": "RGB-only hand–object reconstruction of a slotted spoon interaction.",
+      "playback_mode": "synchronized",
       "baselines": [
         {
           "id": "no-harness",
@@ -14610,6 +14611,7 @@
       "id": "scale-0416-mug",
       "title": "0416 · Mug",
       "description": "Final Blender reconstruction from the 20260930 scale run.",
+      "playback_mode": "synchronized",
       "baselines": [
         {
           "id": "20260930-scale-final",
@@ -14654,6 +14656,7 @@
       "id": "scale-0529-bottle",
       "title": "0529 · Bottle",
       "description": "Final Blender reconstruction from the 20260930 scale run.",
+      "playback_mode": "synchronized",
       "baselines": [
         {
           "id": "20260930-scale-final",
@@ -14698,6 +14701,7 @@
       "id": "scale-0529-cup",
       "title": "0529 · Cup",
       "description": "Final Blender reconstruction from the 20260930 scale run.",
+      "playback_mode": "synchronized",
       "baselines": [
         {
           "id": "20260930-scale-final",
@@ -14742,6 +14746,7 @@
       "id": "scale-0529-mouse",
       "title": "0529 · Mouse",
       "description": "Final Blender reconstruction from the 20260930 scale run.",
+      "playback_mode": "synchronized",
       "baselines": [
         {
           "id": "20260930-scale-final",
@@ -14786,6 +14791,7 @@
       "id": "scale-0529-pen",
       "title": "0529 · Pen",
       "description": "Final Blender reconstruction from the 20260930 scale run.",
+      "playback_mode": "synchronized",
       "baselines": [
         {
           "id": "20260930-scale-final",
@@ -14830,6 +14836,7 @@
       "id": "scale-0601-box",
       "title": "0601 · Box",
       "description": "Final Blender reconstruction from the 20260930 scale run.",
+      "playback_mode": "synchronized",
       "baselines": [
         {
           "id": "20260930-scale-final",
@@ -14874,6 +14881,7 @@
       "id": "scale-0608-spoon",
       "title": "0608 · Spoon",
       "description": "Final Blender reconstruction from the 20260930 scale run.",
+      "playback_mode": "synchronized",
       "baselines": [
         {
           "id": "20260930-scale-final",
@@ -14918,6 +14926,7 @@
       "id": "scale-0609-fork",
       "title": "0609 · Fork",
       "description": "Final Blender reconstruction from the 20260930 scale run.",
+      "playback_mode": "synchronized",
       "baselines": [
         {
           "id": "20260930-scale-final",
@@ -14962,6 +14971,7 @@
       "id": "scale-0611-duck",
       "title": "0611 · Duck",
       "description": "Final Blender reconstruction from the 20260930 scale run.",
+      "playback_mode": "synchronized",
       "baselines": [
         {
           "id": "20260930-scale-final",
@@ -15006,6 +15016,7 @@
       "id": "scale-0827-sweep",
       "title": "0827 · Sweep",
       "description": "Final Blender reconstruction from the 20260930 scale run.",
+      "playback_mode": "synchronized",
       "baselines": [
         {
           "id": "20260930-scale-final",
@@ -15050,6 +15061,7 @@
       "id": "scale-sushi",
       "title": "Sushi",
       "description": "Final Blender reconstruction from the 20260930 scale run.",
+      "playback_mode": "synchronized",
       "baselines": [
         {
           "id": "20260930-scale-final",
@@ -15094,6 +15106,7 @@
       "id": "ablation-d-0416-mug",
       "title": "Ablation D · 0416 Mug",
       "description": "Final Ablation D Blender reconstruction and segmented SPIDER motion tracking.",
+      "playback_mode": "independent",
       "baselines": [
         {
           "id": "blender-final",
@@ -15175,6 +15188,7 @@
       "id": "ablation-d-0529-bottle",
       "title": "Ablation D · 0529 Bottle",
       "description": "Final Ablation D Blender reconstruction and segmented SPIDER motion tracking.",
+      "playback_mode": "independent",
       "baselines": [
         {
           "id": "blender-final",
@@ -15256,6 +15270,7 @@
       "id": "ablation-d-0529-cup",
       "title": "Ablation D · 0529 Cup",
       "description": "Final Ablation D Blender reconstruction and segmented SPIDER motion tracking.",
+      "playback_mode": "independent",
       "baselines": [
         {
           "id": "blender-final",
@@ -15337,6 +15352,7 @@
       "id": "ablation-d-0529-mouse",
       "title": "Ablation D · 0529 Mouse",
       "description": "Final Ablation D Blender reconstruction and segmented SPIDER motion tracking.",
+      "playback_mode": "independent",
       "baselines": [
         {
           "id": "blender-final",
@@ -15418,6 +15434,7 @@
       "id": "ablation-d-0529-pen",
       "title": "Ablation D · 0529 Pen",
       "description": "Final Ablation D Blender reconstruction and segmented SPIDER motion tracking.",
+      "playback_mode": "independent",
       "baselines": [
         {
           "id": "blender-final",
@@ -15499,6 +15516,7 @@
       "id": "ablation-d-0609-fork",
       "title": "Ablation D · 0609 Fork",
       "description": "Final Ablation D Blender reconstruction and segmented SPIDER motion tracking.",
+      "playback_mode": "independent",
       "baselines": [
         {
           "id": "blender-final",
@@ -15580,6 +15598,7 @@
       "id": "ablation-d-0611-duck",
       "title": "Ablation D · 0611 Duck",
       "description": "Final Ablation D Blender reconstruction and segmented SPIDER motion tracking.",
+      "playback_mode": "independent",
       "baselines": [
         {
           "id": "blender-final",
@@ -15661,6 +15680,7 @@
       "id": "ablation-d-0827-spoon",
       "title": "Ablation D · 0827 Spoon",
       "description": "Final Ablation D Blender reconstruction and segmented SPIDER motion tracking.",
+      "playback_mode": "independent",
       "baselines": [
         {
           "id": "blender-final",
