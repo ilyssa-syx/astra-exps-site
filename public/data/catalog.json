@@ -27,7 +27,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/no-harness/iterations/final.mp4?v=20260930-4",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/no-harness/iterations/final.mp4?v=20261005-d-spider-1",
               "asset_key": "0827-spoon/no-harness/iterations/final.mp4",
               "video_ready": true,
               "bytes": 4340372,
@@ -47,7 +47,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/no-harness/iterations/before-topology-fix.mp4?v=20260930-4",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/no-harness/iterations/before-topology-fix.mp4?v=20261005-d-spider-1",
               "asset_key": "0827-spoon/no-harness/iterations/before-topology-fix.mp4",
               "video_ready": true,
               "bytes": 4342634,
@@ -67,7 +67,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/no-harness/iterations/before-keytime-fix.mp4?v=20260930-4",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/no-harness/iterations/before-keytime-fix.mp4?v=20261005-d-spider-1",
               "asset_key": "0827-spoon/no-harness/iterations/before-keytime-fix.mp4",
               "video_ready": true,
               "bytes": 4345819,
@@ -1585,7 +1585,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000009.mp4?v=20260930-4",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000009.mp4?v=20261005-d-spider-1",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000009.mp4",
               "video_ready": true,
               "bytes": 4666106,
@@ -2139,7 +2139,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000008.mp4?v=20260930-4",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000008.mp4?v=20261005-d-spider-1",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000008.mp4",
               "video_ready": true,
               "bytes": 4665029,
@@ -2240,7 +2240,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000007.mp4?v=20260930-4",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000007.mp4?v=20261005-d-spider-1",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000007.mp4",
               "video_ready": true,
               "bytes": 4656717,
@@ -2380,7 +2380,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000006.mp4?v=20260930-4",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000006.mp4?v=20261005-d-spider-1",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000006.mp4",
               "video_ready": true,
               "bytes": 4649168,
@@ -2773,7 +2773,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000005.mp4?v=20260930-4",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000005.mp4?v=20261005-d-spider-1",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000005.mp4",
               "video_ready": true,
               "bytes": 4813948,
@@ -2867,7 +2867,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000004.mp4?v=20260930-4",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000004.mp4?v=20261005-d-spider-1",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000004.mp4",
               "video_ready": true,
               "bytes": 4321572,
@@ -3598,7 +3598,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000003.mp4?v=20260930-4",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000003.mp4?v=20261005-d-spider-1",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000003.mp4",
               "video_ready": true,
               "bytes": 4898222,
@@ -4138,7 +4138,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000002.mp4?v=20260930-4",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000002.mp4?v=20261005-d-spider-1",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000002.mp4",
               "video_ready": true,
               "bytes": 5016715,
@@ -4158,7 +4158,7 @@
               "provenance": null,
               "blend_sha256": "ef0a4285f30d12086eb31b6167edc4ab668831369455f85565053dc894ea7d6a",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000001.mp4?v=20260930-4",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260928-2400s/iterations/iteration-000001.mp4?v=20261005-d-spider-1",
               "asset_key": "0827-spoon/20260928-2400s/iterations/iteration-000001.mp4",
               "video_ready": true,
               "bytes": 2599510,
@@ -5061,6 +5061,60 @@
           "token_total_note": "Matched Codex reconstruction-rollout total_tokens delta, including cached input and excluding the checkpointed preflight/init before official run start.",
           "exports": [
             {
+              "iteration": 18,
+              "label": "Iteration 18",
+              "variant": "Four-panel RGB",
+              "export_id": "iteration-000018",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "Tokens not separately attributed",
+              "reason": "Import the matched 1200-frame spoon trajectory for the repaired hand track; preserve supported object poses and protected grasp anchors.",
+              "provenance": {
+                "coordinate_space": "opencv-camera",
+                "frame_indices": "/grogu/datasets/yixuansu/models/astra-project/astra-hoi-harness/runs/20260930_v1/work/sequence_grip_0005/frame_indices.npy",
+                "frame_indices_sha256": "cec39399ebfd2e59c4bf75d1f358bee77b8bfb3a5db5494051fe0d87578ca04e",
+                "kind": "object_pose_import",
+                "poses": "/grogu/datasets/yixuansu/models/astra-project/astra-hoi-harness/runs/20260930_v1/work/sequence_grip_0005/object_poses.npy",
+                "poses_sha256": "2e66b0534344abc4f38c6f612e1cbc8d05eaa29d38a9966b95f387dc8e3fae0e",
+                "source": "sequence_grip_0005; manifest revision4; corrected grasp anchors230,440; shared rigid IoU and temporal fitting",
+                "source_blend_sha256": "6e71c17cc2022e5e70931d9b27ad29784ceedd4a53ca33eaae65c62d0987c208"
+              },
+              "blend_sha256": "1d77b35a7baaf90da48399ba00f741abc470ad4fbd6a8f4d7691c39a90a22c39",
+              "audit_events": [],
+              "video_url": "",
+              "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000018.mp4",
+              "video_ready": false,
+              "bytes": 0,
+              "width": 960,
+              "height": 780
+            },
+            {
+              "iteration": 17,
+              "label": "Iteration 17",
+              "variant": "Four-panel RGB",
+              "export_id": "iteration-000017",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "Tokens not separately attributed",
+              "reason": "User-authorized 1200-frame phase-specific grasp repair: shaft enclosed by palm and four fingers in stable hold; preserve230 and440; continuous placement proposals and local contact refinement.",
+              "provenance": {
+                "kind": "wilor_import",
+                "manifest": "/grogu/datasets/yixuansu/models/astra-project/astra-hoi-harness/runs/20260930_v1/work/sequence_grip_0005/prepared/manifest.json",
+                "manifest_sha256": "b88e94cac3646d50d0ab523d14138f73d57f7887e0da912c1007e5ad8d98b416",
+                "source_blend_sha256": "dba60fa6236916c13435ee87042fc2c995b162541e11830f8df9bec46c235619"
+              },
+              "blend_sha256": "6e71c17cc2022e5e70931d9b27ad29784ceedd4a53ca33eaae65c62d0987c208",
+              "audit_events": [],
+              "video_url": "",
+              "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000017.mp4",
+              "video_ready": false,
+              "bytes": 0,
+              "width": 960,
+              "height": 780
+            },
+            {
               "iteration": 16,
               "label": "Iteration 16",
               "variant": "Four-panel RGB",
@@ -5498,9 +5552,866 @@
                     "stdout_sha256": "65dd638a55c9a317d74a5cfd9be64750eebc5167d81e98df1780e0fe5c07546b",
                     "timed_out": false
                   }
+                },
+                {
+                  "raw": {
+                    "created_at": 1791046135.1922865,
+                    "event": "tool_call_started",
+                    "event_hash": "92764c8abb5f4292f7f00e9495844ceed12f8a8a0f1ac486b34b16715d884d0a",
+                    "payload": {
+                      "call_id": "000124",
+                      "operation": "add",
+                      "purpose": "Record user-requested ContactOpt continuation diagnosis and trial hypothesis",
+                      "request": "audit/tool_calls/000124/request.json",
+                      "tool": "notebook"
+                    },
+                    "previous_hash": "13f92ddc11a12e2616fc3e355c7a182d91c36563f062393411d820199d89e1e5",
+                    "schema": "hoi-agent-audit-event/v1",
+                    "sequence": 249
+                  },
+                  "request": {
+                    "argv": [
+                      "add",
+                      "--run",
+                      "astra-hoi-harness/runs/20260930_v1",
+                      "--type",
+                      "decision",
+                      "--summary",
+                      "User resumed this run on 2026-10-03 for a reportable ContactOpt trial from iteration16. RGB440 supports thumb opposing index/middle on handle; raw DeepContact predicts spurious contact along exposed handle and is rejected.",
+                      "--decision",
+                      "Optimize only400-480 using reviewed numeric predictions restricted to the RGB-supported grip band. Fix object geometry/trajectory and left hand; allow bounded MANO-weighted residual joints and <=10mm per-axis root correction with temporal regularization and zero phase-boundary correction. Preserve full baseline outside interval.",
+                      "--reason",
+                      "Expected effect is a tighter opposing handle pinch without pulling fingers to exposed upper handle or bowl. Falsify if source projection, semantic grasp, penetration, or temporal motion regresses even when target loss improves. The old evaluation budget remains historical; this is a separate explicitly requested continuation trial.",
+                      "--uncertainty",
+                      "Current hand is a corrected evaluated mesh; residual skinning is used rather than replacing it with original WiLoR parameters. Target grip band is inferred from RGB440, not contact ground truth.",
+                      "--reference",
+                      "astra-hoi-harness/runs/20260930_v1/work/contactopt_trial_0016_0001/review_decisions.json"
+                    ],
+                    "call_id": "000124",
+                    "cwd": "/grogu/datasets/yixuansu/models/astra-project",
+                    "purpose": "Record user-requested ContactOpt continuation diagnosis and trial hypothesis",
+                    "schema": "hoi-agent-tool-call-request/v1",
+                    "started_at": 1791046135.1906192,
+                    "tool": "notebook"
+                  }
+                },
+                {
+                  "raw": {
+                    "created_at": 1791046135.1980865,
+                    "event": "tool_call_finished",
+                    "event_hash": "f0f6cb389850e914917692552851a2a8f535475b4537aba99a3c9b49f654d83d",
+                    "payload": {
+                      "call_id": "000124",
+                      "elapsed_seconds": 0.0031266179867088795,
+                      "exit_code": 0,
+                      "result": "audit/tool_calls/000124/result.json",
+                      "tool": "notebook"
+                    },
+                    "previous_hash": "92764c8abb5f4292f7f00e9495844ceed12f8a8a0f1ac486b34b16715d884d0a",
+                    "schema": "hoi-agent-audit-event/v1",
+                    "sequence": 250
+                  },
+                  "result": {
+                    "call_id": "000124",
+                    "elapsed_seconds": 0.0031266179867088795,
+                    "exit_code": 0,
+                    "finished_at": 1791046135.196697,
+                    "interrupted": false,
+                    "request_sha256": "18c3896c781d1a94c76ca78ae8b308a63ac15f5b7ee2a24ac91edbf77350db84",
+                    "schema": "hoi-agent-tool-call-result/v1",
+                    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                    "stdout_sha256": "2845b5bfc5bf40a59908ddd09e57c364705b0f5888042c0036b373ef1118762e",
+                    "timed_out": false
+                  }
+                },
+                {
+                  "raw": {
+                    "created_at": 1791046495.5999072,
+                    "event": "tool_call_started",
+                    "event_hash": "ca4386a31a1aff3d1fc7ea27d1be0e116980a957896143977fbb4cd7f7da91cc",
+                    "payload": {
+                      "call_id": "000125",
+                      "operation": "add",
+                      "purpose": "Record rejected ContactOpt trial and reportable evidence",
+                      "request": "audit/tool_calls/000125/request.json",
+                      "tool": "notebook"
+                    },
+                    "previous_hash": "f0f6cb389850e914917692552851a2a8f535475b4537aba99a3c9b49f654d83d",
+                    "schema": "hoi-agent-audit-event/v1",
+                    "sequence": 251
+                  },
+                  "request": {
+                    "argv": [
+                      "add",
+                      "--run",
+                      "astra-hoi-harness/runs/20260930_v1",
+                      "--type",
+                      "observation",
+                      "--summary",
+                      "ContactOpt continuation pipeline completed on400-480 from iteration16. Reviewed raw and RGB-filtered target plus calibrated/virtual-side comparisons at400,420,440,460,480. Independent triangle-distance/winding audit covers all81frames: max inside-depth estimate worsens1.30->8.87mm; >2mm frames0->79; >5mm frames0->72. Contact target L1 improves22.8percent but p95 projection displacement10.7px and visible finger/handle interpenetration invalidate candidate. Reject; keep iteration16. Report PDF, full-interval video and numeric summaries saved.",
+                      "--frame",
+                      "400",
+                      "--frame",
+                      "420",
+                      "--frame",
+                      "440",
+                      "--frame",
+                      "460",
+                      "--frame",
+                      "480",
+                      "--uncertainty",
+                      "Open-wrist winding and2048 surface samples estimate penetration; full video exported but visual review here uses selected frames. No claim of final HOI acceptance.",
+                      "--reference",
+                      "astra-hoi-harness/runs/20260930_v1/work/contactopt_trial_0016_0001/summary.json",
+                      "--reference",
+                      "astra-hoi-harness/runs/20260930_v1/work/contactopt_trial_0016_0001/ContactOpt_trial_report.pdf"
+                    ],
+                    "call_id": "000125",
+                    "cwd": "/grogu/datasets/yixuansu/models/astra-project",
+                    "purpose": "Record rejected ContactOpt trial and reportable evidence",
+                    "schema": "hoi-agent-tool-call-request/v1",
+                    "started_at": 1791046495.5981965,
+                    "tool": "notebook"
+                  }
+                },
+                {
+                  "raw": {
+                    "created_at": 1791046495.6055298,
+                    "event": "tool_call_finished",
+                    "event_hash": "560ab3373ae9e1f69551af466d3d78c331ccb973708d8edac799d7b87691d610",
+                    "payload": {
+                      "call_id": "000125",
+                      "elapsed_seconds": 0.0031639868393540382,
+                      "exit_code": 0,
+                      "result": "audit/tool_calls/000125/result.json",
+                      "tool": "notebook"
+                    },
+                    "previous_hash": "ca4386a31a1aff3d1fc7ea27d1be0e116980a957896143977fbb4cd7f7da91cc",
+                    "schema": "hoi-agent-audit-event/v1",
+                    "sequence": 252
+                  },
+                  "result": {
+                    "call_id": "000125",
+                    "elapsed_seconds": 0.0031639868393540382,
+                    "exit_code": 0,
+                    "finished_at": 1791046495.604254,
+                    "interrupted": false,
+                    "request_sha256": "441141a2e102a372a8adf50a6c391b89935f51166e79178bccb88eb008e9f0a7",
+                    "schema": "hoi-agent-tool-call-result/v1",
+                    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                    "stdout_sha256": "d27b8a1772ab5704f3f7219acdbdde9be0e635c5f9ffa9c8772170b88515f178",
+                    "timed_out": false
+                  }
+                },
+                {
+                  "raw": {
+                    "created_at": 1791084674.751749,
+                    "event": "tool_call_started",
+                    "event_hash": "b4a741e3ff575e47543936c2cbcb685c74092c0268831905b3f16cbdac2b0564",
+                    "payload": {
+                      "call_id": "000126",
+                      "operation": "add",
+                      "purpose": "Record thumb-only corrective search authorized by user",
+                      "request": "audit/tool_calls/000126/request.json",
+                      "tool": "notebook"
+                    },
+                    "previous_hash": "560ab3373ae9e1f69551af466d3d78c331ccb973708d8edac799d7b87691d610",
+                    "schema": "hoi-agent-audit-event/v1",
+                    "sequence": 253
+                  },
+                  "request": {
+                    "argv": [
+                      "add",
+                      "--run",
+                      "astra-hoi-harness/runs/20260930_v1",
+                      "--type",
+                      "decision",
+                      "--summary",
+                      "Frame440 thumb-only joint search",
+                      "--decision",
+                      "Search residual MANO joint13 with object, wrist, root and other finger rotations frozen; joint14 only if base-only fails.",
+                      "--reason",
+                      "RGB thumb crosses the spoon handle; current geometry places thumb between other fingers. User requested localized correction.",
+                      "--uncertainty",
+                      "RGB thumb polygon is manually approximate; contact and hidden shape require independent mesh review.",
+                      "--reference",
+                      "work/thumb_joint_trial_0001/manifest.json"
+                    ],
+                    "call_id": "000126",
+                    "cwd": "/grogu/datasets/yixuansu/models/astra-project",
+                    "purpose": "Record thumb-only corrective search authorized by user",
+                    "schema": "hoi-agent-tool-call-request/v1",
+                    "started_at": 1791084674.750059,
+                    "tool": "notebook"
+                  }
+                },
+                {
+                  "raw": {
+                    "created_at": 1791084674.7577536,
+                    "event": "tool_call_finished",
+                    "event_hash": "09e97f17adfbad8f59dcaf7ebf2b62772449c71061c332e5cf40c43b2770ea89",
+                    "payload": {
+                      "call_id": "000126",
+                      "elapsed_seconds": 0.003303897101432085,
+                      "exit_code": 0,
+                      "result": "audit/tool_calls/000126/result.json",
+                      "tool": "notebook"
+                    },
+                    "previous_hash": "b4a741e3ff575e47543936c2cbcb685c74092c0268831905b3f16cbdac2b0564",
+                    "schema": "hoi-agent-audit-event/v1",
+                    "sequence": 254
+                  },
+                  "result": {
+                    "call_id": "000126",
+                    "elapsed_seconds": 0.003303897101432085,
+                    "exit_code": 0,
+                    "finished_at": 1791084674.7564414,
+                    "interrupted": false,
+                    "request_sha256": "bdc99e01633de008a72756f85296d17f9220a5867b9445a3d10f78cc26805103",
+                    "schema": "hoi-agent-tool-call-result/v1",
+                    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                    "stdout_sha256": "9db3fecdd19fe96253519120e7408748b95836f4c8562f1b2e7917a40a7d78e8",
+                    "timed_out": false
+                  }
+                },
+                {
+                  "raw": {
+                    "created_at": 1791084906.939475,
+                    "event": "tool_call_started",
+                    "event_hash": "4f6250f0520557fbe696fea808aa93331004790cd33789d6d5b1e5234843fcaf",
+                    "payload": {
+                      "call_id": "000127",
+                      "operation": "add",
+                      "purpose": "Record completed localized thumb trial and visualization",
+                      "request": "audit/tool_calls/000127/request.json",
+                      "tool": "notebook"
+                    },
+                    "previous_hash": "09e97f17adfbad8f59dcaf7ebf2b62772449c71061c332e5cf40c43b2770ea89",
+                    "schema": "hoi-agent-audit-event/v1",
+                    "sequence": 255
+                  },
+                  "request": {
+                    "argv": [
+                      "add",
+                      "--run",
+                      "astra-hoi-harness/runs/20260930_v1",
+                      "--type",
+                      "observation",
+                      "--summary",
+                      "Thumb joint13 alone corrects source-view handle occlusion at frame440; physical grasp remains unverified",
+                      "--frame",
+                      "440",
+                      "--reference",
+                      "work/thumb_joint_trial_0001/summary.json",
+                      "--reference",
+                      "work/thumb_joint_trial_0001/grip_visualization_440/00_calibrated_source_closeup.jpg"
+                    ],
+                    "call_id": "000127",
+                    "cwd": "/grogu/datasets/yixuansu/models/astra-project",
+                    "purpose": "Record completed localized thumb trial and visualization",
+                    "schema": "hoi-agent-tool-call-request/v1",
+                    "started_at": 1791084906.9379473,
+                    "tool": "notebook"
+                  }
+                },
+                {
+                  "raw": {
+                    "created_at": 1791084906.9448164,
+                    "event": "tool_call_finished",
+                    "event_hash": "6dc40b75174cc32bd968ad069acb4d4306201f51381a2b996aca0291cfec3ca6",
+                    "payload": {
+                      "call_id": "000127",
+                      "elapsed_seconds": 0.002872336655855179,
+                      "exit_code": 0,
+                      "result": "audit/tool_calls/000127/result.json",
+                      "tool": "notebook"
+                    },
+                    "previous_hash": "4f6250f0520557fbe696fea808aa93331004790cd33789d6d5b1e5234843fcaf",
+                    "schema": "hoi-agent-audit-event/v1",
+                    "sequence": 256
+                  },
+                  "result": {
+                    "call_id": "000127",
+                    "elapsed_seconds": 0.002872336655855179,
+                    "exit_code": 0,
+                    "finished_at": 1791084906.9434965,
+                    "interrupted": false,
+                    "request_sha256": "7c56a70aa6369666bfa36b51eff20c6dbbe2bb766933283c4249f6125a6a477c",
+                    "schema": "hoi-agent-tool-call-result/v1",
+                    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                    "stdout_sha256": "96b39899ae66488f2256c22dcb5b982a7cef1afb735fa7a62d70df6bfb3f5f48",
+                    "timed_out": false
+                  }
+                },
+                {
+                  "raw": {
+                    "created_at": 1791086343.0218399,
+                    "event": "tool_call_started",
+                    "event_hash": "45e37c6e5fa3cdde002143facb81be5bdc9c1a0c6ee98a05c3f93c7cdb73ee93",
+                    "payload": {
+                      "call_id": "000128",
+                      "operation": "add",
+                      "purpose": "Record public interface implementation and real GPU validation",
+                      "request": "audit/tool_calls/000128/request.json",
+                      "tool": "notebook"
+                    },
+                    "previous_hash": "6dc40b75174cc32bd968ad069acb4d4306201f51381a2b996aca0291cfec3ca6",
+                    "schema": "hoi-agent-audit-event/v1",
+                    "sequence": 257
+                  },
+                  "request": {
+                    "argv": [
+                      "add",
+                      "--run",
+                      "astra-hoi-harness/runs/20260930_v1",
+                      "--type",
+                      "observation",
+                      "--summary",
+                      "Public audit/refine/review interfaces validated on accepted thumb correction; protected handle occlusion retained and sampled penetration reduced",
+                      "--frame",
+                      "440",
+                      "--reference",
+                      "work/hand_joint_interface_0001/REPORT.md",
+                      "--reference",
+                      "work/hand_joint_interface_0001/VALIDATION.json",
+                      "--reference",
+                      "work/hand_joint_interface_0001/candidate/report.json"
+                    ],
+                    "call_id": "000128",
+                    "cwd": "/grogu/datasets/yixuansu/models/astra-project",
+                    "purpose": "Record public interface implementation and real GPU validation",
+                    "schema": "hoi-agent-tool-call-request/v1",
+                    "started_at": 1791086343.0201783,
+                    "tool": "notebook"
+                  }
+                },
+                {
+                  "raw": {
+                    "created_at": 1791086343.027649,
+                    "event": "tool_call_finished",
+                    "event_hash": "4f25ccaee183001cada0472077f7f0cb5d5c64f6c364adface50c021cb321caa",
+                    "payload": {
+                      "call_id": "000128",
+                      "elapsed_seconds": 0.0032244371250271797,
+                      "exit_code": 0,
+                      "result": "audit/tool_calls/000128/result.json",
+                      "tool": "notebook"
+                    },
+                    "previous_hash": "45e37c6e5fa3cdde002143facb81be5bdc9c1a0c6ee98a05c3f93c7cdb73ee93",
+                    "schema": "hoi-agent-audit-event/v1",
+                    "sequence": 258
+                  },
+                  "result": {
+                    "call_id": "000128",
+                    "elapsed_seconds": 0.0032244371250271797,
+                    "exit_code": 0,
+                    "finished_at": 1791086343.0263472,
+                    "interrupted": false,
+                    "request_sha256": "bb34a39c7928f3b3bf2287c28711c313c3954d493ad6bdb138f0f4775cc589ff",
+                    "schema": "hoi-agent-tool-call-result/v1",
+                    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                    "stdout_sha256": "4cbef926f857431b1e167d9a6ff27eb4f35bbc77f16ba711a54fe5bdc9f2e845",
+                    "timed_out": false
+                  }
+                },
+                {
+                  "raw": {
+                    "created_at": 1791087218.0076568,
+                    "event": "tool_call_started",
+                    "event_hash": "8a4de03d5cf2dd6bdd248716bab5a32180fbb7ed8a615ce425def398dca162b5",
+                    "payload": {
+                      "call_id": "000129",
+                      "operation": "add",
+                      "purpose": "Record differentiable single-frame thumb trials with protected grasp",
+                      "request": "audit/tool_calls/000129/request.json",
+                      "tool": "notebook"
+                    },
+                    "previous_hash": "4f25ccaee183001cada0472077f7f0cb5d5c64f6c364adface50c021cb321caa",
+                    "schema": "hoi-agent-audit-event/v1",
+                    "sequence": 259
+                  },
+                  "request": {
+                    "argv": [
+                      "add",
+                      "--run",
+                      "astra-hoi-harness/runs/20260930_v1",
+                      "--type",
+                      "decision",
+                      "--summary",
+                      "Frame440 differentiable contact/penetration refinement from accepted corrected hand",
+                      "--decision",
+                      "Use Adam through residual thumb joints and triangle-distance gradients; keep current RGB thumb-front relationship and unchanged-input fallback. Root-only trial infeasible; try thumb joints13 and14 with strong bidirectional penetration penalties.",
+                      "--reason",
+                      "User explicitly requested differentiable refinement and upload; preserve the corrected grasp rather than revert toward original estimator.",
+                      "--uncertainty",
+                      "Winding signs and hard acceptance remain detached/discrete; sampled mesh checks cannot prove complete collision freedom.",
+                      "--reference",
+                      "work/thumb_gradient_0002/request.json"
+                    ],
+                    "call_id": "000129",
+                    "cwd": "/grogu/datasets/yixuansu/models/astra-project",
+                    "purpose": "Record differentiable single-frame thumb trials with protected grasp",
+                    "schema": "hoi-agent-tool-call-request/v1",
+                    "started_at": 1791087218.0056252,
+                    "tool": "notebook"
+                  }
+                },
+                {
+                  "raw": {
+                    "created_at": 1791087218.0138242,
+                    "event": "tool_call_finished",
+                    "event_hash": "50a397ea5fb41c6af23d9fb2c1377b43711326709a3ff0d4edbcd1a5f2fc23bb",
+                    "payload": {
+                      "call_id": "000129",
+                      "elapsed_seconds": 0.0033192867413163185,
+                      "exit_code": 0,
+                      "result": "audit/tool_calls/000129/result.json",
+                      "tool": "notebook"
+                    },
+                    "previous_hash": "8a4de03d5cf2dd6bdd248716bab5a32180fbb7ed8a615ce425def398dca162b5",
+                    "schema": "hoi-agent-audit-event/v1",
+                    "sequence": 260
+                  },
+                  "result": {
+                    "call_id": "000129",
+                    "elapsed_seconds": 0.0033192867413163185,
+                    "exit_code": 0,
+                    "finished_at": 1791087218.0122519,
+                    "interrupted": false,
+                    "request_sha256": "a99c30e77ba537c703b015e1d6fe40a295d9c80e17dec3dad24160ab238b4bea",
+                    "schema": "hoi-agent-tool-call-result/v1",
+                    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                    "stdout_sha256": "08ac02fc46f0905be5d44ff54775a7e5fcaf48eb0f0ce3fbd4ebe7ed8a9d4699",
+                    "timed_out": false
+                  }
+                },
+                {
+                  "raw": {
+                    "created_at": 1791087368.1400976,
+                    "event": "tool_call_started",
+                    "event_hash": "d0cefadd167b80d5efed8111d84fdfd88beb2579e5c43d3cca034f4dbb3aea09",
+                    "payload": {
+                      "call_id": "000130",
+                      "operation": "add",
+                      "purpose": "Record completed differentiable refinement and visual delivery",
+                      "request": "audit/tool_calls/000130/request.json",
+                      "tool": "notebook"
+                    },
+                    "previous_hash": "50a397ea5fb41c6af23d9fb2c1377b43711326709a3ff0d4edbcd1a5f2fc23bb",
+                    "schema": "hoi-agent-audit-event/v1",
+                    "sequence": 261
+                  },
+                  "request": {
+                    "argv": [
+                      "add",
+                      "--run",
+                      "astra-hoi-harness/runs/20260930_v1",
+                      "--type",
+                      "observation",
+                      "--summary",
+                      "Frame440 Adam refinement improves thumb-pad nearest-three distance 0.746 to0.614mm; thumb-front coverage preserved and zero sampled penetration retained",
+                      "--frame",
+                      "440",
+                      "--reference",
+                      "work/thumb_gradient_0002/report.json",
+                      "--reference",
+                      "work/thumb_gradient_0002/gradient_check.json",
+                      "--reference",
+                      "work/thumb_gradient_0002/review/comparison_00440.jpg"
+                    ],
+                    "call_id": "000130",
+                    "cwd": "/grogu/datasets/yixuansu/models/astra-project",
+                    "purpose": "Record completed differentiable refinement and visual delivery",
+                    "schema": "hoi-agent-tool-call-request/v1",
+                    "started_at": 1791087368.1385915,
+                    "tool": "notebook"
+                  }
+                },
+                {
+                  "raw": {
+                    "created_at": 1791087368.145354,
+                    "event": "tool_call_finished",
+                    "event_hash": "16309872184b36c17bdab8a44e82148473fd55ed261af52b9e658d5ea08313b1",
+                    "payload": {
+                      "call_id": "000130",
+                      "elapsed_seconds": 0.0029258481226861477,
+                      "exit_code": 0,
+                      "result": "audit/tool_calls/000130/result.json",
+                      "tool": "notebook"
+                    },
+                    "previous_hash": "d0cefadd167b80d5efed8111d84fdfd88beb2579e5c43d3cca034f4dbb3aea09",
+                    "schema": "hoi-agent-audit-event/v1",
+                    "sequence": 262
+                  },
+                  "result": {
+                    "call_id": "000130",
+                    "elapsed_seconds": 0.0029258481226861477,
+                    "exit_code": 0,
+                    "finished_at": 1791087368.1440954,
+                    "interrupted": false,
+                    "request_sha256": "6f49574be6c01cfd31d2552fb6dee0945c0b395e690941bd31ad3cd06cc841f4",
+                    "schema": "hoi-agent-tool-call-result/v1",
+                    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                    "stdout_sha256": "a40b8369e1e4ab21074c4fef8cb32b043ae2a12ab67f73238103e84e77560614",
+                    "timed_out": false
+                  }
+                },
+                {
+                  "raw": {
+                    "created_at": 1791089124.3956964,
+                    "event": "tool_call_started",
+                    "event_hash": "997400f8ffc99d6fdd144e3b60b218a6e4ca3c4c83ee2e594c3e20b73d31434f",
+                    "payload": {
+                      "call_id": "000131",
+                      "operation": "set-interaction-plan",
+                      "purpose": "User-authorized external-harness motion/contact annotation for sequence refinement",
+                      "request": "audit/tool_calls/000131/request.json",
+                      "tool": "run"
+                    },
+                    "previous_hash": "16309872184b36c17bdab8a44e82148473fd55ed261af52b9e658d5ea08313b1",
+                    "schema": "hoi-agent-audit-event/v1",
+                    "sequence": 263
+                  },
+                  "request": {
+                    "argv": [
+                      "set-interaction-plan",
+                      "--run",
+                      "runs/20260930_v1",
+                      "--plan",
+                      "runs/20260930_v1/work/interaction-plan-draft-0001.json",
+                      "--reason",
+                      "RGB whole-sequence review; v2 region semantics and protected corrected thumb anchor, using external current harness as explicitly requested"
+                    ],
+                    "call_id": "000131",
+                    "cwd": "/grogu/datasets/yixuansu/models/astra-project/astra-hoi-harness",
+                    "purpose": "User-authorized external-harness motion/contact annotation for sequence refinement",
+                    "schema": "hoi-agent-tool-call-request/v1",
+                    "started_at": 1791089124.3939075,
+                    "tool": "run"
+                  }
+                },
+                {
+                  "raw": {
+                    "created_at": 1791089124.4414768,
+                    "event": "interaction_plan_set",
+                    "event_hash": "b6c9f9bf5b6ce59654d3e9e3432b6d9219d74262f927c61613e85f3187750aa0",
+                    "payload": {
+                      "created_at": 1791089124.4354162,
+                      "path": "work/interaction-plan.json",
+                      "reason": "RGB whole-sequence review; v2 region semantics and protected corrected thumb anchor, using external current harness as explicitly requested",
+                      "revision": 1,
+                      "revision_path": "work/interaction-plans/plan_0001.json",
+                      "sha256": "ac7d48bcc24d3095092471dbbb39e621e59df1939ea64d614feef496cbee4206"
+                    },
+                    "previous_hash": "997400f8ffc99d6fdd144e3b60b218a6e4ca3c4c83ee2e594c3e20b73d31434f",
+                    "schema": "hoi-agent-audit-event/v1",
+                    "sequence": 264
+                  }
+                },
+                {
+                  "raw": {
+                    "created_at": 1791089124.4453943,
+                    "event": "tool_call_finished",
+                    "event_hash": "ce3572f4ebd70fb7b546d7d0ecfc8c4a54145a260c8506cd49eb315adb130ca9",
+                    "payload": {
+                      "call_id": "000131",
+                      "elapsed_seconds": 0.04671741742640734,
+                      "exit_code": 0,
+                      "result": "audit/tool_calls/000131/result.json",
+                      "tool": "run"
+                    },
+                    "previous_hash": "b6c9f9bf5b6ce59654d3e9e3432b6d9219d74262f927c61613e85f3187750aa0",
+                    "schema": "hoi-agent-audit-event/v1",
+                    "sequence": 265
+                  },
+                  "result": {
+                    "call_id": "000131",
+                    "elapsed_seconds": 0.04671741742640734,
+                    "exit_code": 0,
+                    "finished_at": 1791089124.4438365,
+                    "interrupted": false,
+                    "request_sha256": "de17e44c9d8b06fb94b9398260998b63750b86463eaddbb3daeddf6c6a2d13be",
+                    "schema": "hoi-agent-tool-call-result/v1",
+                    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                    "stdout_sha256": "87a5a85d22d001c6d8d532b0638d81bb31613df5f5c9bb034223774c6ecc0c85",
+                    "timed_out": false
+                  }
+                },
+                {
+                  "raw": {
+                    "created_at": 1791090072.123869,
+                    "event": "tool_call_started",
+                    "event_hash": "89c10e27efb4ca3be24ece9e2882f354b40143e27c79a49750d6e1a590982225",
+                    "payload": {
+                      "call_id": "000132",
+                      "operation": "set-interaction-plan",
+                      "purpose": "Refine motion boundary after candidate/source comparison",
+                      "request": "audit/tool_calls/000132/request.json",
+                      "tool": "run"
+                    },
+                    "previous_hash": "ce3572f4ebd70fb7b546d7d0ecfc8c4a54145a260c8506cd49eb315adb130ca9",
+                    "schema": "hoi-agent-audit-event/v1",
+                    "sequence": 266
+                  },
+                  "request": {
+                    "argv": [
+                      "set-interaction-plan",
+                      "--run",
+                      "runs/20260930_v1",
+                      "--plan",
+                      "runs/20260930_v1/work/interaction-plan-draft-0002.json",
+                      "--reason",
+                      "Framewise RGB/render comparison retains 432-437 in ongoing handle roll; stable corrected grasp conservatively begins at 438"
+                    ],
+                    "call_id": "000132",
+                    "cwd": "/grogu/datasets/yixuansu/models/astra-project/astra-hoi-harness",
+                    "purpose": "Refine motion boundary after candidate/source comparison",
+                    "schema": "hoi-agent-tool-call-request/v1",
+                    "started_at": 1791090072.122158,
+                    "tool": "run"
+                  }
+                },
+                {
+                  "raw": {
+                    "created_at": 1791090072.1700673,
+                    "event": "interaction_plan_set",
+                    "event_hash": "d16b40b1331e0b2e2a9e95a8da82777e6a02d2bf96e3de6d334d3ac09adee1a3",
+                    "payload": {
+                      "created_at": 1791090072.1644955,
+                      "path": "work/interaction-plan.json",
+                      "reason": "Framewise RGB/render comparison retains 432-437 in ongoing handle roll; stable corrected grasp conservatively begins at 438",
+                      "revision": 2,
+                      "revision_path": "work/interaction-plans/plan_0002.json",
+                      "sha256": "4c8e4b5cb53edc42b4a8b1fff8b0204e232614061e55f0ca79bb9546319961e5"
+                    },
+                    "previous_hash": "89c10e27efb4ca3be24ece9e2882f354b40143e27c79a49750d6e1a590982225",
+                    "schema": "hoi-agent-audit-event/v1",
+                    "sequence": 267
+                  }
+                },
+                {
+                  "raw": {
+                    "created_at": 1791090072.1737602,
+                    "event": "tool_call_finished",
+                    "event_hash": "2140ac787db2710a72cbd445faa502855d2065a93dcf4d669c9b86a6730cc904",
+                    "payload": {
+                      "call_id": "000132",
+                      "elapsed_seconds": 0.047205416951328516,
+                      "exit_code": 0,
+                      "result": "audit/tool_calls/000132/result.json",
+                      "tool": "run"
+                    },
+                    "previous_hash": "d16b40b1331e0b2e2a9e95a8da82777e6a02d2bf96e3de6d334d3ac09adee1a3",
+                    "schema": "hoi-agent-audit-event/v1",
+                    "sequence": 268
+                  },
+                  "result": {
+                    "call_id": "000132",
+                    "elapsed_seconds": 0.047205416951328516,
+                    "exit_code": 0,
+                    "finished_at": 1791090072.1723197,
+                    "interrupted": false,
+                    "request_sha256": "6f4bbb8b30f2118e1a8089a7d6c5f92db4b259c91790bc4ad5e01f3f5d098cbd",
+                    "schema": "hoi-agent-tool-call-result/v1",
+                    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                    "stdout_sha256": "1ce2cd062661464dc78b2c5d95ece9d5a0aeabbd2dc424747b1680edeaeb9e68",
+                    "timed_out": false
+                  }
+                },
+                {
+                  "raw": {
+                    "created_at": 1791090378.7351148,
+                    "event": "tool_call_started",
+                    "event_hash": "22357d4bd634f2c3093cea97045f41e41017f06cc0036134294271464add49fd",
+                    "payload": {
+                      "call_id": "000133",
+                      "operation": "add",
+                      "purpose": "Record sequence manifest and optimization development result",
+                      "request": "audit/tool_calls/000133/request.json",
+                      "tool": "notebook"
+                    },
+                    "previous_hash": "2140ac787db2710a72cbd445faa502855d2065a93dcf4d669c9b86a6730cc904",
+                    "schema": "hoi-agent-audit-event/v1",
+                    "sequence": 269
+                  },
+                  "request": {
+                    "argv": [
+                      "add",
+                      "--run",
+                      "runs/20260930_v1",
+                      "--type",
+                      "decision",
+                      "--summary",
+                      "Installed semantic interaction manifest revision 2 (29 segments, all 1200 frames), implemented separate public gradient sequence backend, evaluated three seed/sequence candidates; protected frame 440 preserved exactly.",
+                      "--reference",
+                      "work/interaction-plans/plan_0002.json",
+                      "--reference",
+                      "work/hand_sequence_0003/candidate/report.json",
+                      "--reference",
+                      "work/hand_sequence_0003/README.txt",
+                      "--decision",
+                      "Keep iteration 16 authoritative; share corrected pose over verified short 438-449 hold as a review candidate, but do not adopt full sequence.",
+                      "--reason",
+                      "Stable object-relative grasp has no detected bidirectional penetration; smooth initialization transitions still introduce up to 8.48mm reverse sampled penetration, so feasible gradients relative to seed do not approve that seed.",
+                      "--next-step",
+                      "Add phase-specific RGB pose anchors and audit relative wrist/object depth in turning segments; solve transitions without undoing corrected thumb."
+                    ],
+                    "call_id": "000133",
+                    "cwd": "/grogu/datasets/yixuansu/models/astra-project/astra-hoi-harness",
+                    "purpose": "Record sequence manifest and optimization development result",
+                    "schema": "hoi-agent-tool-call-request/v1",
+                    "started_at": 1791090378.7334254,
+                    "tool": "notebook"
+                  }
+                },
+                {
+                  "raw": {
+                    "created_at": 1791090378.7413528,
+                    "event": "tool_call_finished",
+                    "event_hash": "7e64dc096d648395839332fc35876f475c8e6e64924abc82a60ef3017165d564",
+                    "payload": {
+                      "call_id": "000133",
+                      "elapsed_seconds": 0.003298246767371893,
+                      "exit_code": 0,
+                      "result": "audit/tool_calls/000133/result.json",
+                      "tool": "notebook"
+                    },
+                    "previous_hash": "22357d4bd634f2c3093cea97045f41e41017f06cc0036134294271464add49fd",
+                    "schema": "hoi-agent-audit-event/v1",
+                    "sequence": 270
+                  },
+                  "result": {
+                    "call_id": "000133",
+                    "elapsed_seconds": 0.003298246767371893,
+                    "exit_code": 0,
+                    "finished_at": 1791090378.739861,
+                    "interrupted": false,
+                    "request_sha256": "02fc604daa702b39da4eed888cbb89b4a29b2ae47be0d15c77d1da23aacd76fb",
+                    "schema": "hoi-agent-tool-call-result/v1",
+                    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                    "stdout_sha256": "049c2d396b7b9e34eafc071677732b60c8858519d63ce86b6a58af74af48efe5",
+                    "timed_out": false
+                  }
+                },
+                {
+                  "raw": {
+                    "created_at": 1791091584.9643495,
+                    "event": "tool_call_started",
+                    "event_hash": "9826d59e8bc960c28964aa1ba28a4e39e4419b64796a0f4bb00a909937a60374",
+                    "payload": {
+                      "call_id": "000134",
+                      "operation": "set-interaction-plan",
+                      "purpose": "Correct first stable-grasp annotation with explicit user human priors",
+                      "request": "audit/tool_calls/000134/request.json",
+                      "tool": "run"
+                    },
+                    "previous_hash": "7e64dc096d648395839332fc35876f475c8e6e64924abc82a60ef3017165d564",
+                    "schema": "hoi-agent-audit-event/v1",
+                    "sequence": 271
+                  },
+                  "request": {
+                    "argv": [
+                      "set-interaction-plan",
+                      "--run",
+                      "runs/20260930_v1",
+                      "--plan",
+                      "runs/20260930_v1/work/interaction-plan-draft-0003.json",
+                      "--reason",
+                      "180-309: distinguish observed local contact from user-provided whole-hand enclosure and occluded-finger participation priors; preserve all other segments"
+                    ],
+                    "call_id": "000134",
+                    "cwd": "/grogu/datasets/yixuansu/models/astra-project/astra-hoi-harness",
+                    "purpose": "Correct first stable-grasp annotation with explicit user human priors",
+                    "schema": "hoi-agent-tool-call-request/v1",
+                    "started_at": 1791091584.96307,
+                    "tool": "run"
+                  }
+                },
+                {
+                  "raw": {
+                    "created_at": 1791091585.0094347,
+                    "event": "interaction_plan_set",
+                    "event_hash": "3e29ad0d966ad4393e34790a8a7e3818b637e39abe668fcc67c9219f74ea0810",
+                    "payload": {
+                      "created_at": 1791091585.004085,
+                      "path": "work/interaction-plan.json",
+                      "reason": "180-309: distinguish observed local contact from user-provided whole-hand enclosure and occluded-finger participation priors; preserve all other segments",
+                      "revision": 3,
+                      "revision_path": "work/interaction-plans/plan_0003.json",
+                      "sha256": "cbd12f6efefd88f1d94a9fd60cf37a4da7a594308b16a1517489f430eb58681f"
+                    },
+                    "previous_hash": "9826d59e8bc960c28964aa1ba28a4e39e4419b64796a0f4bb00a909937a60374",
+                    "schema": "hoi-agent-audit-event/v1",
+                    "sequence": 272
+                  }
+                },
+                {
+                  "raw": {
+                    "created_at": 1791091585.0125124,
+                    "event": "tool_call_finished",
+                    "event_hash": "c5bb6ec5f9b656c540c8af36afbae4fb646c226d8cd370699b966e2235eccd01",
+                    "payload": {
+                      "call_id": "000134",
+                      "elapsed_seconds": 0.045317978132516146,
+                      "exit_code": 0,
+                      "result": "audit/tool_calls/000134/result.json",
+                      "tool": "run"
+                    },
+                    "previous_hash": "3e29ad0d966ad4393e34790a8a7e3818b637e39abe668fcc67c9219f74ea0810",
+                    "schema": "hoi-agent-audit-event/v1",
+                    "sequence": 273
+                  },
+                  "result": {
+                    "call_id": "000134",
+                    "elapsed_seconds": 0.045317978132516146,
+                    "exit_code": 0,
+                    "finished_at": 1791091585.0112193,
+                    "interrupted": false,
+                    "request_sha256": "b04c695c437f85cb3b665ea339d2fbd892796a3bfae99b8760cd32e9f3db7317",
+                    "schema": "hoi-agent-tool-call-result/v1",
+                    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                    "stdout_sha256": "246aa42f56553b7918b45baf5d08181e56804c4fd73cc57bb6cee2a4e7c165dc",
+                    "timed_out": false
+                  }
+                },
+                {
+                  "raw": {
+                    "created_at": 1791093460.301055,
+                    "event": "interaction_plan_set",
+                    "event_hash": "b73e7b107602e6c03dc5e764fc3f6df6e123d0d8adac5e5e226985b2a3242e69",
+                    "payload": {
+                      "created_at": 1791093460.2948465,
+                      "path": "work/interaction-plan.json",
+                      "reason": "180-309: audit intended contact from RGB and human prior, retain multigit region hypotheses, add soft possible local palmar contact; link reusable contact artifacts",
+                      "revision": 4,
+                      "revision_path": "work/interaction-plans/plan_0004.json",
+                      "sha256": "4e55db05030ef8fcf2295872e03e97364c7b37412555134ea59b822bde854876"
+                    },
+                    "previous_hash": "c5bb6ec5f9b656c540c8af36afbae4fb646c226d8cd370699b966e2235eccd01",
+                    "schema": "hoi-agent-audit-event/v1",
+                    "sequence": 274
+                  }
+                },
+                {
+                  "raw": {
+                    "created_at": 1791107266.5321598,
+                    "event": "interaction_plan_set",
+                    "event_hash": "2eccd7388f7b97d4e522c482f3e7b3e24e725c7b7e71578a6c3238262bf79706",
+                    "payload": {
+                      "created_at": 1791107266.5225697,
+                      "path": "work/interaction-plan.json",
+                      "reason": "User reviewed second-stage reannotation and requested geometry correction: apply continuous thumb-front relationship over310–544, with medium-confidence regrasp and high-confidence rolls.",
+                      "revision": 5,
+                      "revision_path": "work/interaction-plans/plan_0005.json",
+                      "sha256": "8c4752094d4b5ebfc5e1011f33a5864fc565635a6c20f466fb068e6867c9bc8b"
+                    },
+                    "previous_hash": "b73e7b107602e6c03dc5e764fc3f6df6e123d0d8adac5e5e226985b2a3242e69",
+                    "schema": "hoi-agent-audit-event/v1",
+                    "sequence": 275
+                  }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000016.mp4?v=20260930-4",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000016.mp4?v=20261005-d-spider-1",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000016.mp4",
               "video_ready": true,
               "bytes": 5029574,
@@ -6374,7 +7285,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000015.mp4?v=20260930-4",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000015.mp4?v=20261005-d-spider-1",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000015.mp4",
               "video_ready": true,
               "bytes": 5025521,
@@ -6588,7 +7499,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000014.mp4?v=20260930-4",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000014.mp4?v=20261005-d-spider-1",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000014.mp4",
               "video_ready": true,
               "bytes": 4815353,
@@ -7437,7 +8348,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000013.mp4?v=20260930-4",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000013.mp4?v=20261005-d-spider-1",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000013.mp4",
               "video_ready": true,
               "bytes": 4932534,
@@ -7990,7 +8901,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000012.mp4?v=20260930-4",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000012.mp4?v=20261005-d-spider-1",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000012.mp4",
               "video_ready": true,
               "bytes": 4966555,
@@ -8140,7 +9051,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000011.mp4?v=20260930-4",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000011.mp4?v=20261005-d-spider-1",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000011.mp4",
               "video_ready": true,
               "bytes": 5098791,
@@ -8621,7 +9532,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000010.mp4?v=20260930-4",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000010.mp4?v=20261005-d-spider-1",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000010.mp4",
               "video_ready": true,
               "bytes": 5094780,
@@ -9625,7 +10536,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000009.mp4?v=20260930-4",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000009.mp4?v=20261005-d-spider-1",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000009.mp4",
               "video_ready": true,
               "bytes": 5069457,
@@ -10892,7 +11803,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000008.mp4?v=20260930-4",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000008.mp4?v=20261005-d-spider-1",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000008.mp4",
               "video_ready": true,
               "bytes": 4762414,
@@ -11545,7 +12456,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000007.mp4?v=20260930-4",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000007.mp4?v=20261005-d-spider-1",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000007.mp4",
               "video_ready": true,
               "bytes": 4813781,
@@ -11637,7 +12548,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000006.mp4?v=20260930-4",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000006.mp4?v=20261005-d-spider-1",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000006.mp4",
               "video_ready": true,
               "bytes": 4528666,
@@ -11804,7 +12715,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000005.mp4?v=20260930-4",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000005.mp4?v=20261005-d-spider-1",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000005.mp4",
               "video_ready": true,
               "bytes": 4730774,
@@ -12186,7 +13097,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000004.mp4?v=20260930-4",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000004.mp4?v=20261005-d-spider-1",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000004.mp4",
               "video_ready": true,
               "bytes": 5013576,
@@ -12508,7 +13419,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000003.mp4?v=20260930-4",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000003.mp4?v=20261005-d-spider-1",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000003.mp4",
               "video_ready": true,
               "bytes": 5039903,
@@ -13005,7 +13916,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000002.mp4?v=20260930-4",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000002.mp4?v=20261005-d-spider-1",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000002.mp4",
               "video_ready": true,
               "bytes": 4720471,
@@ -13093,7 +14004,7 @@
                   }
                 }
               ],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000001.mp4?v=20260930-4",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/0827-spoon/20260930-v1-2400s/iterations/iteration-000001.mp4?v=20261005-d-spider-1",
               "asset_key": "0827-spoon/20260930-v1-2400s/iterations/iteration-000001.mp4",
               "video_ready": true,
               "bytes": 2580321,
@@ -13101,7 +14012,16 @@
               "height": 780
             }
           ],
-          "ignored_exports": [],
+          "ignored_exports": [
+            {
+              "file": "/grogu/datasets/yixuansu/models/astra-project/astra-hoi-harness/runs/20260930_v1/output/site-videos/iteration_000017/comparison.mp4",
+              "reason": "missing manifest or incomplete MP4"
+            },
+            {
+              "file": "/grogu/datasets/yixuansu/models/astra-project/astra-hoi-harness/runs/20260930_v1/output/site-videos/iteration_000018/comparison.mp4",
+              "reason": "missing manifest or incomplete MP4"
+            }
+          ],
           "audit": {
             "available": true,
             "source": "audit/events.jsonl",
@@ -13680,7 +14600,7 @@
                 }
               }
             ],
-            "included_event_count": 238,
+            "included_event_count": 265,
             "excluded_event_count": 10
           }
         }
@@ -13711,7 +14631,7 @@
               "provenance": null,
               "blend_sha256": "b1497164379752900c90ff7ccb1f868b0b18255e1868ea15b2f0889834aadcf6",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0416-mug/20260930-scale-final/iterations/final.mp4?v=20260930-4",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0416-mug/20260930-scale-final/iterations/final.mp4?v=20261005-d-spider-1",
               "asset_key": "scale-0416-mug/20260930-scale-final/iterations/final.mp4",
               "video_ready": true,
               "bytes": 1381469,
@@ -13755,7 +14675,7 @@
               "provenance": null,
               "blend_sha256": "7f73165a495f73ddc5f9e275b36dbcc834c569cf10e2afd0a9e5b795f06f691d",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0529-bottle/20260930-scale-final/iterations/final.mp4?v=20260930-4",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0529-bottle/20260930-scale-final/iterations/final.mp4?v=20261005-d-spider-1",
               "asset_key": "scale-0529-bottle/20260930-scale-final/iterations/final.mp4",
               "video_ready": true,
               "bytes": 2875327,
@@ -13799,7 +14719,7 @@
               "provenance": null,
               "blend_sha256": "ba81831381f81c1fedb64dfa2c6f807ec5e909bea212ac8ba80e7fee7aa2872e",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0529-cup/20260930-scale-final/iterations/final.mp4?v=20260930-4",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0529-cup/20260930-scale-final/iterations/final.mp4?v=20261005-d-spider-1",
               "asset_key": "scale-0529-cup/20260930-scale-final/iterations/final.mp4",
               "video_ready": true,
               "bytes": 2814217,
@@ -13843,7 +14763,7 @@
               "provenance": null,
               "blend_sha256": "3270c5efab7bfe684b3e48af92baeb3e035eb09df71c68152d9d9a11d2c934a9",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0529-mouse/20260930-scale-final/iterations/final.mp4?v=20260930-4",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0529-mouse/20260930-scale-final/iterations/final.mp4?v=20261005-d-spider-1",
               "asset_key": "scale-0529-mouse/20260930-scale-final/iterations/final.mp4",
               "video_ready": true,
               "bytes": 3275734,
@@ -13887,7 +14807,7 @@
               "provenance": null,
               "blend_sha256": "8c26c770e2a516768188ee99db629245624f8b4f4836e4f5f7b9af83fd2ba631",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0529-pen/20260930-scale-final/iterations/final.mp4?v=20260930-4",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0529-pen/20260930-scale-final/iterations/final.mp4?v=20261005-d-spider-1",
               "asset_key": "scale-0529-pen/20260930-scale-final/iterations/final.mp4",
               "video_ready": true,
               "bytes": 2259261,
@@ -13931,7 +14851,7 @@
               "provenance": null,
               "blend_sha256": "6c7f93381356418855b894ed111ac3ae561b246ffd1a1e2055c33d34b78aae1c",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0601-box/20260930-scale-final/iterations/final.mp4?v=20260930-4",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0601-box/20260930-scale-final/iterations/final.mp4?v=20261005-d-spider-1",
               "asset_key": "scale-0601-box/20260930-scale-final/iterations/final.mp4",
               "video_ready": true,
               "bytes": 3360600,
@@ -13975,7 +14895,7 @@
               "provenance": null,
               "blend_sha256": "5db0f3012257257ff6f11280080292dbf562b0dcd43c40ae434d6b0897b6a7bf",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0608-spoon/20260930-scale-final/iterations/final.mp4?v=20260930-4",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0608-spoon/20260930-scale-final/iterations/final.mp4?v=20261005-d-spider-1",
               "asset_key": "scale-0608-spoon/20260930-scale-final/iterations/final.mp4",
               "video_ready": true,
               "bytes": 3192452,
@@ -14019,7 +14939,7 @@
               "provenance": null,
               "blend_sha256": "aeaa5f6ac244991e93ef69e10a55528636010940efbd9b07b197321216458476",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0609-fork/20260930-scale-final/iterations/final.mp4?v=20260930-4",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0609-fork/20260930-scale-final/iterations/final.mp4?v=20261005-d-spider-1",
               "asset_key": "scale-0609-fork/20260930-scale-final/iterations/final.mp4",
               "video_ready": true,
               "bytes": 2842284,
@@ -14063,7 +14983,7 @@
               "provenance": null,
               "blend_sha256": "e50f6e7f31ad57aff8f3ee63ec3c96814a5544ce1c96887a3dbdec605daad4da",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0611-duck/20260930-scale-final/iterations/final.mp4?v=20260930-4",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0611-duck/20260930-scale-final/iterations/final.mp4?v=20261005-d-spider-1",
               "asset_key": "scale-0611-duck/20260930-scale-final/iterations/final.mp4",
               "video_ready": true,
               "bytes": 2674559,
@@ -14107,7 +15027,7 @@
               "provenance": null,
               "blend_sha256": "a528e5c23c253b322b6d13aa50a11d14f891d12b812930ad89a95e1708fa2a92",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0827-sweep/20260930-scale-final/iterations/final.mp4?v=20260930-4",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0827-sweep/20260930-scale-final/iterations/final.mp4?v=20261005-d-spider-1",
               "asset_key": "scale-0827-sweep/20260930-scale-final/iterations/final.mp4",
               "video_ready": true,
               "bytes": 2845723,
@@ -14151,10 +15071,658 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-sushi/20260930-scale-final/iterations/final.mp4?v=20260930-4",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-sushi/20260930-scale-final/iterations/final.mp4?v=20261005-d-spider-1",
               "asset_key": "scale-sushi/20260930-scale-final/iterations/final.mp4",
               "video_ready": true,
               "bytes": 758749,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "ablation-d-0416-mug",
+      "title": "Ablation D · 0416 Mug",
+      "description": "Final Ablation D Blender reconstruction and segmented SPIDER motion tracking.",
+      "baselines": [
+        {
+          "id": "blender-final",
+          "label": "Blender final",
+          "summary": "Final iteration 17, rendered as a four-panel comparison at 20 fps.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 17,
+              "label": "Final iteration 17 · Blender",
+              "variant": "Four-panel RGB",
+              "export_id": "final-blender",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "",
+              "provenance": null,
+              "blend_sha256": "",
+              "audit_events": [],
+              "video_url": "../../media/ablation-d-0416-mug/blender-final/iterations/final-blender.mp4?v=20261005-d-spider-1",
+              "asset_key": "ablation-d-0416-mug/blender-final/iterations/final-blender.mp4",
+              "video_ready": true,
+              "bytes": 1351292,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        },
+        {
+          "id": "spider-final",
+          "label": "SPIDER tracking",
+          "summary": "Final-iteration SPIDER tracking; dropped segments resume at drop frame +30 with a two-second pause.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 17,
+              "label": "SPIDER tracking",
+              "variant": "Four-panel RGB",
+              "export_id": "final-spider",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "",
+              "provenance": null,
+              "blend_sha256": "",
+              "audit_events": [],
+              "video_url": "../../media/ablation-d-0416-mug/spider-final/iterations/final-spider.mp4?v=20261005-d-spider-1",
+              "asset_key": "ablation-d-0416-mug/spider-final/iterations/final-spider.mp4",
+              "video_ready": true,
+              "bytes": 238638,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "ablation-d-0529-bottle",
+      "title": "Ablation D · 0529 Bottle",
+      "description": "Final Ablation D Blender reconstruction and segmented SPIDER motion tracking.",
+      "baselines": [
+        {
+          "id": "blender-final",
+          "label": "Blender final",
+          "summary": "Final iteration 9, rendered as a four-panel comparison at 20 fps.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 9,
+              "label": "Final iteration 9 · Blender",
+              "variant": "Four-panel RGB",
+              "export_id": "final-blender",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "",
+              "provenance": null,
+              "blend_sha256": "",
+              "audit_events": [],
+              "video_url": "../../media/ablation-d-0529-bottle/blender-final/iterations/final-blender.mp4?v=20261005-d-spider-1",
+              "asset_key": "ablation-d-0529-bottle/blender-final/iterations/final-blender.mp4",
+              "video_ready": true,
+              "bytes": 2654027,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        },
+        {
+          "id": "spider-final",
+          "label": "SPIDER tracking",
+          "summary": "Final-iteration SPIDER tracking; dropped segments resume at drop frame +30 with a two-second pause.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 9,
+              "label": "SPIDER tracking",
+              "variant": "Four-panel RGB",
+              "export_id": "final-spider",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "",
+              "provenance": null,
+              "blend_sha256": "",
+              "audit_events": [],
+              "video_url": "../../media/ablation-d-0529-bottle/spider-final/iterations/final-spider.mp4?v=20261005-d-spider-1",
+              "asset_key": "ablation-d-0529-bottle/spider-final/iterations/final-spider.mp4",
+              "video_ready": true,
+              "bytes": 250573,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "ablation-d-0529-cup",
+      "title": "Ablation D · 0529 Cup",
+      "description": "Final Ablation D Blender reconstruction and segmented SPIDER motion tracking.",
+      "baselines": [
+        {
+          "id": "blender-final",
+          "label": "Blender final",
+          "summary": "Final iteration 12, rendered as a four-panel comparison at 20 fps.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 12,
+              "label": "Final iteration 12 · Blender",
+              "variant": "Four-panel RGB",
+              "export_id": "final-blender",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "",
+              "provenance": null,
+              "blend_sha256": "",
+              "audit_events": [],
+              "video_url": "../../media/ablation-d-0529-cup/blender-final/iterations/final-blender.mp4?v=20261005-d-spider-1",
+              "asset_key": "ablation-d-0529-cup/blender-final/iterations/final-blender.mp4",
+              "video_ready": true,
+              "bytes": 3777139,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        },
+        {
+          "id": "spider-final",
+          "label": "SPIDER tracking",
+          "summary": "Final-iteration SPIDER tracking; dropped segments resume at drop frame +30 with a two-second pause.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 12,
+              "label": "SPIDER tracking",
+              "variant": "Four-panel RGB",
+              "export_id": "final-spider",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "",
+              "provenance": null,
+              "blend_sha256": "",
+              "audit_events": [],
+              "video_url": "../../media/ablation-d-0529-cup/spider-final/iterations/final-spider.mp4?v=20261005-d-spider-1",
+              "asset_key": "ablation-d-0529-cup/spider-final/iterations/final-spider.mp4",
+              "video_ready": true,
+              "bytes": 106994,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "ablation-d-0529-mouse",
+      "title": "Ablation D · 0529 Mouse",
+      "description": "Final Ablation D Blender reconstruction and segmented SPIDER motion tracking.",
+      "baselines": [
+        {
+          "id": "blender-final",
+          "label": "Blender final",
+          "summary": "Final iteration 12, rendered as a four-panel comparison at 20 fps.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 12,
+              "label": "Final iteration 12 · Blender",
+              "variant": "Four-panel RGB",
+              "export_id": "final-blender",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "",
+              "provenance": null,
+              "blend_sha256": "",
+              "audit_events": [],
+              "video_url": "../../media/ablation-d-0529-mouse/blender-final/iterations/final-blender.mp4?v=20261005-d-spider-1",
+              "asset_key": "ablation-d-0529-mouse/blender-final/iterations/final-blender.mp4",
+              "video_ready": true,
+              "bytes": 2568409,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        },
+        {
+          "id": "spider-final",
+          "label": "SPIDER tracking",
+          "summary": "Final-iteration SPIDER tracking; dropped segments resume at drop frame +30 with a two-second pause.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 12,
+              "label": "SPIDER tracking",
+              "variant": "Four-panel RGB",
+              "export_id": "final-spider",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "",
+              "provenance": null,
+              "blend_sha256": "",
+              "audit_events": [],
+              "video_url": "../../media/ablation-d-0529-mouse/spider-final/iterations/final-spider.mp4?v=20261005-d-spider-1",
+              "asset_key": "ablation-d-0529-mouse/spider-final/iterations/final-spider.mp4",
+              "video_ready": true,
+              "bytes": 189000,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "ablation-d-0529-pen",
+      "title": "Ablation D · 0529 Pen",
+      "description": "Final Ablation D Blender reconstruction and segmented SPIDER motion tracking.",
+      "baselines": [
+        {
+          "id": "blender-final",
+          "label": "Blender final",
+          "summary": "Final iteration 15, rendered as a four-panel comparison at 20 fps.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 15,
+              "label": "Final iteration 15 · Blender",
+              "variant": "Four-panel RGB",
+              "export_id": "final-blender",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "",
+              "provenance": null,
+              "blend_sha256": "",
+              "audit_events": [],
+              "video_url": "../../media/ablation-d-0529-pen/blender-final/iterations/final-blender.mp4?v=20261005-d-spider-1",
+              "asset_key": "ablation-d-0529-pen/blender-final/iterations/final-blender.mp4",
+              "video_ready": true,
+              "bytes": 2001040,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        },
+        {
+          "id": "spider-final",
+          "label": "SPIDER tracking",
+          "summary": "Final-iteration SPIDER tracking; dropped segments resume at drop frame +30 with a two-second pause.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 15,
+              "label": "SPIDER tracking",
+              "variant": "Four-panel RGB",
+              "export_id": "final-spider",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "",
+              "provenance": null,
+              "blend_sha256": "",
+              "audit_events": [],
+              "video_url": "../../media/ablation-d-0529-pen/spider-final/iterations/final-spider.mp4?v=20261005-d-spider-1",
+              "asset_key": "ablation-d-0529-pen/spider-final/iterations/final-spider.mp4",
+              "video_ready": true,
+              "bytes": 99449,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "ablation-d-0609-fork",
+      "title": "Ablation D · 0609 Fork",
+      "description": "Final Ablation D Blender reconstruction and segmented SPIDER motion tracking.",
+      "baselines": [
+        {
+          "id": "blender-final",
+          "label": "Blender final",
+          "summary": "Final iteration 11, rendered as a four-panel comparison at 20 fps.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 11,
+              "label": "Final iteration 11 · Blender",
+              "variant": "Four-panel RGB",
+              "export_id": "final-blender",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "",
+              "provenance": null,
+              "blend_sha256": "",
+              "audit_events": [],
+              "video_url": "../../media/ablation-d-0609-fork/blender-final/iterations/final-blender.mp4?v=20261005-d-spider-1",
+              "asset_key": "ablation-d-0609-fork/blender-final/iterations/final-blender.mp4",
+              "video_ready": true,
+              "bytes": 2605237,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        },
+        {
+          "id": "spider-final",
+          "label": "SPIDER tracking",
+          "summary": "Final-iteration SPIDER tracking; dropped segments resume at drop frame +30 with a two-second pause.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 11,
+              "label": "SPIDER tracking",
+              "variant": "Four-panel RGB",
+              "export_id": "final-spider",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "",
+              "provenance": null,
+              "blend_sha256": "",
+              "audit_events": [],
+              "video_url": "../../media/ablation-d-0609-fork/spider-final/iterations/final-spider.mp4?v=20261005-d-spider-1",
+              "asset_key": "ablation-d-0609-fork/spider-final/iterations/final-spider.mp4",
+              "video_ready": true,
+              "bytes": 97602,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "ablation-d-0611-duck",
+      "title": "Ablation D · 0611 Duck",
+      "description": "Final Ablation D Blender reconstruction and segmented SPIDER motion tracking.",
+      "baselines": [
+        {
+          "id": "blender-final",
+          "label": "Blender final",
+          "summary": "Final iteration 12, rendered as a four-panel comparison at 20 fps.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 12,
+              "label": "Final iteration 12 · Blender",
+              "variant": "Four-panel RGB",
+              "export_id": "final-blender",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "",
+              "provenance": null,
+              "blend_sha256": "",
+              "audit_events": [],
+              "video_url": "../../media/ablation-d-0611-duck/blender-final/iterations/final-blender.mp4?v=20261005-d-spider-1",
+              "asset_key": "ablation-d-0611-duck/blender-final/iterations/final-blender.mp4",
+              "video_ready": true,
+              "bytes": 2125183,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        },
+        {
+          "id": "spider-final",
+          "label": "SPIDER tracking",
+          "summary": "Final-iteration SPIDER tracking; dropped segments resume at drop frame +30 with a two-second pause.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 12,
+              "label": "SPIDER tracking",
+              "variant": "Four-panel RGB",
+              "export_id": "final-spider",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "",
+              "provenance": null,
+              "blend_sha256": "",
+              "audit_events": [],
+              "video_url": "../../media/ablation-d-0611-duck/spider-final/iterations/final-spider.mp4?v=20261005-d-spider-1",
+              "asset_key": "ablation-d-0611-duck/spider-final/iterations/final-spider.mp4",
+              "video_ready": true,
+              "bytes": 240857,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "ablation-d-0827-spoon",
+      "title": "Ablation D · 0827 Spoon",
+      "description": "Final Ablation D Blender reconstruction and segmented SPIDER motion tracking.",
+      "baselines": [
+        {
+          "id": "blender-final",
+          "label": "Blender final",
+          "summary": "Final iteration 18, rendered as a four-panel comparison at 20 fps.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 18,
+              "label": "Final iteration 18 · Blender",
+              "variant": "Four-panel RGB",
+              "export_id": "final-blender",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "",
+              "provenance": null,
+              "blend_sha256": "",
+              "audit_events": [],
+              "video_url": "../../media/ablation-d-0827-spoon/blender-final/iterations/final-blender.mp4?v=20261005-d-spider-1",
+              "asset_key": "ablation-d-0827-spoon/blender-final/iterations/final-blender.mp4",
+              "video_ready": true,
+              "bytes": 3154691,
+              "width": 960,
+              "height": 780
+            }
+          ],
+          "ignored_exports": [],
+          "audit": {
+            "available": false,
+            "source": "",
+            "setup_events": [],
+            "included_event_count": 0,
+            "excluded_event_count": 0
+          }
+        },
+        {
+          "id": "spider-final",
+          "label": "SPIDER tracking",
+          "summary": "Final-iteration SPIDER tracking; dropped segments resume at drop frame +30 with a two-second pause.",
+          "total_token_count": null,
+          "token_total_note": "",
+          "exports": [
+            {
+              "iteration": 18,
+              "label": "SPIDER tracking",
+              "variant": "Four-panel RGB",
+              "export_id": "final-spider",
+              "status": "recorded",
+              "runtime_seconds": null,
+              "token_count": null,
+              "token_note": "",
+              "reason": "",
+              "provenance": null,
+              "blend_sha256": "",
+              "audit_events": [],
+              "video_url": "../../media/ablation-d-0827-spoon/spider-final/iterations/final-spider.mp4?v=20261005-d-spider-1",
+              "asset_key": "ablation-d-0827-spoon/spider-final/iterations/final-spider.mp4",
+              "video_ready": true,
+              "bytes": 196538,
               "width": 960,
               "height": 780
             }

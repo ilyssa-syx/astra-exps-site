@@ -253,6 +253,7 @@ def build_catalog(config):
     asset_version = config.get("asset_version", "1")
     public_examples = []
     upload_assets = []
+    local_assets = []
     warnings = []
 
     for example in config.get("examples", []):
@@ -373,9 +374,13 @@ def build_catalog(config):
                 asset_key = "{}/{}/iterations/{}.mp4".format(
                     example["id"], baseline["id"], export_name
                 )
-                video_url = "{}/{}?v={}".format(
-                    asset_base, asset_key, asset_version
-                ) if asset_base and video_ready else ""
+                publish_local = bool(spec.get("publish_local"))
+                if publish_local and video_ready:
+                    video_url = "../../media/{}?v={}".format(asset_key, asset_version)
+                else:
+                    video_url = "{}/{}?v={}".format(
+                        asset_base, asset_key, asset_version
+                    ) if asset_base and video_ready else ""
                 audit_events = audit.get("iteration_events", {}).get(str(iteration), [])
                 annotation = annotations.get(str(iteration), {})
                 exports.append({
@@ -402,7 +407,13 @@ def build_catalog(config):
                     "width": 960,
                     "height": 780,
                 })
-                if video_ready:
+                if video_ready and publish_local:
+                    local_assets.append({
+                        "source": str(video_path),
+                        "key": asset_key,
+                        "bytes": video_path.stat().st_size,
+                    })
+                elif video_ready:
                     upload_assets.append({
                         "source": str(video_path),
                         "key": asset_key,
@@ -435,7 +446,7 @@ def build_catalog(config):
         "site_title": config.get("site_title", "ASTRA Experiments"),
         "asset_base_url": asset_base,
         "examples": public_examples,
-    }, upload_assets, warnings
+    }, upload_assets, local_assets, warnings
 
 
 def render_example_page(example, site_title, asset_version):
@@ -465,7 +476,7 @@ def render_example_page(example, site_title, asset_version):
     )
 
 
-def build_pages(config, catalog):
+def build_pages(config, catalog, local_assets):
     template_root = ROOT / "site"
     PUBLIC.mkdir(parents=True, exist_ok=True)
     assets_dest = PUBLIC / "assets"
@@ -475,6 +486,14 @@ def build_pages(config, catalog):
     shutil.copy2(str(template_root / "index.html"), str(PUBLIC / "index.html"))
     (PUBLIC / ".nojekyll").touch()
     write_json(PUBLIC / "data" / "catalog.json", catalog)
+
+    media_root = PUBLIC / "media"
+    if media_root.exists():
+        shutil.rmtree(str(media_root))
+    for asset in local_assets:
+        destination = media_root / asset["key"]
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(asset["source"], str(destination))
 
     examples_root = PUBLIC / "examples"
     if examples_root.exists():
@@ -494,10 +513,13 @@ def build_pages(config, catalog):
 
 def main():
     config = read_json(CONFIG_PATH)
-    catalog, assets, warnings = build_catalog(config)
-    build_pages(config, catalog)
+    catalog, assets, local_assets, warnings = build_catalog(config)
+    build_pages(config, catalog, local_assets)
     write_json(BUILD / "asset-manifest.json", {"assets": assets})
-    write_json(BUILD / "build-report.json", {"warnings": warnings})
+    write_json(BUILD / "build-report.json", {
+        "warnings": warnings,
+        "local_assets": local_assets,
+    })
     print(
         "Built {} example(s), {} baseline(s), and {} video asset(s).".format(
             len(catalog["examples"]),

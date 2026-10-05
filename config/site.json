@@ -1,6 +1,6 @@
 {
   "site_title": "ASTRA Experiments",
-  "asset_version": "20260930-4",
+  "asset_version": "20261005-d-spider-1",
   "asset_base_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev",
   "examples": [
     {
@@ -198,6 +198,174 @@
         "skip_run_discovery": true, "skip_audit": true,
         "exports": [{"video": "delivery_four_panel_12fps/comparison.mp4", "id": "final", "iteration": 1, "label": "Final"}]
       }]
+    },
+    {
+      "id": "ablation-d-0416-mug",
+      "title": "Ablation D · 0416 Mug",
+      "description": "Final Ablation D Blender reconstruction and segmented SPIDER motion tracking.",
+      "baselines": [
+        {
+          "id": "blender-final", "label": "Blender final",
+          "run": "../runs/20261004_ablation/D/_render_20fps/videos/0416-mug",
+          "summary": "Final iteration 17, rendered as a four-panel comparison at 20 fps.",
+          "skip_run_discovery": true, "skip_audit": true,
+          "exports": [{"video": "iteration_000017/comparison.mp4", "id": "final-blender", "iteration": 17, "label": "Final iteration 17 · Blender", "publish_local": true}]
+        },
+        {
+          "id": "spider-final", "label": "SPIDER tracking",
+          "run": "../runs/20261004_ablation/D_spider_track/0416-mug",
+          "summary": "Final-iteration SPIDER tracking; dropped segments resume at drop frame +30 with a two-second pause.",
+          "skip_run_discovery": true, "skip_audit": true,
+          "exports": [{"video": "0416-mug_spider_motion_tracking.mp4", "id": "final-spider", "iteration": 17, "label": "SPIDER tracking", "publish_local": true}]
+        }
+      ]
+    },
+    {
+      "id": "ablation-d-0529-bottle",
+      "title": "Ablation D · 0529 Bottle",
+      "description": "Final Ablation D Blender reconstruction and segmented SPIDER motion tracking.",
+      "baselines": [
+        {
+          "id": "blender-final", "label": "Blender final",
+          "run": "../runs/20261004_ablation/D/_render_20fps/videos/0529-bottle",
+          "summary": "Final iteration 9, rendered as a four-panel comparison at 20 fps.",
+          "skip_run_discovery": true, "skip_audit": true,
+          "exports": [{"video": "iteration_000009/comparison.mp4", "id": "final-blender", "iteration": 9, "label": "Final iteration 9 · Blender", "publish_local": true}]
+        },
+        {
+          "id": "spider-final", "label": "SPIDER tracking",
+          "run": "../runs/20261004_ablation/D_spider_track/0529-bottle",
+          "summary": "Final-iteration SPIDER tracking; dropped segments resume at drop frame +30 with a two-second pause.",
+          "skip_run_discovery": true, "skip_audit": true,
+          "exports": [{"video": "0529-bottle_spider_motion_tracking.mp4", "id": "final-spider", "iteration": 9, "label": "SPIDER tracking", "publish_local": true}]
+        }
+      ]
+    },
+    {
+      "id": "ablation-d-0529-cup",
+      "title": "Ablation D · 0529 Cup",
+      "description": "Final Ablation D Blender reconstruction and segmented SPIDER motion tracking.",
+      "baselines": [
+        {
+          "id": "blender-final", "label": "Blender final",
+          "run": "../runs/20261004_ablation/D/_render_20fps/videos/0529-cup",
+          "summary": "Final iteration 12, rendered as a four-panel comparison at 20 fps.",
+          "skip_run_discovery": true, "skip_audit": true,
+          "exports": [{"video": "iteration_000012/comparison.mp4", "id": "final-blender", "iteration": 12, "label": "Final iteration 12 · Blender", "publish_local": true}]
+        },
+        {
+          "id": "spider-final", "label": "SPIDER tracking",
+          "run": "../runs/20261004_ablation/D_spider_track/0529-cup",
+          "summary": "Final-iteration SPIDER tracking; dropped segments resume at drop frame +30 with a two-second pause.",
+          "skip_run_discovery": true, "skip_audit": true,
+          "exports": [{"video": "0529-cup_spider_motion_tracking.mp4", "id": "final-spider", "iteration": 12, "label": "SPIDER tracking", "publish_local": true}]
+        }
+      ]
+    },
+    {
+      "id": "ablation-d-0529-mouse",
+      "title": "Ablation D · 0529 Mouse",
+      "description": "Final Ablation D Blender reconstruction and segmented SPIDER motion tracking.",
+      "baselines": [
+        {
+          "id": "blender-final", "label": "Blender final",
+          "run": "../runs/20261004_ablation/D/_render_20fps/videos/0529-mouse",
+          "summary": "Final iteration 12, rendered as a four-panel comparison at 20 fps.",
+          "skip_run_discovery": true, "skip_audit": true,
+          "exports": [{"video": "iteration_000012/comparison.mp4", "id": "final-blender", "iteration": 12, "label": "Final iteration 12 · Blender", "publish_local": true}]
+        },
+        {
+          "id": "spider-final", "label": "SPIDER tracking",
+          "run": "../runs/20261004_ablation/D_spider_track/0529-mouse",
+          "summary": "Final-iteration SPIDER tracking; dropped segments resume at drop frame +30 with a two-second pause.",
+          "skip_run_discovery": true, "skip_audit": true,
+          "exports": [{"video": "0529-mouse_spider_motion_tracking.mp4", "id": "final-spider", "iteration": 12, "label": "SPIDER tracking", "publish_local": true}]
+        }
+      ]
+    },
+    {
+      "id": "ablation-d-0529-pen",
+      "title": "Ablation D · 0529 Pen",
+      "description": "Final Ablation D Blender reconstruction and segmented SPIDER motion tracking.",
+      "baselines": [
+        {
+          "id": "blender-final", "label": "Blender final",
+          "run": "../runs/20261004_ablation/D/_render_20fps/videos/0529-pen",
+          "summary": "Final iteration 15, rendered as a four-panel comparison at 20 fps.",
+          "skip_run_discovery": true, "skip_audit": true,
+          "exports": [{"video": "iteration_000015/comparison.mp4", "id": "final-blender", "iteration": 15, "label": "Final iteration 15 · Blender", "publish_local": true}]
+        },
+        {
+          "id": "spider-final", "label": "SPIDER tracking",
+          "run": "../runs/20261004_ablation/D_spider_track/0529-pen",
+          "summary": "Final-iteration SPIDER tracking; dropped segments resume at drop frame +30 with a two-second pause.",
+          "skip_run_discovery": true, "skip_audit": true,
+          "exports": [{"video": "0529-pen_spider_motion_tracking.mp4", "id": "final-spider", "iteration": 15, "label": "SPIDER tracking", "publish_local": true}]
+        }
+      ]
+    },
+    {
+      "id": "ablation-d-0609-fork",
+      "title": "Ablation D · 0609 Fork",
+      "description": "Final Ablation D Blender reconstruction and segmented SPIDER motion tracking.",
+      "baselines": [
+        {
+          "id": "blender-final", "label": "Blender final",
+          "run": "../runs/20261004_ablation/D/_render_20fps/videos/0609-fork",
+          "summary": "Final iteration 11, rendered as a four-panel comparison at 20 fps.",
+          "skip_run_discovery": true, "skip_audit": true,
+          "exports": [{"video": "iteration_000011/comparison.mp4", "id": "final-blender", "iteration": 11, "label": "Final iteration 11 · Blender", "publish_local": true}]
+        },
+        {
+          "id": "spider-final", "label": "SPIDER tracking",
+          "run": "../runs/20261004_ablation/D_spider_track/0609-fork",
+          "summary": "Final-iteration SPIDER tracking; dropped segments resume at drop frame +30 with a two-second pause.",
+          "skip_run_discovery": true, "skip_audit": true,
+          "exports": [{"video": "0609-fork_spider_motion_tracking.mp4", "id": "final-spider", "iteration": 11, "label": "SPIDER tracking", "publish_local": true}]
+        }
+      ]
+    },
+    {
+      "id": "ablation-d-0611-duck",
+      "title": "Ablation D · 0611 Duck",
+      "description": "Final Ablation D Blender reconstruction and segmented SPIDER motion tracking.",
+      "baselines": [
+        {
+          "id": "blender-final", "label": "Blender final",
+          "run": "../runs/20261004_ablation/D/_render_20fps/videos/0611-duck",
+          "summary": "Final iteration 12, rendered as a four-panel comparison at 20 fps.",
+          "skip_run_discovery": true, "skip_audit": true,
+          "exports": [{"video": "iteration_000012/comparison.mp4", "id": "final-blender", "iteration": 12, "label": "Final iteration 12 · Blender", "publish_local": true}]
+        },
+        {
+          "id": "spider-final", "label": "SPIDER tracking",
+          "run": "../runs/20261004_ablation/D_spider_track/0611-duck",
+          "summary": "Final-iteration SPIDER tracking; dropped segments resume at drop frame +30 with a two-second pause.",
+          "skip_run_discovery": true, "skip_audit": true,
+          "exports": [{"video": "0611-duck_spider_motion_tracking.mp4", "id": "final-spider", "iteration": 12, "label": "SPIDER tracking", "publish_local": true}]
+        }
+      ]
+    },
+    {
+      "id": "ablation-d-0827-spoon",
+      "title": "Ablation D · 0827 Spoon",
+      "description": "Final Ablation D Blender reconstruction and segmented SPIDER motion tracking.",
+      "baselines": [
+        {
+          "id": "blender-final", "label": "Blender final",
+          "run": "../runs/20261004_ablation/D/_render_20fps/videos/0827-spoon",
+          "summary": "Final iteration 18, rendered as a four-panel comparison at 20 fps.",
+          "skip_run_discovery": true, "skip_audit": true,
+          "exports": [{"video": "iteration_000018/comparison.mp4", "id": "final-blender", "iteration": 18, "label": "Final iteration 18 · Blender", "publish_local": true}]
+        },
+        {
+          "id": "spider-final", "label": "SPIDER tracking",
+          "run": "../runs/20261004_ablation/D_spider_track/0827-spoon",
+          "summary": "Final-iteration SPIDER tracking; dropped segments resume at drop frame +30 with a two-second pause.",
+          "skip_run_discovery": true, "skip_audit": true,
+          "exports": [{"video": "0827-spoon_spider_motion_tracking.mp4", "id": "final-spider", "iteration": 18, "label": "SPIDER tracking", "publish_local": true}]
+        }
+      ]
     }
   ]
 }
