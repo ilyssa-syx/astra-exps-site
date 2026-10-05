@@ -94,6 +94,22 @@ h1 { margin-bottom: .8rem; font-size: clamp(2.6rem, 6vw, 4.7rem); line-height: 1
 }
 .baseline-section { flex: 0 0 min(760px, calc(100vw - 3rem)); min-width: 0; padding: 1rem; border: 1px solid var(--border); background: #eee; scroll-snap-align: start; }
 .baseline-list.single-baseline .baseline-section { flex-basis: min(760px, 100%); }
+.baseline-list.stacked-baselines {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  overflow: visible;
+  scroll-snap-type: none;
+}
+.stacked-baselines .baseline-section { width: min(900px, 100%); flex: none; }
+.stacked-baselines .audit-panel,
+.stacked-baselines .baseline-total,
+.stacked-baselines .iteration-heading,
+.stacked-baselines .iteration-reason,
+.stacked-baselines .iteration-provenance { display: none; }
+.stacked-baselines .baseline-intro { min-height: 0; }
+.stacked-baselines .iteration-row { padding-bottom: 0; border-bottom: 0; }
+.stacked-baselines .video-frame { width: 100%; }
 .baseline-intro { min-height: 8rem; margin-bottom: 1rem; }
 .baseline-intro p:last-child { max-width: 700px; margin: .4rem 0 0; color: var(--muted); }
 

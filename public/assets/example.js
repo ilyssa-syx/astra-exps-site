@@ -17,7 +17,8 @@
 })();
 
 function renderExample(root, example, assetsReady) {
-  const independentPlayback = example.playback_mode === "independent";
+  const stackedPlayback = example.playback_mode === "stacked";
+  const independentPlayback = example.playback_mode === "independent" || stackedPlayback;
   root.innerHTML = `
     <section class="example-hero">
       <a class="back-link" href="../../">← All examples</a>
@@ -25,7 +26,7 @@ function renderExample(root, example, assetsReady) {
       <h1>${escapeHtml(example.title)}</h1>
       <p class="lede">${escapeHtml(example.description)}</p>
     </section>
-    <nav class="baseline-toggles" aria-label="Show or hide baselines"></nav>
+    <nav class="baseline-toggles" aria-label="Show or hide baselines" ${stackedPlayback ? "hidden" : ""}></nav>
     ${!assetsReady ? `<div class="notice"><strong>Video assets pending.</strong></div>` : ""}
     <div class="sync-controls" aria-label="Synchronized video controls" ${independentPlayback ? "hidden" : ""}>
       <button class="sync-play" type="button">Play all</button>
@@ -43,13 +44,14 @@ function renderExample(root, example, assetsReady) {
       <input class="sync-progress" type="range" min="0" max="1000" value="0" step="1" aria-label="Video progress">
       <span class="sync-time">00:00.0 / 00:20.0</span>
     </div>
-    <p class="measurement-note">Runtime and token count are stage-local, not cumulative. Unattributed iteration token counts are labeled explicitly.</p>
-    <div class="baseline-scroll-top" aria-label="Scroll baselines horizontally" tabindex="0">
+    <p class="measurement-note" ${stackedPlayback ? "hidden" : ""}>Runtime and token count are stage-local, not cumulative. Unattributed iteration token counts are labeled explicitly.</p>
+    <div class="baseline-scroll-top" aria-label="Scroll baselines horizontally" tabindex="0" ${stackedPlayback ? "hidden" : ""}>
       <div class="baseline-scroll-top-spacer"></div>
     </div>
     <div class="baseline-list"></div>`;
 
   const baselineList = root.querySelector(".baseline-list");
+  baselineList.classList.toggle("stacked-baselines", stackedPlayback);
   const baselineToggles = root.querySelector(".baseline-toggles");
   let updateTopScroller = () => {};
   const updateBaselineLayout = () => {
@@ -79,7 +81,7 @@ function renderExample(root, example, assetsReady) {
           <h2>${escapeHtml(baseline.label)}</h2>
           <p>${escapeHtml(baseline.summary)}</p>
         </div>
-        <span class="count">${baseline.exports.length} iterations</span>
+        <span class="count">${baseline.exports.length} final video${baseline.exports.length === 1 ? "" : "s"}</span>
       </div>
       ${renderAudit(baseline.audit)}
       <div class="iteration-list"></div>

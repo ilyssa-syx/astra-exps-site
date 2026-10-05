@@ -1,6 +1,7 @@
 {
   "site_title": "ASTRA Experiments",
-  "asset_version": "20261005-e-final-1",
+  "asset_version": "20261005-sequence-final-1",
+  "merge_final_by_sequence": true,
   "ablation_e_final_cases": [
     {"id": "0416-mug", "title": "0416 Mug"},
     {"id": "0529-bottle", "title": "0529 Bottle"},

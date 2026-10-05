@@ -248,6 +248,43 @@ def variant_label(export_name, metadata):
     return "Comparison render"
 
 
+def merge_final_examples_by_sequence(examples):
+    """Collapse Scale/D/E pages into one final-only page per RGB sequence."""
+    prefixes = (
+        ("scale-", "Scale"),
+        ("ablation-d-", "Ablation D"),
+        ("ablation-e-final-", "Ablation E"),
+    )
+    merged = {}
+    for example in examples:
+        match = next(((prefix, group) for prefix, group in prefixes
+                      if example["id"].startswith(prefix)), None)
+        if match is None:
+            continue
+        prefix, group = match
+        sequence = example["id"][len(prefix):]
+        target = merged.setdefault(sequence, {
+            "id": "sequence-" + sequence,
+            "title": sequence.replace("-", " ").title(),
+            "description": "Final-only results for this sequence. SPIDER playback appears directly below its corresponding Blender final when available.",
+            "playback_mode": "stacked",
+            "baselines": [],
+        })
+        for baseline in example.get("baselines", []):
+            ready = [item for item in baseline.get("exports", []) if item.get("video_ready")]
+            if not ready:
+                continue
+            final_export = max(ready, key=lambda item: (item["iteration"], item["export_id"]))
+            is_spider = "spider" in baseline["id"].lower()
+            target["baselines"].append({
+                **baseline,
+                "id": group.lower().replace(" ", "-") + "-" + baseline["id"],
+                "label": group + (" · SPIDER" if is_spider else " · Final Blender"),
+                "exports": [final_export],
+            })
+    return [merged[key] for key in sorted(merged)]
+
+
 def build_catalog(config):
     asset_base = config.get("asset_base_url", "").rstrip("/")
     asset_version = config.get("asset_version", "1")
@@ -483,6 +520,9 @@ def build_catalog(config):
                 },
             })
         public_examples.append(public_example)
+
+    if config.get("merge_final_by_sequence"):
+        public_examples = merge_final_examples_by_sequence(public_examples)
 
     return {
         "site_title": config.get("site_title", "ASTRA Experiments"),
