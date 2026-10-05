@@ -5,19 +5,19 @@
     {
       "id": "sequence-0416-mug",
       "title": "0416 Mug",
-      "description": "Final-only results for this sequence. SPIDER playback appears directly below its corresponding Blender final when available.",
-      "playback_mode": "stacked",
+      "description": "Final-only results for this sequence. Baselines are arranged horizontally; SPIDER appears below its corresponding Blender final when available.",
+      "playback_mode": "sequence",
       "baselines": [
         {
-          "id": "scale-20260930-scale-final",
-          "label": "Scale · Final Blender",
-          "summary": "Final four-panel Blender video.",
-          "total_token_count": null,
-          "token_total_note": "",
+          "id": "scale",
+          "label": "Scale",
+          "summary": "Final Blender.",
+          "total_token_count": 15881805,
+          "token_total_note": "Codex thread total across 1 thread; cached input 15,380,224 tokens (already included, not added twice).",
           "exports": [
             {
               "iteration": 1,
-              "label": "Final",
+              "label": "Final Blender",
               "variant": "Four-panel RGB",
               "export_id": "final",
               "status": "recorded",
@@ -28,7 +28,7 @@
               "provenance": null,
               "blend_sha256": "b1497164379752900c90ff7ccb1f868b0b18255e1868ea15b2f0889834aadcf6",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0416-mug/20260930-scale-final/iterations/final.mp4?v=20261005-sequence-final-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0416-mug/20260930-scale-final/iterations/final.mp4?v=20261005-sequence-final-3",
               "asset_key": "scale-0416-mug/20260930-scale-final/iterations/final.mp4",
               "video_ready": true,
               "bytes": 1381469,
@@ -46,15 +46,15 @@
           }
         },
         {
-          "id": "ablation-d-blender-final",
-          "label": "Ablation D · Final Blender",
-          "summary": "Final iteration 17, rendered as a four-panel comparison at 20 fps.",
-          "total_token_count": null,
-          "token_total_note": "",
+          "id": "ablation-d",
+          "label": "Ablation D",
+          "summary": "Final Blender with SPIDER below.",
+          "total_token_count": 33586080,
+          "token_total_note": "Codex thread total across 1 thread; cached input 32,344,576 tokens (already included, not added twice).",
           "exports": [
             {
               "iteration": 17,
-              "label": "Final iteration 17 · Blender",
+              "label": "Final Blender",
               "variant": "Four-panel RGB",
               "export_id": "final-blender",
               "status": "recorded",
@@ -65,33 +65,16 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-d-0416-mug/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-1",
+              "video_url": "../../media/ablation-d-0416-mug/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-3",
               "asset_key": "ablation-d-0416-mug/blender-final/iterations/final-blender.mp4",
               "video_ready": true,
               "bytes": 1351292,
               "width": 960,
               "height": 780
-            }
-          ],
-          "ignored_exports": [],
-          "audit": {
-            "available": false,
-            "source": "",
-            "setup_events": [],
-            "included_event_count": 0,
-            "excluded_event_count": 0
-          }
-        },
-        {
-          "id": "ablation-d-spider-final",
-          "label": "Ablation D · SPIDER",
-          "summary": "Final-iteration SPIDER tracking; dropped segments resume at drop frame +30 with a two-second pause.",
-          "total_token_count": null,
-          "token_total_note": "",
-          "exports": [
+            },
             {
               "iteration": 17,
-              "label": "SPIDER tracking",
+              "label": "SPIDER",
               "variant": "Four-panel RGB",
               "export_id": "final-spider",
               "status": "recorded",
@@ -102,7 +85,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-d-0416-mug/spider-final/iterations/final-spider.mp4?v=20261005-sequence-final-1",
+              "video_url": "../../media/ablation-d-0416-mug/spider-final/iterations/final-spider.mp4?v=20261005-sequence-final-3",
               "asset_key": "ablation-d-0416-mug/spider-final/iterations/final-spider.mp4",
               "video_ready": true,
               "bytes": 630099,
@@ -120,15 +103,15 @@
           }
         },
         {
-          "id": "ablation-e-blender-final",
-          "label": "Ablation E · Final Blender",
-          "summary": "Final deliverable rendered at 20 fps with two elevated rear-oblique views chosen to expose finger/object contact.",
-          "total_token_count": null,
-          "token_total_note": "",
+          "id": "ablation-e",
+          "label": "Ablation E",
+          "summary": "Final Blender with SPIDER below.",
+          "total_token_count": 54861032,
+          "token_total_note": "Codex thread total across 4 threads; cached input 52,435,968 tokens (already included, not added twice).",
           "exports": [
             {
               "iteration": 0,
-              "label": "Final Blender · palm/contact views",
+              "label": "Final Blender",
               "variant": "Four-panel RGB",
               "export_id": "final-blender",
               "status": "recorded",
@@ -139,33 +122,16 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-e-final-0416-mug/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-1",
+              "video_url": "../../media/ablation-e-final-0416-mug/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-3",
               "asset_key": "ablation-e-final-0416-mug/blender-final/iterations/final-blender.mp4",
               "video_ready": true,
               "bytes": 1423746,
               "width": 960,
               "height": 780
-            }
-          ],
-          "ignored_exports": [],
-          "audit": {
-            "available": false,
-            "source": "",
-            "setup_events": [],
-            "included_event_count": 0,
-            "excluded_event_count": 0
-          }
-        },
-        {
-          "id": "ablation-e-spider-final",
-          "label": "Ablation E · SPIDER",
-          "summary": "Tracked until a drop; resumed from drop +30 frames. Processing stopped when the next segment could not initialize, and all successful segments were retained.",
-          "total_token_count": null,
-          "token_total_note": "",
-          "exports": [
+            },
             {
               "iteration": 0,
-              "label": "SPIDER tracking",
+              "label": "SPIDER",
               "variant": "Four-panel RGB",
               "export_id": "final-spider",
               "status": "recorded",
@@ -176,7 +142,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-e-final-0416-mug/spider-final/iterations/final-spider.mp4?v=20261005-sequence-final-1",
+              "video_url": "../../media/ablation-e-final-0416-mug/spider-final/iterations/final-spider.mp4?v=20261005-sequence-final-3",
               "asset_key": "ablation-e-final-0416-mug/spider-final/iterations/final-spider.mp4",
               "video_ready": true,
               "bytes": 228477,
@@ -198,19 +164,19 @@
     {
       "id": "sequence-0529-bottle",
       "title": "0529 Bottle",
-      "description": "Final-only results for this sequence. SPIDER playback appears directly below its corresponding Blender final when available.",
-      "playback_mode": "stacked",
+      "description": "Final-only results for this sequence. Baselines are arranged horizontally; SPIDER appears below its corresponding Blender final when available.",
+      "playback_mode": "sequence",
       "baselines": [
         {
-          "id": "scale-20260930-scale-final",
-          "label": "Scale · Final Blender",
-          "summary": "Final four-panel Blender video.",
-          "total_token_count": null,
-          "token_total_note": "",
+          "id": "scale",
+          "label": "Scale",
+          "summary": "Final Blender.",
+          "total_token_count": 21351879,
+          "token_total_note": "Codex thread total across 1 thread; cached input 20,404,736 tokens (already included, not added twice).",
           "exports": [
             {
               "iteration": 1,
-              "label": "Final",
+              "label": "Final Blender",
               "variant": "Four-panel RGB",
               "export_id": "final",
               "status": "recorded",
@@ -221,7 +187,7 @@
               "provenance": null,
               "blend_sha256": "7f73165a495f73ddc5f9e275b36dbcc834c569cf10e2afd0a9e5b795f06f691d",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0529-bottle/20260930-scale-final/iterations/final.mp4?v=20261005-sequence-final-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0529-bottle/20260930-scale-final/iterations/final.mp4?v=20261005-sequence-final-3",
               "asset_key": "scale-0529-bottle/20260930-scale-final/iterations/final.mp4",
               "video_ready": true,
               "bytes": 2875327,
@@ -239,15 +205,15 @@
           }
         },
         {
-          "id": "ablation-d-blender-final",
-          "label": "Ablation D · Final Blender",
-          "summary": "Final iteration 9, rendered as a four-panel comparison at 20 fps.",
-          "total_token_count": null,
-          "token_total_note": "",
+          "id": "ablation-d",
+          "label": "Ablation D",
+          "summary": "Final Blender with SPIDER below.",
+          "total_token_count": 40787551,
+          "token_total_note": "Codex thread total across 1 thread; cached input 38,986,752 tokens (already included, not added twice).",
           "exports": [
             {
               "iteration": 9,
-              "label": "Final iteration 9 · Blender",
+              "label": "Final Blender",
               "variant": "Four-panel RGB",
               "export_id": "final-blender",
               "status": "recorded",
@@ -258,33 +224,16 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-d-0529-bottle/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-1",
+              "video_url": "../../media/ablation-d-0529-bottle/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-3",
               "asset_key": "ablation-d-0529-bottle/blender-final/iterations/final-blender.mp4",
               "video_ready": true,
               "bytes": 2654027,
               "width": 960,
               "height": 780
-            }
-          ],
-          "ignored_exports": [],
-          "audit": {
-            "available": false,
-            "source": "",
-            "setup_events": [],
-            "included_event_count": 0,
-            "excluded_event_count": 0
-          }
-        },
-        {
-          "id": "ablation-d-spider-final",
-          "label": "Ablation D · SPIDER",
-          "summary": "Final-iteration SPIDER tracking; dropped segments resume at drop frame +30 with a two-second pause.",
-          "total_token_count": null,
-          "token_total_note": "",
-          "exports": [
+            },
             {
               "iteration": 9,
-              "label": "SPIDER tracking",
+              "label": "SPIDER",
               "variant": "Four-panel RGB",
               "export_id": "final-spider",
               "status": "recorded",
@@ -295,7 +244,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-d-0529-bottle/spider-final/iterations/final-spider.mp4?v=20261005-sequence-final-1",
+              "video_url": "../../media/ablation-d-0529-bottle/spider-final/iterations/final-spider.mp4?v=20261005-sequence-final-3",
               "asset_key": "ablation-d-0529-bottle/spider-final/iterations/final-spider.mp4",
               "video_ready": true,
               "bytes": 822180,
@@ -313,15 +262,15 @@
           }
         },
         {
-          "id": "ablation-e-blender-final",
-          "label": "Ablation E · Final Blender",
-          "summary": "Final deliverable rendered at 20 fps with two elevated rear-oblique views chosen to expose finger/object contact.",
-          "total_token_count": null,
-          "token_total_note": "",
+          "id": "ablation-e",
+          "label": "Ablation E",
+          "summary": "Final Blender with SPIDER below.",
+          "total_token_count": 67940508,
+          "token_total_note": "Codex thread total across 4 threads; cached input 65,569,920 tokens (already included, not added twice).",
           "exports": [
             {
               "iteration": 0,
-              "label": "Final Blender · palm/contact views",
+              "label": "Final Blender",
               "variant": "Four-panel RGB",
               "export_id": "final-blender",
               "status": "recorded",
@@ -332,33 +281,16 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-e-final-0529-bottle/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-1",
+              "video_url": "../../media/ablation-e-final-0529-bottle/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-3",
               "asset_key": "ablation-e-final-0529-bottle/blender-final/iterations/final-blender.mp4",
               "video_ready": true,
               "bytes": 2913902,
               "width": 960,
               "height": 780
-            }
-          ],
-          "ignored_exports": [],
-          "audit": {
-            "available": false,
-            "source": "",
-            "setup_events": [],
-            "included_event_count": 0,
-            "excluded_event_count": 0
-          }
-        },
-        {
-          "id": "ablation-e-spider-final",
-          "label": "Ablation E · SPIDER",
-          "summary": "Tracked until a drop; resumed from drop +30 frames. Processing stopped when the next segment could not initialize, and all successful segments were retained.",
-          "total_token_count": null,
-          "token_total_note": "",
-          "exports": [
+            },
             {
               "iteration": 0,
-              "label": "SPIDER tracking",
+              "label": "SPIDER",
               "variant": "Four-panel RGB",
               "export_id": "final-spider",
               "status": "recorded",
@@ -369,7 +301,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-e-final-0529-bottle/spider-final/iterations/final-spider.mp4?v=20261005-sequence-final-1",
+              "video_url": "../../media/ablation-e-final-0529-bottle/spider-final/iterations/final-spider.mp4?v=20261005-sequence-final-3",
               "asset_key": "ablation-e-final-0529-bottle/spider-final/iterations/final-spider.mp4",
               "video_ready": true,
               "bytes": 249537,
@@ -391,19 +323,19 @@
     {
       "id": "sequence-0529-cup",
       "title": "0529 Cup",
-      "description": "Final-only results for this sequence. SPIDER playback appears directly below its corresponding Blender final when available.",
-      "playback_mode": "stacked",
+      "description": "Final-only results for this sequence. Baselines are arranged horizontally; SPIDER appears below its corresponding Blender final when available.",
+      "playback_mode": "sequence",
       "baselines": [
         {
-          "id": "scale-20260930-scale-final",
-          "label": "Scale · Final Blender",
-          "summary": "Final four-panel Blender video.",
-          "total_token_count": null,
-          "token_total_note": "",
+          "id": "scale",
+          "label": "Scale",
+          "summary": "Final Blender.",
+          "total_token_count": 14716950,
+          "token_total_note": "Codex thread total across 1 thread; cached input 14,197,504 tokens (already included, not added twice).",
           "exports": [
             {
               "iteration": 1,
-              "label": "Final",
+              "label": "Final Blender",
               "variant": "Four-panel RGB",
               "export_id": "final",
               "status": "recorded",
@@ -414,7 +346,7 @@
               "provenance": null,
               "blend_sha256": "ba81831381f81c1fedb64dfa2c6f807ec5e909bea212ac8ba80e7fee7aa2872e",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0529-cup/20260930-scale-final/iterations/final.mp4?v=20261005-sequence-final-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0529-cup/20260930-scale-final/iterations/final.mp4?v=20261005-sequence-final-3",
               "asset_key": "scale-0529-cup/20260930-scale-final/iterations/final.mp4",
               "video_ready": true,
               "bytes": 2814217,
@@ -432,15 +364,15 @@
           }
         },
         {
-          "id": "ablation-d-blender-final",
-          "label": "Ablation D · Final Blender",
-          "summary": "Final iteration 12, rendered as a four-panel comparison at 20 fps.",
-          "total_token_count": null,
-          "token_total_note": "",
+          "id": "ablation-d",
+          "label": "Ablation D",
+          "summary": "Final Blender with SPIDER below.",
+          "total_token_count": 30466437,
+          "token_total_note": "Codex thread total across 1 thread; cached input 29,260,672 tokens (already included, not added twice).",
           "exports": [
             {
               "iteration": 12,
-              "label": "Final iteration 12 · Blender",
+              "label": "Final Blender",
               "variant": "Four-panel RGB",
               "export_id": "final-blender",
               "status": "recorded",
@@ -451,33 +383,16 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-d-0529-cup/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-1",
+              "video_url": "../../media/ablation-d-0529-cup/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-3",
               "asset_key": "ablation-d-0529-cup/blender-final/iterations/final-blender.mp4",
               "video_ready": true,
               "bytes": 3777139,
               "width": 960,
               "height": 780
-            }
-          ],
-          "ignored_exports": [],
-          "audit": {
-            "available": false,
-            "source": "",
-            "setup_events": [],
-            "included_event_count": 0,
-            "excluded_event_count": 0
-          }
-        },
-        {
-          "id": "ablation-d-spider-final",
-          "label": "Ablation D · SPIDER",
-          "summary": "Final-iteration SPIDER tracking; dropped segments resume at drop frame +30 with a two-second pause.",
-          "total_token_count": null,
-          "token_total_note": "",
-          "exports": [
+            },
             {
               "iteration": 12,
-              "label": "SPIDER tracking",
+              "label": "SPIDER",
               "variant": "Four-panel RGB",
               "export_id": "final-spider",
               "status": "recorded",
@@ -488,7 +403,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-d-0529-cup/spider-final/iterations/final-spider.mp4?v=20261005-sequence-final-1",
+              "video_url": "../../media/ablation-d-0529-cup/spider-final/iterations/final-spider.mp4?v=20261005-sequence-final-3",
               "asset_key": "ablation-d-0529-cup/spider-final/iterations/final-spider.mp4",
               "video_ready": true,
               "bytes": 1071855,
@@ -506,15 +421,15 @@
           }
         },
         {
-          "id": "ablation-e-blender-final",
-          "label": "Ablation E · Final Blender",
-          "summary": "Final deliverable rendered at 20 fps with two elevated rear-oblique views chosen to expose finger/object contact.",
-          "total_token_count": null,
-          "token_total_note": "",
+          "id": "ablation-e",
+          "label": "Ablation E",
+          "summary": "Final Blender with SPIDER below.",
+          "total_token_count": 62690320,
+          "token_total_note": "Codex thread total across 4 threads; cached input 59,792,640 tokens (already included, not added twice).",
           "exports": [
             {
               "iteration": 0,
-              "label": "Final Blender · palm/contact views",
+              "label": "Final Blender",
               "variant": "Four-panel RGB",
               "export_id": "final-blender",
               "status": "recorded",
@@ -525,33 +440,16 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-e-final-0529-cup/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-1",
+              "video_url": "../../media/ablation-e-final-0529-cup/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-3",
               "asset_key": "ablation-e-final-0529-cup/blender-final/iterations/final-blender.mp4",
               "video_ready": true,
               "bytes": 2470029,
               "width": 960,
               "height": 780
-            }
-          ],
-          "ignored_exports": [],
-          "audit": {
-            "available": false,
-            "source": "",
-            "setup_events": [],
-            "included_event_count": 0,
-            "excluded_event_count": 0
-          }
-        },
-        {
-          "id": "ablation-e-spider-final",
-          "label": "Ablation E · SPIDER",
-          "summary": "Tracked until a drop; resumed from drop +30 frames. Processing stopped when the next segment could not initialize, and all successful segments were retained.",
-          "total_token_count": null,
-          "token_total_note": "",
-          "exports": [
+            },
             {
               "iteration": 0,
-              "label": "SPIDER tracking",
+              "label": "SPIDER",
               "variant": "Four-panel RGB",
               "export_id": "final-spider",
               "status": "recorded",
@@ -562,7 +460,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-e-final-0529-cup/spider-final/iterations/final-spider.mp4?v=20261005-sequence-final-1",
+              "video_url": "../../media/ablation-e-final-0529-cup/spider-final/iterations/final-spider.mp4?v=20261005-sequence-final-3",
               "asset_key": "ablation-e-final-0529-cup/spider-final/iterations/final-spider.mp4",
               "video_ready": true,
               "bytes": 383804,
@@ -584,19 +482,19 @@
     {
       "id": "sequence-0529-mouse",
       "title": "0529 Mouse",
-      "description": "Final-only results for this sequence. SPIDER playback appears directly below its corresponding Blender final when available.",
-      "playback_mode": "stacked",
+      "description": "Final-only results for this sequence. Baselines are arranged horizontally; SPIDER appears below its corresponding Blender final when available.",
+      "playback_mode": "sequence",
       "baselines": [
         {
-          "id": "scale-20260930-scale-final",
-          "label": "Scale · Final Blender",
-          "summary": "Final four-panel Blender video.",
-          "total_token_count": null,
-          "token_total_note": "",
+          "id": "scale",
+          "label": "Scale",
+          "summary": "Final Blender.",
+          "total_token_count": 15487014,
+          "token_total_note": "Codex thread total across 1 thread; cached input 14,627,968 tokens (already included, not added twice).",
           "exports": [
             {
               "iteration": 1,
-              "label": "Final",
+              "label": "Final Blender",
               "variant": "Four-panel RGB",
               "export_id": "final",
               "status": "recorded",
@@ -607,7 +505,7 @@
               "provenance": null,
               "blend_sha256": "3270c5efab7bfe684b3e48af92baeb3e035eb09df71c68152d9d9a11d2c934a9",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0529-mouse/20260930-scale-final/iterations/final.mp4?v=20261005-sequence-final-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0529-mouse/20260930-scale-final/iterations/final.mp4?v=20261005-sequence-final-3",
               "asset_key": "scale-0529-mouse/20260930-scale-final/iterations/final.mp4",
               "video_ready": true,
               "bytes": 3275734,
@@ -625,15 +523,15 @@
           }
         },
         {
-          "id": "ablation-d-blender-final",
-          "label": "Ablation D · Final Blender",
-          "summary": "Final iteration 12, rendered as a four-panel comparison at 20 fps.",
-          "total_token_count": null,
-          "token_total_note": "",
+          "id": "ablation-d",
+          "label": "Ablation D",
+          "summary": "Final Blender with SPIDER below.",
+          "total_token_count": 40254728,
+          "token_total_note": "Codex thread total across 1 thread; cached input 38,778,496 tokens (already included, not added twice).",
           "exports": [
             {
               "iteration": 12,
-              "label": "Final iteration 12 · Blender",
+              "label": "Final Blender",
               "variant": "Four-panel RGB",
               "export_id": "final-blender",
               "status": "recorded",
@@ -644,33 +542,16 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-d-0529-mouse/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-1",
+              "video_url": "../../media/ablation-d-0529-mouse/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-3",
               "asset_key": "ablation-d-0529-mouse/blender-final/iterations/final-blender.mp4",
               "video_ready": true,
               "bytes": 2568409,
               "width": 960,
               "height": 780
-            }
-          ],
-          "ignored_exports": [],
-          "audit": {
-            "available": false,
-            "source": "",
-            "setup_events": [],
-            "included_event_count": 0,
-            "excluded_event_count": 0
-          }
-        },
-        {
-          "id": "ablation-d-spider-final",
-          "label": "Ablation D · SPIDER",
-          "summary": "Final-iteration SPIDER tracking; dropped segments resume at drop frame +30 with a two-second pause.",
-          "total_token_count": null,
-          "token_total_note": "",
-          "exports": [
+            },
             {
               "iteration": 12,
-              "label": "SPIDER tracking",
+              "label": "SPIDER",
               "variant": "Four-panel RGB",
               "export_id": "final-spider",
               "status": "recorded",
@@ -681,7 +562,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-d-0529-mouse/spider-final/iterations/final-spider.mp4?v=20261005-sequence-final-1",
+              "video_url": "../../media/ablation-d-0529-mouse/spider-final/iterations/final-spider.mp4?v=20261005-sequence-final-3",
               "asset_key": "ablation-d-0529-mouse/spider-final/iterations/final-spider.mp4",
               "video_ready": true,
               "bytes": 187301,
@@ -699,15 +580,15 @@
           }
         },
         {
-          "id": "ablation-e-blender-final",
-          "label": "Ablation E · Final Blender",
-          "summary": "Final deliverable rendered at 20 fps with two elevated rear-oblique views chosen to expose finger/object contact.",
-          "total_token_count": null,
-          "token_total_note": "",
+          "id": "ablation-e",
+          "label": "Ablation E",
+          "summary": "Final Blender with SPIDER below.",
+          "total_token_count": 62261451,
+          "token_total_note": "Codex thread total across 3 threads; cached input 60,077,824 tokens (already included, not added twice).",
           "exports": [
             {
               "iteration": 0,
-              "label": "Final Blender · palm/contact views",
+              "label": "Final Blender",
               "variant": "Four-panel RGB",
               "export_id": "final-blender",
               "status": "recorded",
@@ -718,33 +599,16 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-e-final-0529-mouse/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-1",
+              "video_url": "../../media/ablation-e-final-0529-mouse/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-3",
               "asset_key": "ablation-e-final-0529-mouse/blender-final/iterations/final-blender.mp4",
               "video_ready": true,
               "bytes": 2699979,
               "width": 960,
               "height": 780
-            }
-          ],
-          "ignored_exports": [],
-          "audit": {
-            "available": false,
-            "source": "",
-            "setup_events": [],
-            "included_event_count": 0,
-            "excluded_event_count": 0
-          }
-        },
-        {
-          "id": "ablation-e-spider-final",
-          "label": "Ablation E · SPIDER",
-          "summary": "Tracked until a drop; resumed from drop +30 frames. Processing stopped when the next segment could not initialize, and all successful segments were retained.",
-          "total_token_count": null,
-          "token_total_note": "",
-          "exports": [
+            },
             {
               "iteration": 0,
-              "label": "SPIDER tracking",
+              "label": "SPIDER",
               "variant": "Four-panel RGB",
               "export_id": "final-spider",
               "status": "recorded",
@@ -755,7 +619,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-e-final-0529-mouse/spider-final/iterations/final-spider.mp4?v=20261005-sequence-final-1",
+              "video_url": "../../media/ablation-e-final-0529-mouse/spider-final/iterations/final-spider.mp4?v=20261005-sequence-final-3",
               "asset_key": "ablation-e-final-0529-mouse/spider-final/iterations/final-spider.mp4",
               "video_ready": true,
               "bytes": 150057,
@@ -777,19 +641,19 @@
     {
       "id": "sequence-0529-pen",
       "title": "0529 Pen",
-      "description": "Final-only results for this sequence. SPIDER playback appears directly below its corresponding Blender final when available.",
-      "playback_mode": "stacked",
+      "description": "Final-only results for this sequence. Baselines are arranged horizontally; SPIDER appears below its corresponding Blender final when available.",
+      "playback_mode": "sequence",
       "baselines": [
         {
-          "id": "scale-20260930-scale-final",
-          "label": "Scale · Final Blender",
-          "summary": "Final four-panel Blender video.",
-          "total_token_count": null,
-          "token_total_note": "",
+          "id": "scale",
+          "label": "Scale",
+          "summary": "Final Blender.",
+          "total_token_count": 16140865,
+          "token_total_note": "Codex thread total across 1 thread; cached input 15,328,768 tokens (already included, not added twice).",
           "exports": [
             {
               "iteration": 1,
-              "label": "Final",
+              "label": "Final Blender",
               "variant": "Four-panel RGB",
               "export_id": "final",
               "status": "recorded",
@@ -800,7 +664,7 @@
               "provenance": null,
               "blend_sha256": "8c26c770e2a516768188ee99db629245624f8b4f4836e4f5f7b9af83fd2ba631",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0529-pen/20260930-scale-final/iterations/final.mp4?v=20261005-sequence-final-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0529-pen/20260930-scale-final/iterations/final.mp4?v=20261005-sequence-final-3",
               "asset_key": "scale-0529-pen/20260930-scale-final/iterations/final.mp4",
               "video_ready": true,
               "bytes": 2259261,
@@ -818,15 +682,15 @@
           }
         },
         {
-          "id": "ablation-d-blender-final",
-          "label": "Ablation D · Final Blender",
-          "summary": "Final iteration 15, rendered as a four-panel comparison at 20 fps.",
-          "total_token_count": null,
-          "token_total_note": "",
+          "id": "ablation-d",
+          "label": "Ablation D",
+          "summary": "Final Blender with SPIDER below.",
+          "total_token_count": 38961526,
+          "token_total_note": "Codex thread total across 1 thread; cached input 37,459,840 tokens (already included, not added twice).",
           "exports": [
             {
               "iteration": 15,
-              "label": "Final iteration 15 · Blender",
+              "label": "Final Blender",
               "variant": "Four-panel RGB",
               "export_id": "final-blender",
               "status": "recorded",
@@ -837,33 +701,16 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-d-0529-pen/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-1",
+              "video_url": "../../media/ablation-d-0529-pen/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-3",
               "asset_key": "ablation-d-0529-pen/blender-final/iterations/final-blender.mp4",
               "video_ready": true,
               "bytes": 2001040,
               "width": 960,
               "height": 780
-            }
-          ],
-          "ignored_exports": [],
-          "audit": {
-            "available": false,
-            "source": "",
-            "setup_events": [],
-            "included_event_count": 0,
-            "excluded_event_count": 0
-          }
-        },
-        {
-          "id": "ablation-d-spider-final",
-          "label": "Ablation D · SPIDER",
-          "summary": "Final-iteration SPIDER tracking; dropped segments resume at drop frame +30 with a two-second pause.",
-          "total_token_count": null,
-          "token_total_note": "",
-          "exports": [
+            },
             {
               "iteration": 15,
-              "label": "SPIDER tracking",
+              "label": "SPIDER",
               "variant": "Four-panel RGB",
               "export_id": "final-spider",
               "status": "recorded",
@@ -874,7 +721,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-d-0529-pen/spider-final/iterations/final-spider.mp4?v=20261005-sequence-final-1",
+              "video_url": "../../media/ablation-d-0529-pen/spider-final/iterations/final-spider.mp4?v=20261005-sequence-final-3",
               "asset_key": "ablation-d-0529-pen/spider-final/iterations/final-spider.mp4",
               "video_ready": true,
               "bytes": 301691,
@@ -892,15 +739,15 @@
           }
         },
         {
-          "id": "ablation-e-blender-final",
-          "label": "Ablation E · Final Blender",
-          "summary": "Final deliverable rendered at 20 fps with two elevated rear-oblique views chosen to expose finger/object contact.",
-          "total_token_count": null,
-          "token_total_note": "",
+          "id": "ablation-e",
+          "label": "Ablation E",
+          "summary": "Final Blender with SPIDER below.",
+          "total_token_count": 66234011,
+          "token_total_note": "Codex thread total across 4 threads; cached input 63,803,392 tokens (already included, not added twice).",
           "exports": [
             {
               "iteration": 0,
-              "label": "Final Blender · palm/contact views",
+              "label": "Final Blender",
               "variant": "Four-panel RGB",
               "export_id": "final-blender",
               "status": "recorded",
@@ -911,33 +758,16 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-e-final-0529-pen/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-1",
+              "video_url": "../../media/ablation-e-final-0529-pen/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-3",
               "asset_key": "ablation-e-final-0529-pen/blender-final/iterations/final-blender.mp4",
               "video_ready": true,
               "bytes": 2223474,
               "width": 960,
               "height": 780
-            }
-          ],
-          "ignored_exports": [],
-          "audit": {
-            "available": false,
-            "source": "",
-            "setup_events": [],
-            "included_event_count": 0,
-            "excluded_event_count": 0
-          }
-        },
-        {
-          "id": "ablation-e-spider-final",
-          "label": "Ablation E · SPIDER",
-          "summary": "Tracked until a drop; resumed from drop +30 frames. Processing stopped when the next segment could not initialize, and all successful segments were retained.",
-          "total_token_count": null,
-          "token_total_note": "",
-          "exports": [
+            },
             {
               "iteration": 0,
-              "label": "SPIDER tracking",
+              "label": "SPIDER",
               "variant": "Four-panel RGB",
               "export_id": "final-spider",
               "status": "recorded",
@@ -948,7 +778,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-e-final-0529-pen/spider-final/iterations/final-spider.mp4?v=20261005-sequence-final-1",
+              "video_url": "../../media/ablation-e-final-0529-pen/spider-final/iterations/final-spider.mp4?v=20261005-sequence-final-3",
               "asset_key": "ablation-e-final-0529-pen/spider-final/iterations/final-spider.mp4",
               "video_ready": true,
               "bytes": 102924,
@@ -970,19 +800,19 @@
     {
       "id": "sequence-0601-box",
       "title": "0601 Box",
-      "description": "Final-only results for this sequence. SPIDER playback appears directly below its corresponding Blender final when available.",
-      "playback_mode": "stacked",
+      "description": "Final-only results for this sequence. Baselines are arranged horizontally; SPIDER appears below its corresponding Blender final when available.",
+      "playback_mode": "sequence",
       "baselines": [
         {
-          "id": "scale-20260930-scale-final",
-          "label": "Scale · Final Blender",
-          "summary": "Final four-panel Blender video.",
-          "total_token_count": null,
-          "token_total_note": "",
+          "id": "scale",
+          "label": "Scale",
+          "summary": "Final Blender.",
+          "total_token_count": 19689983,
+          "token_total_note": "Codex thread total across 1 thread; cached input 18,775,808 tokens (already included, not added twice).",
           "exports": [
             {
               "iteration": 1,
-              "label": "Final",
+              "label": "Final Blender",
               "variant": "Four-panel RGB",
               "export_id": "final",
               "status": "recorded",
@@ -993,7 +823,7 @@
               "provenance": null,
               "blend_sha256": "6c7f93381356418855b894ed111ac3ae561b246ffd1a1e2055c33d34b78aae1c",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0601-box/20260930-scale-final/iterations/final.mp4?v=20261005-sequence-final-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0601-box/20260930-scale-final/iterations/final.mp4?v=20261005-sequence-final-3",
               "asset_key": "scale-0601-box/20260930-scale-final/iterations/final.mp4",
               "video_ready": true,
               "bytes": 3360600,
@@ -1011,15 +841,15 @@
           }
         },
         {
-          "id": "ablation-d-blender-final",
-          "label": "Ablation D · Final Blender",
-          "summary": "Final iteration 23, rendered as a four-panel comparison at 20 fps.",
-          "total_token_count": null,
-          "token_total_note": "",
+          "id": "ablation-d",
+          "label": "Ablation D",
+          "summary": "Final Blender.",
+          "total_token_count": 35057170,
+          "token_total_note": "Codex thread total across 1 thread; cached input 33,558,272 tokens (already included, not added twice).",
           "exports": [
             {
               "iteration": 23,
-              "label": "Final iteration 23 · Blender",
+              "label": "Final Blender",
               "variant": "Four-panel RGB",
               "export_id": "final-blender",
               "status": "recorded",
@@ -1030,7 +860,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-d-0601-box/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-1",
+              "video_url": "../../media/ablation-d-0601-box/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-3",
               "asset_key": "ablation-d-0601-box/blender-final/iterations/final-blender.mp4",
               "video_ready": true,
               "bytes": 3248744,
@@ -1048,15 +878,15 @@
           }
         },
         {
-          "id": "ablation-e-blender-final",
-          "label": "Ablation E · Final Blender",
-          "summary": "Final deliverable rendered at 20 fps with two elevated rear-oblique views chosen to expose finger/object contact.",
-          "total_token_count": null,
-          "token_total_note": "",
+          "id": "ablation-e",
+          "label": "Ablation E",
+          "summary": "Final Blender with SPIDER below.",
+          "total_token_count": 58997224,
+          "token_total_note": "Codex thread total across 4 threads; cached input 57,054,976 tokens (already included, not added twice).",
           "exports": [
             {
               "iteration": 0,
-              "label": "Final Blender · palm/contact views",
+              "label": "Final Blender",
               "variant": "Four-panel RGB",
               "export_id": "final-blender",
               "status": "recorded",
@@ -1067,33 +897,16 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-e-final-0601-box/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-1",
+              "video_url": "../../media/ablation-e-final-0601-box/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-3",
               "asset_key": "ablation-e-final-0601-box/blender-final/iterations/final-blender.mp4",
               "video_ready": true,
               "bytes": 3193605,
               "width": 960,
               "height": 780
-            }
-          ],
-          "ignored_exports": [],
-          "audit": {
-            "available": false,
-            "source": "",
-            "setup_events": [],
-            "included_event_count": 0,
-            "excluded_event_count": 0
-          }
-        },
-        {
-          "id": "ablation-e-spider-final",
-          "label": "Ablation E · SPIDER",
-          "summary": "Tracked until a drop; resumed from drop +30 frames. Processing stopped when the next segment could not initialize, and all successful segments were retained.",
-          "total_token_count": null,
-          "token_total_note": "",
-          "exports": [
+            },
             {
               "iteration": 0,
-              "label": "SPIDER tracking",
+              "label": "SPIDER",
               "variant": "Four-panel RGB",
               "export_id": "final-spider",
               "status": "recorded",
@@ -1104,7 +917,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-e-final-0601-box/spider-final/iterations/final-spider.mp4?v=20261005-sequence-final-1",
+              "video_url": "../../media/ablation-e-final-0601-box/spider-final/iterations/final-spider.mp4?v=20261005-sequence-final-3",
               "asset_key": "ablation-e-final-0601-box/spider-final/iterations/final-spider.mp4",
               "video_ready": true,
               "bytes": 165426,
@@ -1126,19 +939,19 @@
     {
       "id": "sequence-0608-spoon",
       "title": "0608 Spoon",
-      "description": "Final-only results for this sequence. SPIDER playback appears directly below its corresponding Blender final when available.",
-      "playback_mode": "stacked",
+      "description": "Final-only results for this sequence. Baselines are arranged horizontally; SPIDER appears below its corresponding Blender final when available.",
+      "playback_mode": "sequence",
       "baselines": [
         {
-          "id": "scale-20260930-scale-final",
-          "label": "Scale · Final Blender",
-          "summary": "Final four-panel Blender video.",
-          "total_token_count": null,
-          "token_total_note": "",
+          "id": "scale",
+          "label": "Scale",
+          "summary": "Final Blender.",
+          "total_token_count": 20262155,
+          "token_total_note": "Codex thread total across 1 thread; cached input 19,365,504 tokens (already included, not added twice).",
           "exports": [
             {
               "iteration": 1,
-              "label": "Final",
+              "label": "Final Blender",
               "variant": "Four-panel RGB",
               "export_id": "final",
               "status": "recorded",
@@ -1149,7 +962,7 @@
               "provenance": null,
               "blend_sha256": "5db0f3012257257ff6f11280080292dbf562b0dcd43c40ae434d6b0897b6a7bf",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0608-spoon/20260930-scale-final/iterations/final.mp4?v=20261005-sequence-final-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0608-spoon/20260930-scale-final/iterations/final.mp4?v=20261005-sequence-final-3",
               "asset_key": "scale-0608-spoon/20260930-scale-final/iterations/final.mp4",
               "video_ready": true,
               "bytes": 3192452,
@@ -1167,15 +980,15 @@
           }
         },
         {
-          "id": "ablation-d-blender-final",
-          "label": "Ablation D · Final Blender",
-          "summary": "Final iteration 17, rendered as a four-panel comparison at 20 fps.",
-          "total_token_count": null,
-          "token_total_note": "",
+          "id": "ablation-d",
+          "label": "Ablation D",
+          "summary": "Final Blender.",
+          "total_token_count": 42201509,
+          "token_total_note": "Codex thread total across 1 thread; cached input 40,852,864 tokens (already included, not added twice).",
           "exports": [
             {
               "iteration": 17,
-              "label": "Final iteration 17 · Blender",
+              "label": "Final Blender",
               "variant": "Four-panel RGB",
               "export_id": "final-blender",
               "status": "recorded",
@@ -1186,7 +999,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-d-0608-spoon/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-1",
+              "video_url": "../../media/ablation-d-0608-spoon/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-3",
               "asset_key": "ablation-d-0608-spoon/blender-final/iterations/final-blender.mp4",
               "video_ready": true,
               "bytes": 2283687,
@@ -1204,15 +1017,15 @@
           }
         },
         {
-          "id": "ablation-e-blender-final",
-          "label": "Ablation E · Final Blender",
-          "summary": "Final deliverable rendered at 20 fps with two elevated rear-oblique views chosen to expose finger/object contact.",
-          "total_token_count": null,
-          "token_total_note": "",
+          "id": "ablation-e",
+          "label": "Ablation E",
+          "summary": "Final Blender with SPIDER below.",
+          "total_token_count": 59882245,
+          "token_total_note": "Codex thread total across 4 threads; cached input 57,697,408 tokens (already included, not added twice).",
           "exports": [
             {
               "iteration": 0,
-              "label": "Final Blender · palm/contact views",
+              "label": "Final Blender",
               "variant": "Four-panel RGB",
               "export_id": "final-blender",
               "status": "recorded",
@@ -1223,33 +1036,16 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-e-final-0608-spoon/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-1",
+              "video_url": "../../media/ablation-e-final-0608-spoon/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-3",
               "asset_key": "ablation-e-final-0608-spoon/blender-final/iterations/final-blender.mp4",
               "video_ready": true,
               "bytes": 2075903,
               "width": 960,
               "height": 780
-            }
-          ],
-          "ignored_exports": [],
-          "audit": {
-            "available": false,
-            "source": "",
-            "setup_events": [],
-            "included_event_count": 0,
-            "excluded_event_count": 0
-          }
-        },
-        {
-          "id": "ablation-e-spider-final",
-          "label": "Ablation E · SPIDER",
-          "summary": "Tracked until a drop; resumed from drop +30 frames. Processing stopped when the next segment could not initialize, and all successful segments were retained.",
-          "total_token_count": null,
-          "token_total_note": "",
-          "exports": [
+            },
             {
               "iteration": 0,
-              "label": "SPIDER tracking",
+              "label": "SPIDER",
               "variant": "Four-panel RGB",
               "export_id": "final-spider",
               "status": "recorded",
@@ -1260,7 +1056,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-e-final-0608-spoon/spider-final/iterations/final-spider.mp4?v=20261005-sequence-final-1",
+              "video_url": "../../media/ablation-e-final-0608-spoon/spider-final/iterations/final-spider.mp4?v=20261005-sequence-final-3",
               "asset_key": "ablation-e-final-0608-spoon/spider-final/iterations/final-spider.mp4",
               "video_ready": true,
               "bytes": 89297,
@@ -1282,19 +1078,19 @@
     {
       "id": "sequence-0609-fork",
       "title": "0609 Fork",
-      "description": "Final-only results for this sequence. SPIDER playback appears directly below its corresponding Blender final when available.",
-      "playback_mode": "stacked",
+      "description": "Final-only results for this sequence. Baselines are arranged horizontally; SPIDER appears below its corresponding Blender final when available.",
+      "playback_mode": "sequence",
       "baselines": [
         {
-          "id": "scale-20260930-scale-final",
-          "label": "Scale · Final Blender",
-          "summary": "Final four-panel Blender video.",
-          "total_token_count": null,
-          "token_total_note": "",
+          "id": "scale",
+          "label": "Scale",
+          "summary": "Final Blender.",
+          "total_token_count": 18294975,
+          "token_total_note": "Codex thread total across 1 thread; cached input 17,246,592 tokens (already included, not added twice).",
           "exports": [
             {
               "iteration": 1,
-              "label": "Final",
+              "label": "Final Blender",
               "variant": "Four-panel RGB",
               "export_id": "final",
               "status": "recorded",
@@ -1305,7 +1101,7 @@
               "provenance": null,
               "blend_sha256": "aeaa5f6ac244991e93ef69e10a55528636010940efbd9b07b197321216458476",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0609-fork/20260930-scale-final/iterations/final.mp4?v=20261005-sequence-final-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0609-fork/20260930-scale-final/iterations/final.mp4?v=20261005-sequence-final-3",
               "asset_key": "scale-0609-fork/20260930-scale-final/iterations/final.mp4",
               "video_ready": true,
               "bytes": 2842284,
@@ -1323,15 +1119,15 @@
           }
         },
         {
-          "id": "ablation-d-blender-final",
-          "label": "Ablation D · Final Blender",
-          "summary": "Final iteration 11, rendered as a four-panel comparison at 20 fps.",
-          "total_token_count": null,
-          "token_total_note": "",
+          "id": "ablation-d",
+          "label": "Ablation D",
+          "summary": "Final Blender with SPIDER below.",
+          "total_token_count": 35970731,
+          "token_total_note": "Codex thread total across 1 thread; cached input 34,675,712 tokens (already included, not added twice).",
           "exports": [
             {
               "iteration": 11,
-              "label": "Final iteration 11 · Blender",
+              "label": "Final Blender",
               "variant": "Four-panel RGB",
               "export_id": "final-blender",
               "status": "recorded",
@@ -1342,33 +1138,16 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-d-0609-fork/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-1",
+              "video_url": "../../media/ablation-d-0609-fork/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-3",
               "asset_key": "ablation-d-0609-fork/blender-final/iterations/final-blender.mp4",
               "video_ready": true,
               "bytes": 2605237,
               "width": 960,
               "height": 780
-            }
-          ],
-          "ignored_exports": [],
-          "audit": {
-            "available": false,
-            "source": "",
-            "setup_events": [],
-            "included_event_count": 0,
-            "excluded_event_count": 0
-          }
-        },
-        {
-          "id": "ablation-d-spider-final",
-          "label": "Ablation D · SPIDER",
-          "summary": "Final-iteration SPIDER tracking; dropped segments resume at drop frame +30 with a two-second pause.",
-          "total_token_count": null,
-          "token_total_note": "",
-          "exports": [
+            },
             {
               "iteration": 11,
-              "label": "SPIDER tracking",
+              "label": "SPIDER",
               "variant": "Four-panel RGB",
               "export_id": "final-spider",
               "status": "recorded",
@@ -1379,7 +1158,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-d-0609-fork/spider-final/iterations/final-spider.mp4?v=20261005-sequence-final-1",
+              "video_url": "../../media/ablation-d-0609-fork/spider-final/iterations/final-spider.mp4?v=20261005-sequence-final-3",
               "asset_key": "ablation-d-0609-fork/spider-final/iterations/final-spider.mp4",
               "video_ready": true,
               "bytes": 202892,
@@ -1397,15 +1176,15 @@
           }
         },
         {
-          "id": "ablation-e-blender-final",
-          "label": "Ablation E · Final Blender",
-          "summary": "Final deliverable rendered at 20 fps with two elevated rear-oblique views chosen to expose finger/object contact.",
-          "total_token_count": null,
-          "token_total_note": "",
+          "id": "ablation-e",
+          "label": "Ablation E",
+          "summary": "Final Blender with SPIDER below.",
+          "total_token_count": 71164158,
+          "token_total_note": "Codex thread total across 4 threads; cached input 68,764,800 tokens (already included, not added twice).",
           "exports": [
             {
               "iteration": 0,
-              "label": "Final Blender · palm/contact views",
+              "label": "Final Blender",
               "variant": "Four-panel RGB",
               "export_id": "final-blender",
               "status": "recorded",
@@ -1416,33 +1195,16 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-e-final-0609-fork/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-1",
+              "video_url": "../../media/ablation-e-final-0609-fork/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-3",
               "asset_key": "ablation-e-final-0609-fork/blender-final/iterations/final-blender.mp4",
               "video_ready": true,
               "bytes": 2169711,
               "width": 960,
               "height": 780
-            }
-          ],
-          "ignored_exports": [],
-          "audit": {
-            "available": false,
-            "source": "",
-            "setup_events": [],
-            "included_event_count": 0,
-            "excluded_event_count": 0
-          }
-        },
-        {
-          "id": "ablation-e-spider-final",
-          "label": "Ablation E · SPIDER",
-          "summary": "Tracked until a drop; resumed from drop +30 frames. Processing stopped when the next segment could not initialize, and all successful segments were retained.",
-          "total_token_count": null,
-          "token_total_note": "",
-          "exports": [
+            },
             {
               "iteration": 0,
-              "label": "SPIDER tracking",
+              "label": "SPIDER",
               "variant": "Four-panel RGB",
               "export_id": "final-spider",
               "status": "recorded",
@@ -1453,7 +1215,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-e-final-0609-fork/spider-final/iterations/final-spider.mp4?v=20261005-sequence-final-1",
+              "video_url": "../../media/ablation-e-final-0609-fork/spider-final/iterations/final-spider.mp4?v=20261005-sequence-final-3",
               "asset_key": "ablation-e-final-0609-fork/spider-final/iterations/final-spider.mp4",
               "video_ready": true,
               "bytes": 95268,
@@ -1475,19 +1237,19 @@
     {
       "id": "sequence-0611-duck",
       "title": "0611 Duck",
-      "description": "Final-only results for this sequence. SPIDER playback appears directly below its corresponding Blender final when available.",
-      "playback_mode": "stacked",
+      "description": "Final-only results for this sequence. Baselines are arranged horizontally; SPIDER appears below its corresponding Blender final when available.",
+      "playback_mode": "sequence",
       "baselines": [
         {
-          "id": "scale-20260930-scale-final",
-          "label": "Scale · Final Blender",
-          "summary": "Final four-panel Blender video.",
-          "total_token_count": null,
-          "token_total_note": "",
+          "id": "scale",
+          "label": "Scale",
+          "summary": "Final Blender.",
+          "total_token_count": 19631627,
+          "token_total_note": "Codex thread total across 1 thread; cached input 18,761,216 tokens (already included, not added twice).",
           "exports": [
             {
               "iteration": 1,
-              "label": "Final",
+              "label": "Final Blender",
               "variant": "Four-panel RGB",
               "export_id": "final",
               "status": "recorded",
@@ -1498,7 +1260,7 @@
               "provenance": null,
               "blend_sha256": "e50f6e7f31ad57aff8f3ee63ec3c96814a5544ce1c96887a3dbdec605daad4da",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0611-duck/20260930-scale-final/iterations/final.mp4?v=20261005-sequence-final-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0611-duck/20260930-scale-final/iterations/final.mp4?v=20261005-sequence-final-3",
               "asset_key": "scale-0611-duck/20260930-scale-final/iterations/final.mp4",
               "video_ready": true,
               "bytes": 2674559,
@@ -1516,15 +1278,15 @@
           }
         },
         {
-          "id": "ablation-d-blender-final",
-          "label": "Ablation D · Final Blender",
-          "summary": "Final iteration 12, rendered as a four-panel comparison at 20 fps.",
-          "total_token_count": null,
-          "token_total_note": "",
+          "id": "ablation-d",
+          "label": "Ablation D",
+          "summary": "Final Blender with SPIDER below.",
+          "total_token_count": 37726377,
+          "token_total_note": "Codex thread total across 1 thread; cached input 36,162,176 tokens (already included, not added twice).",
           "exports": [
             {
               "iteration": 12,
-              "label": "Final iteration 12 · Blender",
+              "label": "Final Blender",
               "variant": "Four-panel RGB",
               "export_id": "final-blender",
               "status": "recorded",
@@ -1535,33 +1297,16 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-d-0611-duck/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-1",
+              "video_url": "../../media/ablation-d-0611-duck/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-3",
               "asset_key": "ablation-d-0611-duck/blender-final/iterations/final-blender.mp4",
               "video_ready": true,
               "bytes": 2125183,
               "width": 960,
               "height": 780
-            }
-          ],
-          "ignored_exports": [],
-          "audit": {
-            "available": false,
-            "source": "",
-            "setup_events": [],
-            "included_event_count": 0,
-            "excluded_event_count": 0
-          }
-        },
-        {
-          "id": "ablation-d-spider-final",
-          "label": "Ablation D · SPIDER",
-          "summary": "Final-iteration SPIDER tracking; dropped segments resume at drop frame +30 with a two-second pause.",
-          "total_token_count": null,
-          "token_total_note": "",
-          "exports": [
+            },
             {
               "iteration": 12,
-              "label": "SPIDER tracking",
+              "label": "SPIDER",
               "variant": "Four-panel RGB",
               "export_id": "final-spider",
               "status": "recorded",
@@ -1572,7 +1317,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-d-0611-duck/spider-final/iterations/final-spider.mp4?v=20261005-sequence-final-1",
+              "video_url": "../../media/ablation-d-0611-duck/spider-final/iterations/final-spider.mp4?v=20261005-sequence-final-3",
               "asset_key": "ablation-d-0611-duck/spider-final/iterations/final-spider.mp4",
               "video_ready": true,
               "bytes": 517970,
@@ -1590,15 +1335,15 @@
           }
         },
         {
-          "id": "ablation-e-blender-final",
-          "label": "Ablation E · Final Blender",
-          "summary": "Final deliverable rendered at 20 fps with two elevated rear-oblique views chosen to expose finger/object contact.",
-          "total_token_count": null,
-          "token_total_note": "",
+          "id": "ablation-e",
+          "label": "Ablation E",
+          "summary": "Final Blender with SPIDER below.",
+          "total_token_count": 70564479,
+          "token_total_note": "Codex thread total across 4 threads; cached input 68,156,672 tokens (already included, not added twice).",
           "exports": [
             {
               "iteration": 0,
-              "label": "Final Blender · palm/contact views",
+              "label": "Final Blender",
               "variant": "Four-panel RGB",
               "export_id": "final-blender",
               "status": "recorded",
@@ -1609,33 +1354,16 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-e-final-0611-duck/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-1",
+              "video_url": "../../media/ablation-e-final-0611-duck/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-3",
               "asset_key": "ablation-e-final-0611-duck/blender-final/iterations/final-blender.mp4",
               "video_ready": true,
               "bytes": 3000164,
               "width": 960,
               "height": 780
-            }
-          ],
-          "ignored_exports": [],
-          "audit": {
-            "available": false,
-            "source": "",
-            "setup_events": [],
-            "included_event_count": 0,
-            "excluded_event_count": 0
-          }
-        },
-        {
-          "id": "ablation-e-spider-final",
-          "label": "Ablation E · SPIDER",
-          "summary": "Tracked until a drop; resumed from drop +30 frames. Processing stopped when the next segment could not initialize, and all successful segments were retained.",
-          "total_token_count": null,
-          "token_total_note": "",
-          "exports": [
+            },
             {
               "iteration": 0,
-              "label": "SPIDER tracking",
+              "label": "SPIDER",
               "variant": "Four-panel RGB",
               "export_id": "final-spider",
               "status": "recorded",
@@ -1646,7 +1374,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-e-final-0611-duck/spider-final/iterations/final-spider.mp4?v=20261005-sequence-final-1",
+              "video_url": "../../media/ablation-e-final-0611-duck/spider-final/iterations/final-spider.mp4?v=20261005-sequence-final-3",
               "asset_key": "ablation-e-final-0611-duck/spider-final/iterations/final-spider.mp4",
               "video_ready": true,
               "bytes": 122757,
@@ -1668,19 +1396,19 @@
     {
       "id": "sequence-0827-spoon",
       "title": "0827 Spoon",
-      "description": "Final-only results for this sequence. SPIDER playback appears directly below its corresponding Blender final when available.",
-      "playback_mode": "stacked",
+      "description": "Final-only results for this sequence. Baselines are arranged horizontally; SPIDER appears below its corresponding Blender final when available.",
+      "playback_mode": "sequence",
       "baselines": [
         {
-          "id": "ablation-d-blender-final",
-          "label": "Ablation D · Final Blender",
-          "summary": "Final iteration 18, rendered as a four-panel comparison at 20 fps.",
-          "total_token_count": null,
-          "token_total_note": "",
+          "id": "ablation-d",
+          "label": "Ablation D",
+          "summary": "Final Blender with SPIDER below.",
+          "total_token_count": 42275912,
+          "token_total_note": "Codex thread total across 1 thread; cached input 40,692,864 tokens (already included, not added twice).",
           "exports": [
             {
               "iteration": 18,
-              "label": "Final iteration 18 · Blender",
+              "label": "Final Blender",
               "variant": "Four-panel RGB",
               "export_id": "final-blender",
               "status": "recorded",
@@ -1691,33 +1419,16 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-d-0827-spoon/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-1",
+              "video_url": "../../media/ablation-d-0827-spoon/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-3",
               "asset_key": "ablation-d-0827-spoon/blender-final/iterations/final-blender.mp4",
               "video_ready": true,
               "bytes": 3154691,
               "width": 960,
               "height": 780
-            }
-          ],
-          "ignored_exports": [],
-          "audit": {
-            "available": false,
-            "source": "",
-            "setup_events": [],
-            "included_event_count": 0,
-            "excluded_event_count": 0
-          }
-        },
-        {
-          "id": "ablation-d-spider-final",
-          "label": "Ablation D · SPIDER",
-          "summary": "Final-iteration SPIDER tracking; dropped segments resume at drop frame +30 with a two-second pause.",
-          "total_token_count": null,
-          "token_total_note": "",
-          "exports": [
+            },
             {
               "iteration": 18,
-              "label": "SPIDER tracking",
+              "label": "SPIDER",
               "variant": "Four-panel RGB",
               "export_id": "final-spider",
               "status": "recorded",
@@ -1728,7 +1439,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-d-0827-spoon/spider-final/iterations/final-spider.mp4?v=20261005-sequence-final-1",
+              "video_url": "../../media/ablation-d-0827-spoon/spider-final/iterations/final-spider.mp4?v=20261005-sequence-final-3",
               "asset_key": "ablation-d-0827-spoon/spider-final/iterations/final-spider.mp4",
               "video_ready": true,
               "bytes": 293381,
@@ -1746,15 +1457,15 @@
           }
         },
         {
-          "id": "ablation-e-blender-final",
-          "label": "Ablation E · Final Blender",
-          "summary": "Final deliverable rendered at 20 fps with two elevated rear-oblique views chosen to expose finger/object contact.",
-          "total_token_count": null,
-          "token_total_note": "",
+          "id": "ablation-e",
+          "label": "Ablation E",
+          "summary": "Final Blender with SPIDER below.",
+          "total_token_count": 64540554,
+          "token_total_note": "Codex thread total across 4 threads; cached input 62,204,544 tokens (already included, not added twice).",
           "exports": [
             {
               "iteration": 0,
-              "label": "Final Blender · palm/contact views",
+              "label": "Final Blender",
               "variant": "Four-panel RGB",
               "export_id": "final-blender",
               "status": "recorded",
@@ -1765,33 +1476,16 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-e-final-0827-spoon/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-1",
+              "video_url": "../../media/ablation-e-final-0827-spoon/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-3",
               "asset_key": "ablation-e-final-0827-spoon/blender-final/iterations/final-blender.mp4",
               "video_ready": true,
               "bytes": 3256619,
               "width": 960,
               "height": 780
-            }
-          ],
-          "ignored_exports": [],
-          "audit": {
-            "available": false,
-            "source": "",
-            "setup_events": [],
-            "included_event_count": 0,
-            "excluded_event_count": 0
-          }
-        },
-        {
-          "id": "ablation-e-spider-final",
-          "label": "Ablation E · SPIDER",
-          "summary": "Tracked until a drop; resumed from drop +30 frames. Processing stopped when the next segment could not initialize, and all successful segments were retained.",
-          "total_token_count": null,
-          "token_total_note": "",
-          "exports": [
+            },
             {
               "iteration": 0,
-              "label": "SPIDER tracking",
+              "label": "SPIDER",
               "variant": "Four-panel RGB",
               "export_id": "final-spider",
               "status": "recorded",
@@ -1802,7 +1496,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-e-final-0827-spoon/spider-final/iterations/final-spider.mp4?v=20261005-sequence-final-1",
+              "video_url": "../../media/ablation-e-final-0827-spoon/spider-final/iterations/final-spider.mp4?v=20261005-sequence-final-3",
               "asset_key": "ablation-e-final-0827-spoon/spider-final/iterations/final-spider.mp4",
               "video_ready": true,
               "bytes": 120184,
@@ -1824,19 +1518,19 @@
     {
       "id": "sequence-0827-sweep",
       "title": "0827 Sweep",
-      "description": "Final-only results for this sequence. SPIDER playback appears directly below its corresponding Blender final when available.",
-      "playback_mode": "stacked",
+      "description": "Final-only results for this sequence. Baselines are arranged horizontally; SPIDER appears below its corresponding Blender final when available.",
+      "playback_mode": "sequence",
       "baselines": [
         {
-          "id": "scale-20260930-scale-final",
-          "label": "Scale · Final Blender",
-          "summary": "Final four-panel Blender video.",
-          "total_token_count": null,
-          "token_total_note": "",
+          "id": "scale",
+          "label": "Scale",
+          "summary": "Final Blender.",
+          "total_token_count": 17477145,
+          "token_total_note": "Codex thread total across 1 thread; cached input 16,878,080 tokens (already included, not added twice).",
           "exports": [
             {
               "iteration": 1,
-              "label": "Final",
+              "label": "Final Blender",
               "variant": "Four-panel RGB",
               "export_id": "final",
               "status": "recorded",
@@ -1847,7 +1541,7 @@
               "provenance": null,
               "blend_sha256": "a528e5c23c253b322b6d13aa50a11d14f891d12b812930ad89a95e1708fa2a92",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0827-sweep/20260930-scale-final/iterations/final.mp4?v=20261005-sequence-final-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-0827-sweep/20260930-scale-final/iterations/final.mp4?v=20261005-sequence-final-3",
               "asset_key": "scale-0827-sweep/20260930-scale-final/iterations/final.mp4",
               "video_ready": true,
               "bytes": 2845723,
@@ -1865,15 +1559,15 @@
           }
         },
         {
-          "id": "ablation-d-blender-final",
-          "label": "Ablation D · Final Blender",
-          "summary": "Final iteration 15, rendered as a four-panel comparison at 20 fps.",
-          "total_token_count": null,
-          "token_total_note": "",
+          "id": "ablation-d",
+          "label": "Ablation D",
+          "summary": "Final Blender with SPIDER below.",
+          "total_token_count": 45726753,
+          "token_total_note": "Codex thread total across 1 thread; cached input 43,841,920 tokens (already included, not added twice).",
           "exports": [
             {
               "iteration": 15,
-              "label": "Final iteration 15 · Blender",
+              "label": "Final Blender",
               "variant": "Four-panel RGB",
               "export_id": "final-blender",
               "status": "recorded",
@@ -1884,33 +1578,16 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-d-0827-sweep/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-1",
+              "video_url": "../../media/ablation-d-0827-sweep/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-3",
               "asset_key": "ablation-d-0827-sweep/blender-final/iterations/final-blender.mp4",
               "video_ready": true,
               "bytes": 2736982,
               "width": 960,
               "height": 780
-            }
-          ],
-          "ignored_exports": [],
-          "audit": {
-            "available": false,
-            "source": "",
-            "setup_events": [],
-            "included_event_count": 0,
-            "excluded_event_count": 0
-          }
-        },
-        {
-          "id": "ablation-d-spider-final",
-          "label": "Ablation D · SPIDER",
-          "summary": "The successful final segment is shown; earlier resume points failed initialization.",
-          "total_token_count": null,
-          "token_total_note": "",
-          "exports": [
+            },
             {
               "iteration": 15,
-              "label": "SPIDER tracking",
+              "label": "SPIDER",
               "variant": "Four-panel RGB",
               "export_id": "final-spider",
               "status": "recorded",
@@ -1921,7 +1598,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-d-0827-sweep/spider-final/iterations/final-spider.mp4?v=20261005-sequence-final-1",
+              "video_url": "../../media/ablation-d-0827-sweep/spider-final/iterations/final-spider.mp4?v=20261005-sequence-final-3",
               "asset_key": "ablation-d-0827-sweep/spider-final/iterations/final-spider.mp4",
               "video_ready": true,
               "bytes": 322434,
@@ -1939,15 +1616,15 @@
           }
         },
         {
-          "id": "ablation-e-blender-final",
-          "label": "Ablation E · Final Blender",
-          "summary": "Final deliverable rendered at 20 fps with two elevated rear-oblique views chosen to expose finger/object contact.",
-          "total_token_count": null,
-          "token_total_note": "",
+          "id": "ablation-e",
+          "label": "Ablation E",
+          "summary": "Final Blender with SPIDER below.",
+          "total_token_count": 68191501,
+          "token_total_note": "Codex thread total across 5 threads; cached input 65,885,184 tokens (already included, not added twice).",
           "exports": [
             {
               "iteration": 0,
-              "label": "Final Blender · palm/contact views",
+              "label": "Final Blender",
               "variant": "Four-panel RGB",
               "export_id": "final-blender",
               "status": "recorded",
@@ -1958,33 +1635,16 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-e-final-0827-sweep/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-1",
+              "video_url": "../../media/ablation-e-final-0827-sweep/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-3",
               "asset_key": "ablation-e-final-0827-sweep/blender-final/iterations/final-blender.mp4",
               "video_ready": true,
               "bytes": 2929187,
               "width": 960,
               "height": 780
-            }
-          ],
-          "ignored_exports": [],
-          "audit": {
-            "available": false,
-            "source": "",
-            "setup_events": [],
-            "included_event_count": 0,
-            "excluded_event_count": 0
-          }
-        },
-        {
-          "id": "ablation-e-spider-final",
-          "label": "Ablation E · SPIDER",
-          "summary": "Tracked until a drop; resumed from drop +30 frames. Processing stopped when the next segment could not initialize, and all successful segments were retained.",
-          "total_token_count": null,
-          "token_total_note": "",
-          "exports": [
+            },
             {
               "iteration": 0,
-              "label": "SPIDER tracking",
+              "label": "SPIDER",
               "variant": "Four-panel RGB",
               "export_id": "final-spider",
               "status": "recorded",
@@ -1995,7 +1655,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-e-final-0827-sweep/spider-final/iterations/final-spider.mp4?v=20261005-sequence-final-1",
+              "video_url": "../../media/ablation-e-final-0827-sweep/spider-final/iterations/final-spider.mp4?v=20261005-sequence-final-3",
               "asset_key": "ablation-e-final-0827-sweep/spider-final/iterations/final-spider.mp4",
               "video_ready": true,
               "bytes": 91811,
@@ -2017,19 +1677,19 @@
     {
       "id": "sequence-sushi",
       "title": "Sushi",
-      "description": "Final-only results for this sequence. SPIDER playback appears directly below its corresponding Blender final when available.",
-      "playback_mode": "stacked",
+      "description": "Final-only results for this sequence. Baselines are arranged horizontally; SPIDER appears below its corresponding Blender final when available.",
+      "playback_mode": "sequence",
       "baselines": [
         {
-          "id": "scale-20260930-scale-final",
-          "label": "Scale · Final Blender",
-          "summary": "Final four-panel Blender video.",
-          "total_token_count": null,
-          "token_total_note": "",
+          "id": "scale",
+          "label": "Scale",
+          "summary": "Final Blender.",
+          "total_token_count": 18731298,
+          "token_total_note": "Codex thread total across 1 thread; cached input 18,154,752 tokens (already included, not added twice).",
           "exports": [
             {
               "iteration": 1,
-              "label": "Final",
+              "label": "Final Blender",
               "variant": "Four-panel RGB",
               "export_id": "final",
               "status": "recorded",
@@ -2040,7 +1700,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-sushi/20260930-scale-final/iterations/final.mp4?v=20261005-sequence-final-1",
+              "video_url": "https://pub-eaa718fdd45e428bb7275d91ccbfbfb5.r2.dev/scale-sushi/20260930-scale-final/iterations/final.mp4?v=20261005-sequence-final-3",
               "asset_key": "scale-sushi/20260930-scale-final/iterations/final.mp4",
               "video_ready": true,
               "bytes": 758749,
@@ -2058,15 +1718,15 @@
           }
         },
         {
-          "id": "ablation-d-blender-final",
-          "label": "Ablation D · Final Blender",
-          "summary": "Final iteration 18, rendered as a four-panel comparison at native 12 fps.",
-          "total_token_count": null,
-          "token_total_note": "",
+          "id": "ablation-d",
+          "label": "Ablation D",
+          "summary": "Final Blender.",
+          "total_token_count": 36253290,
+          "token_total_note": "Codex thread total across 1 thread; cached input 34,907,008 tokens (already included, not added twice).",
           "exports": [
             {
               "iteration": 18,
-              "label": "Final iteration 18 · Blender",
+              "label": "Final Blender",
               "variant": "Four-panel RGB",
               "export_id": "final-blender",
               "status": "recorded",
@@ -2077,7 +1737,7 @@
               "provenance": null,
               "blend_sha256": "",
               "audit_events": [],
-              "video_url": "../../media/ablation-d-sushi/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-1",
+              "video_url": "../../media/ablation-d-sushi/blender-final/iterations/final-blender.mp4?v=20261005-sequence-final-3",
               "asset_key": "ablation-d-sushi/blender-final/iterations/final-blender.mp4",
               "video_ready": true,
               "bytes": 731339,

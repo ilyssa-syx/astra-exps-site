@@ -18,7 +18,8 @@
 
 function renderExample(root, example, assetsReady) {
   const stackedPlayback = example.playback_mode === "stacked";
-  const independentPlayback = example.playback_mode === "independent" || stackedPlayback;
+  const sequencePlayback = example.playback_mode === "sequence";
+  const independentPlayback = example.playback_mode === "independent" || stackedPlayback || sequencePlayback;
   root.innerHTML = `
     <section class="example-hero">
       <a class="back-link" href="../../">← All examples</a>
@@ -52,6 +53,7 @@ function renderExample(root, example, assetsReady) {
 
   const baselineList = root.querySelector(".baseline-list");
   baselineList.classList.toggle("stacked-baselines", stackedPlayback);
+  baselineList.classList.toggle("sequence-baselines", sequencePlayback);
   const baselineToggles = root.querySelector(".baseline-toggles");
   let updateTopScroller = () => {};
   const updateBaselineLayout = () => {

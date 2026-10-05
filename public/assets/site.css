@@ -110,6 +110,22 @@ h1 { margin-bottom: .8rem; font-size: clamp(2.6rem, 6vw, 4.7rem); line-height: 1
 .stacked-baselines .baseline-intro { min-height: 0; }
 .stacked-baselines .iteration-row { padding-bottom: 0; border-bottom: 0; }
 .stacked-baselines .video-frame { width: 100%; }
+.sequence-baselines .audit-panel,
+.sequence-baselines .iteration-reason,
+.sequence-baselines .iteration-provenance,
+.sequence-baselines .iteration-heading .status,
+.sequence-baselines .iteration-heading .metric,
+.sequence-baselines .row-actions { display: none; }
+.sequence-baselines .baseline-section { flex-basis: min(720px, calc(100vw - 3rem)); }
+.sequence-baselines .baseline-intro { min-height: 6rem; }
+.sequence-baselines .iteration-heading { margin-bottom: .65rem; }
+.sequence-baselines .iteration-row:last-child { padding-bottom: 0; border-bottom: 0; }
+.sequence-baselines .baseline-total {
+  margin-top: 1.25rem;
+  padding: .8rem;
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
 .baseline-intro { min-height: 8rem; margin-bottom: 1rem; }
 .baseline-intro p:last-child { max-width: 700px; margin: .4rem 0 0; color: var(--muted); }
 

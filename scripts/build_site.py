@@ -248,7 +248,7 @@ def variant_label(export_name, metadata):
     return "Comparison render"
 
 
-def merge_final_examples_by_sequence(examples):
+def merge_final_examples_by_sequence(examples, token_usage):
     """Collapse Scale/D/E pages into one final-only page per RGB sequence."""
     prefixes = (
         ("scale-", "Scale"),
@@ -266,21 +266,41 @@ def merge_final_examples_by_sequence(examples):
         target = merged.setdefault(sequence, {
             "id": "sequence-" + sequence,
             "title": sequence.replace("-", " ").title(),
-            "description": "Final-only results for this sequence. SPIDER playback appears directly below its corresponding Blender final when available.",
-            "playback_mode": "stacked",
+            "description": "Final-only results for this sequence. Baselines are arranged horizontally; SPIDER appears below its corresponding Blender final when available.",
+            "playback_mode": "sequence",
             "baselines": [],
         })
+        grouped_exports = []
+        first_baseline = None
         for baseline in example.get("baselines", []):
             ready = [item for item in baseline.get("exports", []) if item.get("video_ready")]
             if not ready:
                 continue
+            if first_baseline is None:
+                first_baseline = baseline
             final_export = max(ready, key=lambda item: (item["iteration"], item["export_id"]))
             is_spider = "spider" in baseline["id"].lower()
+            final_export = dict(final_export)
+            final_export["label"] = "SPIDER" if is_spider else "Final Blender"
+            grouped_exports.append((1 if is_spider else 0, final_export))
+        if grouped_exports:
+            usage = token_usage.get("baselines", {}).get(sequence, {}).get(
+                group.lower().replace(" ", "-")
+            )
             target["baselines"].append({
-                **baseline,
-                "id": group.lower().replace(" ", "-") + "-" + baseline["id"],
-                "label": group + (" · SPIDER" if is_spider else " · Final Blender"),
-                "exports": [final_export],
+                **first_baseline,
+                "id": group.lower().replace(" ", "-"),
+                "label": group,
+                "summary": "Final Blender" + (" with SPIDER below." if any(order for order, _ in grouped_exports) else "."),
+                "total_token_count": usage.get("total_tokens") if usage else None,
+                "token_total_note": (
+                    "Codex thread total across {} thread{}; cached input {:,} tokens "
+                    "(already included, not added twice).".format(
+                        usage["threads"], "" if usage["threads"] == 1 else "s",
+                        usage["cached_input_tokens"])
+                    if usage else "Thread-level token usage unavailable."
+                ),
+                "exports": [item for _, item in sorted(grouped_exports, key=lambda pair: pair[0])],
             })
     return [merged[key] for key in sorted(merged)]
 
@@ -522,7 +542,8 @@ def build_catalog(config):
         public_examples.append(public_example)
 
     if config.get("merge_final_by_sequence"):
-        public_examples = merge_final_examples_by_sequence(public_examples)
+        token_usage = read_json(ROOT / "config" / "thread_token_usage.json")
+        public_examples = merge_final_examples_by_sequence(public_examples, token_usage)
 
     return {
         "site_title": config.get("site_title", "ASTRA Experiments"),

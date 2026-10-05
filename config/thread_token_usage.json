@@ -1,0 +1,65 @@
+{
+  "schema": "astra-site-thread-token-usage/v1",
+  "counting": "Latest thread_token_usage record per unique Codex thread. cached_input_tokens is a subset of input_tokens and is already included in total_tokens.",
+  "baselines": {
+    "0416-mug": {
+      "scale": {"threads": 1, "cached_input_tokens": 15380224, "total_tokens": 15881805},
+      "ablation-d": {"threads": 1, "cached_input_tokens": 32344576, "total_tokens": 33586080},
+      "ablation-e": {"threads": 4, "cached_input_tokens": 52435968, "total_tokens": 54861032}
+    },
+    "0529-bottle": {
+      "scale": {"threads": 1, "cached_input_tokens": 20404736, "total_tokens": 21351879},
+      "ablation-d": {"threads": 1, "cached_input_tokens": 38986752, "total_tokens": 40787551},
+      "ablation-e": {"threads": 4, "cached_input_tokens": 65569920, "total_tokens": 67940508}
+    },
+    "0529-cup": {
+      "scale": {"threads": 1, "cached_input_tokens": 14197504, "total_tokens": 14716950},
+      "ablation-d": {"threads": 1, "cached_input_tokens": 29260672, "total_tokens": 30466437},
+      "ablation-e": {"threads": 4, "cached_input_tokens": 59792640, "total_tokens": 62690320}
+    },
+    "0529-mouse": {
+      "scale": {"threads": 1, "cached_input_tokens": 14627968, "total_tokens": 15487014},
+      "ablation-d": {"threads": 1, "cached_input_tokens": 38778496, "total_tokens": 40254728},
+      "ablation-e": {"threads": 3, "cached_input_tokens": 60077824, "total_tokens": 62261451}
+    },
+    "0529-pen": {
+      "scale": {"threads": 1, "cached_input_tokens": 15328768, "total_tokens": 16140865},
+      "ablation-d": {"threads": 1, "cached_input_tokens": 37459840, "total_tokens": 38961526},
+      "ablation-e": {"threads": 4, "cached_input_tokens": 63803392, "total_tokens": 66234011}
+    },
+    "0601-box": {
+      "scale": {"threads": 1, "cached_input_tokens": 18775808, "total_tokens": 19689983},
+      "ablation-d": {"threads": 1, "cached_input_tokens": 33558272, "total_tokens": 35057170},
+      "ablation-e": {"threads": 4, "cached_input_tokens": 57054976, "total_tokens": 58997224}
+    },
+    "0608-spoon": {
+      "scale": {"threads": 1, "cached_input_tokens": 19365504, "total_tokens": 20262155},
+      "ablation-d": {"threads": 1, "cached_input_tokens": 40852864, "total_tokens": 42201509},
+      "ablation-e": {"threads": 4, "cached_input_tokens": 57697408, "total_tokens": 59882245}
+    },
+    "0609-fork": {
+      "scale": {"threads": 1, "cached_input_tokens": 17246592, "total_tokens": 18294975},
+      "ablation-d": {"threads": 1, "cached_input_tokens": 34675712, "total_tokens": 35970731},
+      "ablation-e": {"threads": 4, "cached_input_tokens": 68764800, "total_tokens": 71164158}
+    },
+    "0611-duck": {
+      "scale": {"threads": 1, "cached_input_tokens": 18761216, "total_tokens": 19631627},
+      "ablation-d": {"threads": 1, "cached_input_tokens": 36162176, "total_tokens": 37726377},
+      "ablation-e": {"threads": 4, "cached_input_tokens": 68156672, "total_tokens": 70564479}
+    },
+    "0827-spoon": {
+      "ablation-d": {"threads": 1, "cached_input_tokens": 40692864, "total_tokens": 42275912},
+      "ablation-e": {"threads": 4, "cached_input_tokens": 62204544, "total_tokens": 64540554}
+    },
+    "0827-sweep": {
+      "scale": {"threads": 1, "cached_input_tokens": 16878080, "total_tokens": 17477145},
+      "ablation-d": {"threads": 1, "cached_input_tokens": 43841920, "total_tokens": 45726753},
+      "ablation-e": {"threads": 5, "cached_input_tokens": 65885184, "total_tokens": 68191501}
+    },
+    "sushi": {
+      "scale": {"threads": 1, "cached_input_tokens": 18154752, "total_tokens": 18731298},
+      "ablation-d": {"threads": 1, "cached_input_tokens": 34907008, "total_tokens": 36253290},
+      "ablation-e": {"threads": 1, "cached_input_tokens": 25632512, "total_tokens": 26883821}
+    }
+  }
+}
